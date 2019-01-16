@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DedalusWeb Story</title>
+
+    <script src="http://olado.github.io/doT/doT.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dedalus.js"></script>
+    <script src="dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+ </head>
+<body>
+    <div id="story">
+
+        <initscript>
+        story.bathublady=false;
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+        <!-- Novel -->
+        <title>This is a Place Holder</title>
+        <page id="intro">
+            The year is 2175. The world is not the same place it is currently. A strangeness has taken oven the United States of America, to no ones surprise.
+        </page>
+        <page id="wakeup" class="first">
+            <p>The first thing you notice is that it is cold. You open yours eyes slowly and as the light streams into your retinas it begins a fire in your brain. You manage to pull yourself up slowly off of the cot you were laying on. You swing your feet over the edge and set your bare feet down onto the floor. Your feet are greeted by the soft touch of dirt. It sporadically covers the intricate tiling of the floor ingraining itself into the soft green tiles. Plants of every shape and size surround the perimeter of the room. They crawl up towards the walls and block out the windows casting their organic shadows all around.</p> 
+            <p>You stand up slowly still not sure of where you are or even how you got there. As you try to remember anything past waking up two minutes ago a shock is sent through the base of your spine and an oozing warmth overcomes you.</p> 
+            <p>There is only one door in the room. As you usher yourself through it, carefully of course you aren’t sure if anyone could be posed to attack, you come into a <show paragraph="churchlh">hallway</show> that stretches out in front of you. It is darkly lit and you can not see the end of it. To your right is a <turn to="churchroom">doorway.</turn> The door lies on the ground, broken and battered. In its place hangs soft blue silk draped over the door frame and obscuring the room from your view. Lastly, to your left is a rickety iron <turn to="churchstairs">staircase</turn> the spins into the ceiling and disappears beneath the floorboards of the upper floor.</p>   
+            <paragraph id="churchlh">
+                You carefully traverse the darken landscape taking one step at a time. Doors paper the walls and as you keep walking you notice them changing . Where you were sure the smallest was stands a large oak door. You blink for a moment and the hallway you have attempted to understand has rearranged itself once again. Your pace speeds up as you whisk towards what you hope is the end. You enter a large room filled with tables. An empty kitchen stands to your right. There is no one in slight. There is nothing interesting about this room. All the food is puréed anchovies. No one likes anchovies.
+            </paragraph>
+        </page>  
+        <page id="churchroom">
+                A <interact with="bathtublady">woman</interact> stands over an old wooden bathtub. There seems to be a strange smell emanating from it. The water is a dark and murky blue color and often you see bubbles pop to the surface. The floor is cracked like a lighting bolt and from the crevice sprouts tiny sky blue saplings.   
+        </page>        
+            <!--Upstairs--> 
+        <page id="churchstairs">
+                <p>You carefully ascend the stairs. The whines of the steel swallow the sounds of your foot steps. As you emerge, light pours onto you warming your skin. The sun is a bright sword ever piercing into your soft retinas. It is liquid fire as the stained glass windows colour it red, orange, and yellow. Through the depicted pictures of wildflowers and mountains you get a distorted glance at the world outside. There is nothing to see.</p> 
+                <p>Instead you turn your attention to the room you find yourself in currently. Fat comfortable sofas adorn the sides of the small chamber. They are untouched by the Ivy that crawls up the sides of the walls and bores through the ceiling. There is the soft sound of running water to your left as a trickling rivers sweeps through the industrialized floor and out into the blank expanse outside. Beyond the river,bleach stained bark of two great sycamore trees intertwine together to form an arch saluting over the destroyed maroon carpet that protrudes from the floorboards. Dark blue fabric is interwoven between the melded wood and blows slightly in the breeze that drifts in from the open windows behind you.</p> 
+                <p>A <interact with="churchlady">woman </interact> stands in the corner. Her frame is hunched over the burnt remains of a flower bed. Words shoot out of her mouth as she rocks back and forth over the ashes. A mass of sheer blue fabric is wrapped around her body. It covers everything from her neck down to her feet but you can see her knees digging into the crispy flowers as she carefully rakes her hands through the ash.</p> 
+                <p>Past the woman is a <show paragraph="antiroom">small door</show>. It’s tucked into the corner and if you weren’t attempting to gauge your surroundings your eyes would have certainly swept over it and focused on something more important. It’s be far the most metropolitan thing in the room even though it looks as if someone has attempted to paint a mountain landscape on the steel surface. The paint now peels back and reveals a sad, apocalyptic picture.</p> 
+                <p>However standing directly in front of you is a grand set of <turn to="mainoffice">double doors</turn> adorned with sea glass that depict a woman standing in the center of a massive crowd.</p> 
+            <paragraph id="antiroom">
+                You sneak into the door. The room is extremely small and smells like burnt flowers. On several brass hooks hang <interact with="bluerobes">dark blue robes</interact> and white shawls. There are a series of extensive looking candle holders as well as a basket of hand carved crosses.
+            </paragraph>        
+        </page>
+        <page id="mainoffice">
+                {{? story.bathtublady}} You enter into the room. You can <turn to="churchstairs">go back</turn>
+                {{??}} You do not enter the room. You need to <turn to="churchstairs">go back</turn>.
+                {{?}}
+            </page>
+        <page id="chapel">
+            The room is large. <turn to="churchstairs">The door stand behind you.</turn> It has branches set into a circular fashion around a fountain the sinks into the centre of the floor. The ceiling raises up seemingly forever. The lights are like sunlight. Trees grow up out of the floor. There seems to be birds living in them. Women are scattered around. Their faces are covered with white shawls and they mumble to themselves as the wash their hands in smaller bowls of water. You take a step forward and step on a <interact with="churchletter2">piece of paper</interact>.
+        </page>
+        
+        <!-- Objects -->
+        <obj id="bluerobes">
+            <action id="Examine">
+                    They are soft to touch. A cotton polyester blend. well crafted. You learn forward and smell the faint sent of lavender. Inside the pocket is a <interact with="churchletter1">note</interact>.
+            </action>
+        </obj>
+            <obj id="churchletter1" inventoryName="Letter 1">
+                <action id="Read">
+                    This is your first letter. It talks about the split of Christianity and the rise of Scientology.
+                </action>
+                <action id="Take">
+                    <when>!story.isInInventory('churchletter1')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("churchletter1"); }}
+                </action>
+            </obj>
+        <obj id="churchletter2" inventoryName="Letter 2">
+            <action id="Read">
+                This letter talks about what the church stands for and like ten rules.
+            </action>
+            <action id="Take">
+            <when>!story.isInInventory('churchletter2')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("churchletter2"); }}
+            </action>
+        </obj>        
+            
+        <!-- Characters -->
+            <character id="bathtublady">
+                    <action id= "Who Are You">
+                       “Oh!” The woman says pulling he hands out of the tub. They are stained with the dark substance but she wipes them off on here even darker skirt and move towards you. “ I see you're finally up! That’s such good news!” She grabs your hand and shakes it rigorously. “I’m Zipporah. We’ve been anxiously awaiting your awakening.’
+                    </action>
+                    <action id= "Where am I?">
+                       “Oh goodness! I am so ever terribly sorry.” The woman says, “I bet you are just full of questions. Well you see--” She stops suddenly and the pleasant maternal smile falls from her face. “You know what? You better have Tabitha explain. She’s in the offices upstairs when you’re ready. Here take this map.” Then without another word she goes back to her bathtub and silently stirs it. 
+                        {{story.bathtublady = true;}}
+                    </action> 
+            </character>
+            <character id="churchlady">
+                <action id="Interrupt her prayer.">
+                    You walk over to her slowly. You can see that her hands are stained with a deep black oil. It is the same substance that is smeared across her eyes creating a black bar from temple to temple. Her eyes dart up to meet you.“You shouldn’t be so loud daughter. Your footsteps keeps life in the ground. Should you go into the chapel,” she pauses and taps the shell of her ear, “remember that Joanna hears all in God’s Earth.” She continues to sift through her destroyed flower bed. 
+                </action>
+            </character> 
+        
+
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="inventoryHostWrapper">
+            <h2>Inventory</h2>
+            <div id="inventoryHost"></div>
+        </div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <div id="footer">
+        <a id="undoHost" href="#">Undo</a> &bull; <a id="saveHost" href="#">Save</a> &bull; <a id="restoreHost" href="#">Restore</a> &bull; <a id="reseteHost" href="#">Reset</a>
+    </div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource         : $('#story'),
+                domTarget         : $('#host'),
+                titleTarget       : $('#title'),
+                inventoryTarget   : $('#inventoryHost'),
+                interactionTarget : $('#interactionHost'),
+                undoTarget        : $('#undoHost'),
+                undoStageTarget   : $('#undoStageHost'),
+                saveTarget        : $('#saveHost'),
+                restoreTarget     : $('#restoreHost'),
+                resetTarget       : $('#reseteHost'),
+            });
+        });
+
+    </script>
+</body>
+</html>

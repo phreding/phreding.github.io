@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DedalusWeb Story</title>
+
+    <script src="http://olado.github.io/doT/doT.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dedalus.js"></script>
+    <script src="dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+ </head>
+<body>
+    <div id="story">
+        
+        <initscript>
+            {{story.offer="open";}}
+            {{story.havenottalkedtobartender=true;}}
+            {{story.havenottalkedtoJeff=true;}}
+            {{story.stripper="non-visited";}}
+            {{story.havecodes=false;}}
+            {{story.visitdesk=false;}}
+            {{story.slots=false;}}
+            {{story.havekey==false;}}
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+        <!-- Pages -->
+         <title>This is a Place Holder</title>
+        <page id="intro">
+            The year is 2175.
+        </page>
+        <page id="openingChapterOne" class="first">
+            <p>You find yourself standing in front of a building, but building is the wrong word to describe the figure that towers before you. It is a monument of power, built on the ashes of an ancient metropolitan city. The Cosmopolitan Casino, which stretches up one hundred and four floors, has the capacity to hold close to twenty four thousand people. People around you flock to the giant black block of a building like pilgrims used to flock to Mecca. You recall the layout of the building, as told to you by Tabatha quickly as she thrust a sword into your hand. It has six pools including a daytime pool, a nighttime pool, and a relaxation pool. There is an art gallery on the fifty second floor currently featuring video screenings of classical performance artist Marina Abramovic. The lower floors contain signature attractions such as Marquee Nightclub & Dayclub. Both were part of the original Cosmopolitan Casino that was demolished in 2150. There wasn’t much there to demolish in the first place because everything was mostly burned down but that didn’t stop the contractors from rolling in and making sure that the rest of the buildings went to rubble. No stone left behind, or something like that. </p>
+            <p>Despite all the amenities that the Cosmopolitan has to offer, it is most famous for selling its customers something that can’t be bought on the shelves of the Save-n-Shop that has taken over every street corner. The Cosmopolitan has managed to mass product the sale of lust. It was quite easy to do once Naomi Hall was able to liquefy hormones into injectable capsules. EM-O-TION was now one of the leading synthetic companies with stock up over 3 points in the last week alone.</p> 
+            <p>But you aren’t hear for Naomi Hall and her synthetic empire. You are here for the man that lives on the top floor of this edifice. Nickolev Zakharov is the son of one of the founding members of Neo Vegas. When The Great Fire of Las Vegas destroyed 100 square miles of downtown Las Vegas Nickolev’s father Yakoev, was the main architect and technology expert to design the new strip for the city of Las Vegas. All of the pulsating electric lights, from the Margent Corp Building and the thousands of men handling the finances for Great Basin bioregion right down to the Neo-Vegas Public library and the thousands of books that reside within its glass frame came from Yakoev’s mind.</p>  
+            <p>You only know the facts of your mission target. Nickolev went studied at the Moscow Institute of Physics and Technology. He returned only when his father passed away and now he rules over an empire built on the image of societal beauty. He is the main benefactor of the faction going up against the man you need to be elected. But the man inside of the all black suit is a mystery to everyone else as he is to you -- someone who first heard his name four hours ago. </p>
+            <p>Even though it is a cloudless night, you can just barely see the electric blue kool-aid lights from the private terraces that signifies elite presence at the <turn to="outerAtrium">cosmopolitan.</turn> </p>
+        </page>
+		<page id="outerAtrium">
+			<p>You enter into the crescent par-thru of the Cosmopolitan's outer atrium. The solar roadways have been tinted black to match the façade of the building. Par-transports pull up, their sleek white exteriors hum softly as the richest citizens in step into the soft blue glow of the <turn to="InteriorA">interior</turn>.</p>
+			<p>You look around a little more glancing further out, past the Cosmo grounds and into the busy street of the Neo-Vegas strip. Pars- transports stream past, each following their specific route, gracefully interweaving throughout each other. Above them the endless black sky is a plain backdrop to the fluorescent lights screaming to be read. </p>
+			<p><i>Dover Insurance Covers Cross Borders!</i></p>
+			<p><i>Unlock your full potential -- Join Scientology Today!</i></p>
+			<p><i>McDonald's Little Triple Big Wrap is BACK.</i></p>
+			<p>Some things last the test of time, you guess.</p>
+			<p>Behind you you stands an intricate looking <turn to="fountain">fountain.</turn> It must have been an Old-Vegas relic saved from the Great Fire by somebody on the hotel staff. The marble structure almost radiates Statehood times with it’s smooth white curves and small cherubs adorning the obelisk that slowly pours out actual water. Opposite the crowded street you get a glimpse of an Oxidizer. It has been custom fitted to match the aesthetic of the building but the tell tale signs of oxygen junkies surrounding it give away it’s purpose. An invention by Great Basin native, Norman Beller no doubt. His inventions have taken the region by storm for replacing natural processes. Speaking of natural processes, you notice a very small sign tucked into the back left hand corner of the par-thru that reads, <turn to="garden">Memorial Gardens.</turn></p>
+		</page>
+		<page id="fountain">
+			<p>You take a seat on the smooth surface of the fountain and it immediately sends coldness up your spine that is soothing against the dry hot air.  You gaze are the <turn to="outerAtrium">outer atrium.</turn> Why not enjoy the institute you plan to dismantle? It’s really one of the finer parts of being a mercenary, you know, you get to see so many different sides of things! The before, the during, the inevitable collapse and struggle for power. Simple things. A <interact with="fountainCouple">couple</interact> sits together whispering fast and angrily to each other disrupting your thoughts.</p> 
+		</page>
+		<page id="garden">
+			<p>Silence-Dispensers must surround the garden because when you enter all traffic noise and constant chatter from <turn to="outerAtrium">behind you</turn> halts. You can no longer see the street from here as you walk deeper into the garden. The turf under you is soft, a softness that can only be produced by Fabric Herb™. Another invention to lower the dependency on the environment produced by Norman Beller.  There is a semi circle of uncomfortable looking glass benches that surround a <interact with="gardensStatue">statue</interact> of a stern faced man. It’s an old statute, one made out of a stone material as opposed to light particles.</p>
+		</page>
+		<!-- Interior A -->
+		<page id="InteriorA">
+            The interior of the Cosmopolitan matches the <turn to="outerAtrium">exterior</turn>, brick for brick, or more correctly, borosilicate slate for borosilicate slate. There is nothing to compare the sheer amount of wealth that accumulates inside this room, and that’s not because you have only been conscious for eighteen hours. It’s how the ceiling stretches up into a black escape, creating the illusion of infinite space inside the black box. It eats the secrets and lost coins from the tables below in a monstrous fashion. It’s how the tables themselves seem to be levitating off the ground, each game of chance pulsating a different colour, red for <show paragraph="roulette"> roulette</show>, green for <show paragraph="craps">craps</show>, and purple for poker. You wonder absent mindly if blackjack is lit with vantablack. There is a <turn to="highRollerTables">section</turn> walled off with DuraGlass, lightly tinted to hide the people inside. The <turn to="slotMachine">slot machine</turn> sit spinning and flashing individual scores, each coloured a different shade of yellow. You weren’t aware the human eye could register so many colours at the same time. It’s all disorienting yet seems to be able to beat together, like a infected patient not yet ready to crawl out into the desert and die. You turn away from the gambling and notice a <turn to="circleBar">circle bar</turn> protruding from the floor off to the left. A team of sharply dressed bartenders whirl around in an intense dance throwing alcohol at already drunk patrons.  Past everything you can see is a set of <turn to="InteriorB">stairs</turn> leading up and deeper into the building. 
+		</page>
+            <paragraph id="roulette">
+				The ball spins round and round and each click sends an intrusive fact into your brain. Click. There are 5.26 percent on all bets but one. Click. There is a 7.89 percent house edge on all bets. Click. There are 45 spins per hour. Click. The roulette player who bets $5 spin faces an expected loss per hour only slightly higher than that of an average blackjack player. This information comes to your mind without any prompting. You aren’t sure how you know it and it unsettles you. 
+			</paragraph>
+			<paragraph id="craps">
+                <p>A woman in a dress that resembles the blown off side of a mountain whispers into the ear of a man with a stomach larger than the rest of his body. The dice hit the table, which reminds you more of vintage football, and a question in a voice you don’t recognizes asks you,</p>
+                <p><i>Let N denote the (random) number of rolls in the game and let (Xi,Yi)(Xi,Yi) denote the outcome of the iith roll for i∈{1,2,…,N}i∈{1,2,…,N}. Finally, let Zi=Xi+YiZi=Xi+Yi, the sum of the scores on the iith roll, and let N denote the event that the shooter wins. What is the total formula for a single craps play?</i></p>
+                <p>The woman in the white dress adorned with delicate feathers rolls the dice. As the people cheer the final formula comes to mind.</p> 
+                <p>P(N=n)=1236,n=1124(34)n−2+581(1318)n−2+55648(2536)n−2,n∈{2,3,…}</p>
+			</paragraph>
+		<page id="slotMachine">
+            “You win big money for little money.” A man with no future ahead of him says to the unimpressed woman next to him. She pays him no attention and instead focuses on her VirtualDesk(an implant that allows the user to access the internet with a cyber enhancement in the ocular nerve). Eventually he slumps over onto a machine labeled, <i>The Carousel of Wealth</i>,  accompanied by a sparsely clad women riding a unicorn. It’s a contemporary art design, to keep with the aesthetic of course. The woman walks back into the center of the <turn to="InteriorA">atrium</turn>, leaving him for the sharks. The insert-money-here-slot seems to be blocked by a <interact with="slotMachineLetter">piece of paper</interact>, actual paper, wedged in tightly. 
+		</page>
+		<page id="highRollerTables">
+            <p>The putrid scent of money floats around the people who sit around the sleek black tables hits you as you pass by their little haven of incomprehensible wealth in the middle of the lower class of only millionaires. They are separated from the petty millionaires of society by thick translucent ropes of light that oscillate up and down, up and down, forming not only a physical barrier but a social on as well.</p>
+            <p>“I heard that Avalon is now having a general audience for the boxing match on Saturday.” A woman whose face has been replaced with a plastic synthetic, making impossible to tell her age. “I did not pay two and a half teros to be surrounded by people from Cascadia.” </p>
+            <p>“Don’t they have some lumber to chop or something? Don’t they still use natural fuel up there?” A man responds to her. From a hole in the side of his neck protrudes a pipe that is connected to a clunking machine on the floor. His smile is greasy, like his hair and eyes, but he pays no attention to them as he leans over into a serious looking woman with a shaved head and mumbles, “I heard they don’t even use the class system.”<p>
+            <p>The rest of the <turn to="InteriorA">atrium</turn> stands before you still.</p>
+		</page>
+		<page id="circleBar">
+             <p>In the 1920’s there were speakeasy's while the foolish government of the old America tried to cap the freedom of the American people under the claim of protecting the country from criminal activity caused by scandalous drinking. Now the people just straight up came out and said they hated the lower class and called it a good day. One might confuse the circular enclave with a tavern. Taverns were a place of business where people could do business while heightening their blood alcohol content. Unfortunately they fell out of favor when women decided that they wanted to enter without their husbands.  That’s when someone invented… the bar. A revolutionary invention that would come to kill millions of people and have no real positive influence on the human race. This was whole heartedly a bar. There were no positive influences to come from this place.</p>
+             <p>The man inside of the alcohol pit was fitted with six bionic arms that moved in tandem with each other pouring booze into already smashed guests glasses. Women were draped across stools or slouched over the counter, while men swallowed back ethanol, more popularly called vodka. Other bartenders, dressed all in black, there is a theme here after all, float around gayly pouring charm and beer into guests. You lock eyes with a dark skinned man and he nods for your attention. You push your way through the sweat stained wealth and up to the counter.</p> 
+             <p>The <interact with="bartender"> bartender</interact> is a ripped dude who looks like he means business. The <turn to="InteriorA">lobby</turn> is behind you.</p>
+		</page>
+         <page id="takeOffer">
+            <p>“You can’t even comprehend how you are going to change the world.” He smiles a smile full of shark teeth at you. “Here take this key.” He takes a slide key out of his pocket a slides it across the counter to you. <turn to="InteriorB">The atrium stands behind you.</turn></p>
+            <p>You can now access the elevator.</p>
+            {{ story.offer = 'kill'; }}
+            {{story.havekey=true;}}
+        </page>
+        <page id="declineOffer">
+            <p>"I’m not sure what you see in him. Hopefully whatever you have in store for him gives him as much pain as he caused to others.” He pours the untouched drink down into the sink. “You might need this. Hopefully you’ll change your mind.” <turn to="InteriorB">The atrium stands behind you.</turn></p>
+            <p>You obtain the map of the Cosmopolitan Casino. </p>
+            {{ story.offer = 'non-lethal'; }}
+        </page>
+        <page id="sayNothing">
+            <p> “The longer you wait the more people get hurt.” The bartender says to you. He downs the untouched glass in front of you. “When you make up your mind come talk to me again. For your troubles, take this.”<turn to="InteriorB">The atrium stands behind you.</turn></p>
+            <p>You obtain a map of the Cosmopolitan Casino. </p>
+            {{ story.offer = 'open'; }}
+        </page>
+        <!--InteriorB-->
+        <page id="InteriorB">
+            Casinos are supposed to have low ceilings. That is one of the guiding foundations passed down from seedy architect to seedy architect as a way to ensnare the youthful gambler into pawning away their college education. Not that anyone who wasn’t a millionaire now could afford college, there were more people with yatchs than college educations after the war ended federal funding. The Cosmopolitan however, didn’t care for such antiquated norms and was instead adorned with ceiling that stretched skywards. Upon the ceiling ending there were neat rows of fluorescent light bulbs that were meant to simulate sunshine. They shouldn't have made them glass of course because you couldn’t control actual sunlight and there needed to be some reliability in having workers see their papers. So alas, fluorescent tubes of energy would have to simulate it. This is the first thing you notice upon ascending the onyx staircase and being spat out into the heat of the hotel. Stretching up above you are balconies of tenants. The woman in 34R was leaning over the railing to view people down below while the man in 56T sipped alcoholic beverages that would cause him to become disoriented and fall to his death in twenty six minutes. His wife would receive his fortune and move to Germany. Ahead of you is a constant movement of people around a <turn to="mainDesk">desk</turn> while to your left you see the façade of an unpronounceable <turn to="restaurantCasino">restaurant</turn>. Far off passed all your eyes can process is a tremendous <turn to="InteriorC">archway</turn> leading only into blackness. In a far left corner to see doors swinging open to reveal the signs of a <show paragraph="poolCasino">pool</show>. You stand at the base of the <turn to="InteriorA">stairs.</turn>
+        </page>
+        <page id="restaurantCasino">
+             There are some things that don’t change over time. Wars will be fought over land, the Olympics will be held every four years, high school students will have to read the Odyssey, and despite the cultural integration has has come about from the invention of supersonic travel, French food has still maintained the stigma of being a higher class of calorie intake. The customers of  the restaurant, which displays a name only those with a through language degree or are a native of France could pronounce, sit around velvet coated tables laughing rich laughs, both in money and in humour. Their table cloth is red, as is their dress, as is the drapery that hangs across the floor to ceiling windows, but if you cut them open they would not bleed red blood, but instead diamonds from the south of Africa. A <interact with="tableCoupleCasino">couple</interact> sits in the front talking heatedly about some subject or another, whether it be about the new fashion line released or an upcoming bank heist you could not tell. Despite the high class atmosphere of perfection the hostess desk remains unattended.There is a ripped piece of <interact with="tableLetter">paper</interact> sticking out from one of the menus. The <turn to="InteriorB">atrium</turn> stands behind you, familiar and utterly American. 
+        </page>
+        <paragraph id="poolCasino">
+            The year 2175 has brought with it many technological advancements. Vehicles now drift in hyperspencion on three axis roadways while solar panel roads power city blocks. In half an hour a surgeon and implant a computer the size of a pea into one's brain without the symptom of death happening upon awakening. Amidst all of these technological revolutions someone has forgotten to invent a replacement for chlorine as a pool cleaner. Not even the future can improve on chlorine pool cleaner apparently, because you are greeted with the same pungent smell of chemicals that millions have smelled before you. 
+            The Morrocan tile is a nice touch though. It really brings together the stone masonry arches that stretch across the room, one right after the other. The blue of the hand crafted tiles the line not only the floors, but the walls and the ceiling, out shine the perfect blueness of the water and make it resemble liquid glass and its only purpose is to magnify the artisan craftsmanship rather than to have people swim in it. 
+        </paragraph>   
+        <page id="mainDesk">
+            <p>“I’m sorry but the reservation you made is not for the-”</p>
+            <p>“Yes we do offer packages for those traveling out of-”</p>
+            <p>“I will be with you in just a moment. Please hold.” </p>
+            <p>No matter how many people they hire to attend to the constant input of guest questions and demands there will never be a silent moment among the front desk workers. Those who work nine to five know too well the limitations of human patience. Attendants scuttle back and forth smiling a little to widely as the hustle tenants off from the desk and into the <turn to="InteriorB">inner atrium</turn>. The manager is stored in the back, waiting for the moment when somebody wearing a faux high fashion dress asks to see them. The abhorrent quality of her chainsaw cut dress soaks into her skin and ruins her personality. You observe the scene from a distance as the desk seems to move people along in the fashion a train would more than a front desk. You guess that’s what has to happen when servicing thousands of people. Two sharply dressed women stand off near a potted plant, or what you assume to be a potted plant - it could very well be an abstract piece of art for all you know - looking deathly and talking with the sides of their mouths to keep their conversation under wraps. You only hear a snippet of what they are saying.</p>
+            {{? story.offer == "non-lethal"}}
+                Do you <turn to ="offices"> approach? </turn>
+            {{?}}
+        </page>
+        <page id="offices">
+         {{console.log("visitdesk="+story.visitdesk);
+              console.log("slots="+story.slots);
+              console.log("stripper="+story.stripper);}}
+            {{? story.stripper == "non-visited"}}
+                <p>You walk towards the main desk remaining hidden in the small crowds of people that stand and stare at the sprawling luxury of the <turn to="InteriorB">casino.</turn> You navigate around the desk like the man told you and slip unnoticed into the back rooms. You move down the hallway and are about to go into the second door on the right when you hear talking from inside. 
+                <p> “I can’t just go and talk to her. She’s on call all of the time.” The first woman says. “They all hate it when people are all talk.”</p>
+                <p>“And your broke ass can’t even afford to look at her I get it.” The second one replies. “You just gotta catch her off. She’s gotta sleep sometime.” </p>
+                <p>”She’s the front liner for the second act, Kiera.” The first woman speaks again. “I can’t just go up and say, ‘Hi Suniee my name is Kath and I have the largest crush on you because I love your jokes.” </p>
+                {{story.visitdesk=true;}}
+            {{??}}
+                You slip into the office unseen once again and grab the note from the desk. It is a configuration of letters and numbers even you can't understand. <turn to="InteriorB">You head back.</turn>
+                {{story.havecodes=true;}}
+            {{?}}    
+        </page>
+        <!-- InteriorC -->
+        <page id="InteriorC">
+            <p>In the year 2089 the commonly known ‘Murphy's Law, which stated that anything that can go wrong will go wrong, was rewritten by the Broadcasters Associated Conglomerate Tribune to mean that, any cooperation that can make money, will make money. They trademarked it after the New York Time printed a column about it and sued them for copyright violation.</p>
+            <p>With such an inspirational move taking place others have since followed in BACT’s footsteps, but have changed their moves just enough so that they avoid lawsuits, by using new technology in ways that it should not be used. For instance, ever since the demolition of the stock market in 2109 when Yougten Ullyier and his roommate at MIT, Juirch Miller overrode the firewall and released sensitive information regarding the world's largest companies, instead of investing money into the stock market, wealthy to do people now instead bet on how the market will change and receive their winnings that way. Thus the Electronic Videomat Association (EVA)  arose out of the organization formerly known as the Nevada Gaming Control Board, which had been terminated when Nevada was itself, terminated. </p>
+            <p>EVA has gone onto be the premier provider in electronic betting with over one thousand different consuls in their repertoire, from machines where players can bet on the number of lightning strikes in a Somalian rain storm, to how many casualties in the raid on Los Angeles by the Mother Militant or Parent Group (MMorPG).</p>
+            <p>The Cosmopolitan offers an exclusive brand of EVA machines, which had nothing to do with the sudden and tragic accident that killed every single member of the anti-automation gang which tried to kidnap the CEO’s daughter, that appeared in late 2170. Called How the Crow Flies (some people think that it sounds more like the title of a young adult's novel but it draws in over two hundred thousand people per round so those people are largely ignored) the premise of the game has something to do with stacking and can be explored in depth in the number one bestselling novel, ‘Stacking the Game' written by Georges Tharoen. The MGM also offers a line of EVA machines, these give players the chance to gamble on the pollution particulate count in a random one inch by one inch square. The regular betting machines stand <turn to="InteriorB">behind you.</turn></p> 
+            <p>The rest of the Electronic betting lounge, a state of the art facility (whatever the means in 2175) that was added when the Cosmopolitan was newly constructed sprawls out before you like an upturned table. It’s the brainchild of the man who live atop it and proves that the apple doesn’t fall far from the metaphorical tree. The room seems to be split down the middle like some community college cadaver with human maggots crawling around staring dead at screens all thinking the same unoriginal prayers. On the <turn to="VirtualRoom">left</turn> is a neon luminescent sign proclaiming that it holds Virtual Reality betting while on the <turn to="Esports">right</turn> it screams ESPORTS. Sprawling ahead of you are pink lights that seem to be up to <turn to="InteriorD"> no good.</turn></p>
+        </page>
+        <page id="VirtualRoom">
+            <p>Virtual Reality is defined as the reality where people go when they deem the one they were given is not good enough to satisfy their needs. They are most popular among dreamers, thinkers, writers, and people who enjoy poorly written young adult novels. Virtual Reality might be the most transcendentally human aspect of the Cosmopolitan casino despite being made of nothing but ones and zeros processed at supersonic speed at the same time in a machine called a Quantum computer. Quantum computer just oozes naturality. It is here the man staying in 67T can leave behind his wife and six children who all hate him because he lost their money by investing it in a hydrogen car wash and the lady from 47W can forget that her girlfriend broke up with her over text while she was taking her college finals. The couple from 48U can finally see what it is like to dance together since Catherine was born without limbs and the mother in 67N can have the final words she never got to have with her long passed daughter.</p>
+            <p>When you walk into the space occupied by people in masks all sitting and experiencing individual fantasies, or in some cases nightmares, you never know what people are into these days, there is not a single soul who notices your entrance. People normally don’t pay you any attention, it was a characteristic you were born with, much like some ooze charm or some can do math in their head, or some like tomatoes, your skill is being forgotten. It’s what got you into this profession. Your eyes wander around the place looking at all the lost souls desperately looking for something to tell them they matter, that they will be found, that a matrix can reach out and hold them like the lover, daughter, or husband they lost. In the back, barely noticeable, is a <interact with="Jeff"> man</interact> sitting upright without a mask on. His eyes are trained on you but he make no motion to wave you over. You can always <turn to="InteriorC">return to the main floor</turn></p> 
+        </page>
+        <page id="takeOffer2">
+            "You can sneak past the main desk by using the side entrance. Once past it go into the second door on the right. The codes will be posted in there. Once you're done, come back and talk to me." <turn to="InteriorC">You stand up and leave.</turn>
+            {{ story.offer = 'non-lethal'; }}
+        </page>
+        <page id="declineOffer2">
+            “It’s your choice.” He stands up and starts to leave. “But you better put some air into your lungs and run, because you’re going to have all of Neo-Vegas after you.” <turn to="InteriorC">You stand up and leave.</turn>
+            {{ story.offer = 'kill'; }}
+        </page>
+        <page id="sayNothing2">
+            Time is not on our side. When you decide come talk to me. <turn to="InteriorC">You stand up and leave.</turn>
+            {{ story.offer = 'open'; }}
+        </page>
+        <page id="Esports">
+            <p>The year 2000 saw many great developments for the planet Earth such as Jessica Simpson's Edible Perfume and in the good timeline of America, the election of Al Gore as the president of the United States. However, trivial things such as the president of the United States have long been forgotten by the public in favour of much more important global changes, like the launch of the World Cyber Games and the Electronic Sports World Cup. For one hundred and seventy five years iconic games such as <i>League of Legends</i> and <i>Counter Strike:Global Offense</i> have paved the way for electronic games to get the credibility they have today. Without the players of the past, such as Soon-Yang Kim and Jin-Kung Park who founded the Korean ESport College in 2050, ESports could have never grown to the global phenomenon it is today. You stand surrounded by all the technology the future has to offer. The <turn to="InteriorC"> games of the past </turn> stand in their namesake - that is to say behind you. In the electronic lounge in the Cosmopolitan well to do people can sit and wage away money on the hopes and dreams of seventeen year old. Their skin is pulled back tight over their bones as they discuss how in their days they had to use <i>controllers</i> instead of using the PSI-Konnect that is standard today. Their smiles look more like grimaces as they see the Game of Masters team from Nairobi has overtaken the French team by six points. On table to their left is a <interact with="ebetLetter">book</interact> that has been forgotten.</p>
+        </page>
+        <!--InteriorD-->
+        <page id="InteriorD">
+            <p>There are those that look for comfort in the bottom of a whiskey glass or in the bottom of an ice cream tub. Then there are those that look for comfort in the bottom of another person and it is those people that usually end up at the Marquee Nightclub at least once in their unfulfilled lives. The Marquee Nightclub, located at the base of the Cosmopolitan Casino, is a staple of high class nightlife in Neo-Vegas --  a sort of sordid homing beacon for those who crave the illusion of love and the concrete definition of lust. The people who find themselves here can foot the bill to isolate themselves from the outside world with gorgeous women, so that’s what they do. The woman here provide a temporary service for the rotting souls until they have had their revelation and discover what true love is while a Roy Martin song plays in the background while a montage consisting of walks in the park and cuddling flies before them. </p>
+            <p>The woman here crave no montages.</p> 
+            <p>What they do crave is money to soothe their bruised knees, which are stark against their shining egos, and fund their expensive clothing, or lack thereof, and as you walk deeper into the room you hear them making this known to one man who craved a montage moment with a girl who looks like she would be a Candi.</p>
+            <p>“If I wanted love I would have signed to work for the MGM. Pay up or find someone else to save from this ‘lifestyle’.”</p> 
+            <p>The lighting of the room is dim, perhaps to hide the sensations being committed on lucite chairs and carbon coloured couches. The centerpiece in the room is a center stage adorned with Edison lightbulbs around the edge as a relic of , which draws the eyes of all who walk into the room. It seems to be a showgirl itself, greedy for attention, pleading <i>look at me.</i> The carbon filament in the lights curl around themselves again and again and again, much like the women who pull themselves onto bars with graceful ease. Everything in the room is hot, curvy, and shining.</p>
+            <p>A terrifying <show paragraph="privaterooms">door</show> looms across the landscape of libido and from it calls the promise of funtimes to be had. The things that exists beyond the silicon plexiglass are never known or spoken of once the men stagger out minutes, hours, or sometimes days after they enter. The private rooms eat them alive and spit them out without a dollar to their name, and some, of course, don’t ever come out. Located far from view, strategically place not to be seen, is an <turn to="elevator">elevator</turn> that is barely there under the illumination of the room. Guarding the unforeseen door is a group of <interact with="stripper"> women</interact> standing and talking, taking a break from the demands of being an objectified idol. They stand farthest from the <turn to="InteriorC"> door</turn> you entered from.</p> 
+        </page>
+        <page id="elevator">
+            {{? story.havekey==true}}
+                <p>You walk up to the elevator and are able to <turn to="upperlevel">ASCEND</turn> or <turn to="InteriorD">return</turn>.</p>
+                <p>Once you ascend, you can not return.</p>
+            {{??}}
+                <p>You approach the elevator but you are unable to open it. Next to it is a black key pad. Your only option is to <turn to="InteriorD">return</turn>.</p>
+            {{?}}
+        </page> 
+        <paragraph id="privaterooms">
+            You do not currently crave another woman's touch. 
+        </paragraph>
+        <!-- Upper Level -->
+        <page id="upperlevel">
+                <p>You aren’t sure what your expectations were for the office of a man who was only one step down from being a crime boss. </p>
+                <p> But let you be the first to say...</p>
+                <p>... this wasn’t it.</p>
+                <p>You had set the scene before your eyes had even had time to render the information before them. An office full with splendor and luxury would engulf you as soon as you took place inside the glass walls that looked over a city clinging to it oxygen tank and the rick twisted the breathing tube around its neck. There would be a chandelier, made of glass, or diamonds perhaps, that would hand from the ceiling sending fractions of light that would fall on technology that hadn’t even hit the market yet. There would be plans for buildings that would be built on the homes and with the hands of the poor. There would be a red tint to the room. Symbolic of the never ending quest  for love in a lust filled place and there would be the remains of nighttime lovers strewn across the room haphazardly. You swear you could picture it before you had even seen it. </p>
+                <p> What you walked in on was lifeless. There was a grey spirit that stained everything in the room a dull colour and made the glass windows shine an opaque reflection. There was no chandelier, no plans, no Ming-Dynasty vases, no hundred lefts laying around, nothing to signify that this was anything other than a rather large cubicle. What there was however, was old fashioned computer parts: desktops, monitors, keyboards, mainframes, server pieces, RAM chips, LAN cables. All were piled up on the table and spilled over onto the floor and flowed down the aisle until they met the focal point of the room.  Where you had hoped the epitome of wealth and power would stand, a man who could purchase the world twice over, was just a twenty seven year old man who stood gutting a rather large piece of hardware. A motherboard was ripped out rather viciously as you entered the room and thrown on to the pile to the left.</p>
+                <p> He looks up at you. Grease is smeared slightly across his cheek. His dirty blonde hair falls in his face. He’s wearing what appears to be a black cotton shirt. He looks into your eyes and you notice that his eyes are green. He tries to step back but it seems in his haste to remove the heart of his machine his hand has gotten trapped. He does a marvelous job of covering that fact up. Fear doesn’t show on his face for even a second, but nothing can be hidden from you. </p>
+                <p> “You aren’t supposed to be here.” Well, at least he’s observant. “But since you seem to be both smart and desperate enough to gain access is there something I might help you with?” This question takes you aback. Out of all the things you had calculated to come out his mouth, those were at least  #1345 on the list. He takes action in your moments hesitation to palm a throwing knife and throw it directly at you…</p>
+                <p>DO YOU STRAY <turn to="leftAndRight">LEFT</turn> OR <turn to="leftAndRight">RIGHT</turn>?</p>
+        </page>
+        <page id="leftAndRight">
+            {{? story.offer == "kill"}}
+                <p> You are quite impressed with his throwing skills. The knife soars through the air -- directly towards your glabella. You are quicker though and strafe just in time to dodge the impact thrown in your direction. So that’s how it’s going to be? If he doesn’t want to play by the rules neither will you. The bartender was right. Everything about this man is cold. You run towards him jumping up and sliding across the conference table that he has step up workshop on. Pieces of machinery fall to the floor sending out noises that seem to deafen your ears. In one quick movement you grab the arm that has become trapped in the cyber world and rip it from the computer. As you do so Nickolvev lets out a scream of pain as a sudden, but not unexpected, wetness coats your fingers. You shove your fingers deep into the laceration that travels down the man’s forearm making him wince, but not scream. Before he can get a single defence move in your sword has cut through his major tendons and he falls to the ground.  You imagine him to be the man in your preconceived vision as you slide your sword into his stomach. It helps the metal slide between his ribs a little bit easier. </p>
+                <p>He’s unable to move -- equal parts because of pain and because he simply can’t.</p>
+                <p>You wait for fifteen minutes watching him regurgitate up his own blood. You don’t get to see his last breath however as a sudden movement outside the window alerts you to the fact the you will soon be not alone.</p>
+                <p> You decide to take your <turn to="levelone">LEAVE</turn> knowing your job is done and your promise to the bartender fulfilled.</p>
+                {{story.kills=story.kills+1;}}
+            {{??}}
+                <p>You lose all sense of left and right and instead just hit the floor.</p>
+                <p> The lights flicker.</p>
+                <p>Once.</p>
+                <p>Twice.</p> 
+                <p>They don’t flicked a third time because everything goes dark as the power fades from the Cosmopolitan building. </p>
+                <p> You hear screaming from the direction you take to be downstairs.</p>
+                <p><i>“Nobody move or you will be shot!”</i></p>
+                <p><i>“Grab what you can Daniel!”</i></p>
+                <p><i>“I SAID NOBODY MOVE”</i></p>
+                <p><i>“Jamie? Where are you?”</i></p>
+                <p><i>“I’M GOING TO COUNT TO THREE”</i></p>
+                <p><i>“Give me back that cash!”</i></p>
+                <p><i>“ONE!”</i></p>
+                <p><i>“Nobody move or you will be shot!”</i></p>
+                <p><i>“TWO!”</i></p>
+                <p><i>“Nobody move or you will be shot!”</i></p>
+                <p>The last noise is a the firing of an automatic gun.</p>
+                <p> The lights come on and Nickolev is nowhere to be seen. In his place is a note that reads, “<i> Thanks for those codes. No money. No Nickolev. No problems.”</i></p>
+                <p> You decide to take your <turn to="levelone">LEAVE</turn> knowing your job is done and your promise to the bartender fulfilled.</p>
+            {{?}}
+        </page>    
+		<!-- Objects -->
+        <obj id="slotMachineLetter" inventoryName="Letter 1">
+            <action id="Read">
+                {{story.slots=true;}}
+                 <p>Jack,</p> 
+                 <p>I don’t know if this will find you in time. It’s not that I doubt your ability of running across roof tops like some B level superhero movie without juiced up actors I just know how far the Stratosphere is and those steps have got to be good for leg day. I still don’t know why you launch yourself across fifty story buildings for 34 vecos an hour when you are married to a man worth almost thirteen hundred kepos. Your body is worth 65 thousand keplos Jack. Try and be more cautious, if not for your sake for his….I don’t think he has ever had somebody he actually cared about before.</p> 
+                 <p>Anyway, the man is here. He’s in the E-Bet lounge. You’ll know him when you see him. 
+                 Good luck, if anyone deserves to get away from this festering hell hole it's you two.</p>  
+                    <p>Kisses,</p>
+                    <p>Fannisee</p>
+                    <p>XOXO</p>
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('slotMachineLetter')</when>
+                You pocket it. It might prove useful later.
+                {{ story.putInInventory('slotMachineLetter'); }}
+            </action>
+        </obj>
+		<obj id="tableLetter" inventoryName="Letter 2">
+			<action id="Read">
+                <p>When Yakoev Zakharov constructed such a vault as the Cosmopolitan Casino the man hired thirty three design engineers to examine thirteen of the wealthiest casinos worldwide and calculate their total casino win, slot win, number of slots, slot occupancy rate, player count, and the ratio of players to rooms. Out of this came the five principles that can be found in <i> The Design Comprehension for Laying Odds Hotel and Casino Manual </i> which was published by Yakoev Zakharov himself.  </p>
+                <p>First, gambling equipment should be immediately inside the casino entrance instead of a vacant lobby.</p>
+                <p>Second, the maze layout is more effective than long straight aisles.</p>
+                <p>Third, gambling equipment needs to be as memorable and impressive as the decor.</p>
+                <p>Fourth, pathways need to emphasize the gambling equipment.</p>
+                <p>Fifth, standard decor beats elaborative themes.</p>
+                <p>These principles have allowed the Cosmopolitan Casino to become on of the top ten ranking casinos worldwide. </p>
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('tableLetter')</when>
+                You take it. It might be useful later. 
+                {{ story.putInInventory('tableLetter'); }}
+            </action>
+        </obj>
+		<obj id="ebetLetter" inventoryName="Letter 3">
+			<action id="Read">
+                <p>[An except from a larger work on the history of Esports]</p>
+                <p>The late 2070’s saw one of the most ethical dilemmas the sports community has ever faced. With the constant growth of stronger athletes the steroid market produced Eir, a non traceable short lasting steroid which would increase the user's overall muscle capacity for the duration of ninety six minutes. Athletic associations around the world started using the drug for better performance since the FDA’s 2076 lab findings reported no adverse effects. Athletic sports became significantly more brutal….with injuries in soccer increasing by 67%..... and in American football by 304%....However, the NASC saw an increase of 84% in viewer ship and decided to keep Eir in place.  In response the NASC discarded all restrictions of testosterone enhancing or booster materials. The Athletic Association of America, which has been disbanded since, created the American Gaming Commission in order to create a new line of family friendly sports.</p> 
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('ebetLetter')</when>
+                You take the book. It might come in handy later.
+                {{ story.putInInventory('ebetLetter'); }}
+            </action>
+        </obj> 
+		<obj id="gardensStatue">
+			<action id="Investigate">
+                <p>Yakoev Zakharov</p>
+                <p>2060-2170</p>
+                <p>Yakoev Zarkharov was not only responsible for the restoration of the greater Neo-Vegas area. He was also a respected veteran in the Greater North America Militant Siege, where he served as a technological advisor to the States. When the United States government was disbanded after the defeat of the Militants by the States, Yakoev was appointed to serve as a technological strategist on the North American Development Committee of Ecoregions. Yakoev spent three years in Laurentia where he met his wife Sletvana. After the implementation of bioregional government over the destroyed United States and Canada, Yakoev moved to Great Basin where he had his first and only child, Nickolev. Sletvana passed away in childbirth due to a reaction to the drug Lempthphorin. Yakoev continued to be a beacon of advancement as he continued to build the Cosmopolitan in wake of the tragedy. He leaves behind a legacy of innovation in the face of destruction and perseverance when no hope was seen.  May the Cosmopolitan Casino before you stand as a mausoleum to an irreplaceable architect.</p>
+			</action>
+		</obj>
+		<!-- Characters -->
+		<character id="fountainCouple">
+			<action id="Listen">
+                <p>You listen in on the couple’s conversation.</p>
+                <p>“That was the craziest part Herik!” The woman exclaims. “He managed to get every single member convicted!”</p>
+                <p>“I don’t care if he saved ten thousand girls from sex trafficking rings,” the man responds, “Zakharov gets redeemed in my book when he shows us his books.” The woman rolls her eyes and walks away.</p>
+			</action>
+		</character>
+		<character id="bartender">
+			<action id="Ask him what he wants.">  
+                {{? story.offer== "open"}}
+                    {{? story.havenottalkedtobartender == true}}
+                        {{story.havenottalkedtobartender=false;}}
+                        <p>He sets a glass down in front of you and asks you in a tone no different than if he had asked about your drink order, “You look like someone who gets into places you don’t belong.” He pours a blue liquid into the glass and pushes it forward casually. “I recognize that stain.” He gestures to the black oil of the sisterhood smeared across your hands. “The Daughters sent you, didn’t they?” His eyes scant around and the easygoing nature of the conversation falls. “Look, I can get you into the upper levels. I got a key for the main elevator in the Marquee Nightclub. It leads straight up to Zakharov’s office in the restricted upper levels. I’ll give it to you, you just have to promise me something.” He looks around again and you get the feeling he might be slightly nervous. “You promise to shove your sword so deep in his gut his organs get rearranged.” You think that is a very gruesome metaphor. He seems to sense your hesitation.</p>
+                        <p>“Listen, if you’re sent by the sisterhood you aren’t from around here. Zakharov’s got more dead bodies on him than years on this damn planet. You name it, he’s done it. You think a place like this can be built on clean money?” He does not ask this question for the purpose of having it answered. It’s called a rhetorical question and people use them when they don't want to make statements because they might be wrong. “The people who managed to buy power here, now use everyone below them to make sure it stays that way. I saw my perfectly healthy parents get hauled off in a quarantine vehicle by Zakharov’s men. Whatever he’s doing, he ain’t doing it for the lower class.  And you gotta wonder what’s gonna happen when no one is left for him to haul off.”</p>
+                        <p>He pauses as if he expects you, an amnesiac assassin, to suggest how to fix the socio-economic inequality in Neo-Vegas.</p>
+                        <p>Do you <turn to="takeOffer">TAKE THE OFFER</turn>, <turn to="declineOffer">DECLINE THE OFFER</turn>, or <turn to="sayNothing">SAY NOTHING.</p>
+                    {{??}}
+                        <p>Do you <turn to="takeOffer">TAKE THE OFFER</turn>, <turn to="declineOffer">DECLINE THE OFFER</turn>, or <turn to="sayNothing">SAY NOTHING.</p>
+                    {{?}}
+                {{??}}
+                    {{? story.offer == "kill"}}
+                        <p> “You better get moving. There are eyes and ears all over this place.” The bartender says.</p>
+                    {{??}}
+                        <p>He says nothing and continues to pour drinks.</p>
+                    {{?}}
+                {{?}} 
+			</action>
+		</character> 
+        <character id="tableCoupleCasino">
+            <action id="Listen">
+                    <p>“We need the protection from casinos.” The man told to his companion. “ Without them everyone who don’t make ten thousand keplos a year would be-”</p>
+                    <p>“Better off.” The woman interrupts. “Yeah, they’re helpful now but you think they are doing it out of compassion? They’re doing out of their own self interest. The better the land is around these god damn strong holds the more its worth David.” </p>
+                    <p>“Then why not just buy it all and create a beneopolis like Seattle. Cascadia now has the lowest crime rate out of every bioregion.” The man name David retorts.</p> 
+                    <p>“Cascada also has two and a half people living in it. There’s no one to murder.” The woman responds sharply. “The sooner Frazier, Harper, and Atticus get the power back into the right hands we can all sleep a little sounder.”</p>
+                    <p>She takes a drink from her glass in what can only be describe as an end to their conversation.</p>
+            </action>
+        </character> 
+        <character id="Jeff">
+            <action id="Walk towards him">
+            {{? story.havecodes == true}} 
+                <p> You approach the man once again this time with the codes in your hand. You hand them over to him and he snatches them from you in a manner which you think is rather appaling but you decide not to comment on it.</p>
+                <p> "Thanks. Here is that key - for your troubles." He hands you a plain black key card. </p>
+                <p> You can now open the elevator.</p>
+                {{story.havekey=true;}}
+            {{??}} 
+                {{? story.offer=="open"}}
+                    {{? story.havenottalkedtoJeff == true}}
+                        <p>“I know what you're here to do.”  His voice is low and his eyes encompass you as you sit down. “And I think I have a way to make us both of us win. You see I’m interested in keeping Mr. Zakharov very much alive, for reasons of my own.” The technicolor lights which flicker around sporadically seem wildly out of place for the conversation you seem to be wading into. You sit in an aura of harmless fun whilst debating whether someone deserves to live. You have never felt more like a capitalist. “I’m in the business of making people disappear and I have a client very interested in making sure that the Cosmopolitan goes dark along with Zarkharov himself. Now, I have a way to do this, I just need some door codes which are kept in offices behind the front desk. You get me these codes and then just knock him out and I'll take care off the rest. So. What do you say?"</p>
+                        <p>Do you <turn to="takeOffer2">TAKE THE OFFER</turn>, <turn to="declineOffer2">DECLINE THE OFFER</turn>, or <turn to="sayNothing2">SAY NOTHING.<p>
+                        {{story.havenottalkedtoJeff=false;}}
+                    {{??}}
+                        <p>Do you <turn to="takeOffer2">TAKE THE OFFER</turn>, <turn to="declineOffer2">DECLINE THE OFFER</turn>, or <turn to="sayNothing2">SAY NOTHING.<p>
+                    {{?}}
+                {{??}} 
+                    {{? story.offer == "non-lethal"}}
+                        <p>“I know what you're here to do.”  His voice is low and his eyes encompass you as you sit down. “And I think I have a way to make us both of us win. You see I’m interested in keeping Mr. Zakharov very much alive, for reasons of my own.” The technicolor lights which flicker around sporadically seem wildly out of place for the conversation you seem to be wading into. You sit in an aura of harmless fun whilst debating whether someone deserves to live. You have never felt more like a capitalist. “I’m in the business of making people disappear and I have a client very interested in making sure that the Cosmopolitan goes dark along with Zarkharov himself. Now, I have a way to do this, I just need some door codes which are kept in offices behind the front desk. You get me these codes and then just knock him out and I'll take care off the rest. The longer you wait the more my client gets… agitated. I suggest you hurry along.”</p>
+                    {{??}}
+                        <p>You don't think it's in your best interest to approach him. </p>
+                    {{?}}
+                {{?}} 
+            {{?}} 
+            </action>    
+        </character> 
+        <character id="stripper">
+            <action id="Interact">
+            {{? story.visitdesk==false}}
+                <p>“I’ve been wearing the same outfit for the past three days and he hasn’t even noticed.”</p>
+                <p>"Hon, you could wear the same outfit for a year and they only thing his eyes would land on is your set of tits dude.”</p>
+                <p>"Did your mom have gene splicing when she was pregnant with you? Those can not be real. They are exactly the same”</p>
+                <p>"I guess you could call them,” she takes a dramatic pause, “idenititties.”</p>
+            {{??}}
+                <p>The woman seem to be repelled by your presence, for as you approach all but one seem to give their goodbyes and depart. She stands in front of you confidently sipping a purple slush from a rose coloured glass.</p>
+                <p> “I haven’t seen those marking round here for a while.” The woman says taking a sip from her glass again. “You must be looking for trouble coming in here looking like that.” She sets her glass down carefully and takes a seat on the couch looking completely at ease. “You must be here for something. What is it? <turn to="spitItOut">Spit it out.</turn>”</p>
+            {{?}}
+            </action>
+         </character>
+        <page id="spitItOut">
+             {{? story.slots==false}}
+                    <p>You tell the exotic dancer of your plight. Leaving out the essential details you inform her of your plight to get the codes from the front desk and the new found information that a certain desk woman might be distracted by Suniee’s presence.</p>
+                    <p> “And what are these codes for?” You didn’t expect her to even pay attention to your story. It’s pleasant not having to pumult people into doing what you want them too.</p> 
+                    <p>“Listen, Nickolev’s heart might be as black as his suits but this establishment keeps me off the street. It it falls I do too. Come see me when you have a reason for me to trust you.”</p>
+                    <p>You think it best to <turn to="InteriorA">leave</turn> now.
+                {{??}}
+                    <p>You tell the exotic dancer of your plight. Leaving out the essential details you inform her of your plight to get the codes from the front desk and the new found information that a certain desk woman might be distracted by Suniee’s presence.</p>
+                    <p> “And what are these codes for?” You didn’t expect her to even pay attention to your story. It’s pleasant not having to pumult people into doing what you want them too.</p> 
+                    <p>“Listen, Nickolev’s heart might be as black as his suits but this establishment keeps me off the street. It it falls I do too. Come see me when you have a reason for me to trust you.” She looks like she is about to walk away but you quickly thrust the letter you found in the slot machines into her hands.</p>
+                   <p> “Oh Jack,” she says under her breath. “What have you gotten yourself into?” you believe you weren’t supposed to here this last part. “Alright. I’ll do it. You can go back to the desk and get your codes. Nobody should bother you now.”</p>
+                   <p>You think it best to <turn to="InteriorA">leave</turn> now.
+                   {{story.stripper="visited";}}
+                {{?}}
+        </page>        
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="inventoryHostWrapper">
+            <h2>Inventory</h2>
+            <div id="inventoryHost"></div>
+        </div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <div id="footer">
+        <a id="undoHost" href="#">Undo</a> &bull; <a id="saveHost" href="#">Save</a> &bull; <a id="restoreHost" href="#">Restore</a> &bull; <a id="reseteHost" href="#">Reset</a>
+    </div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource         : $('#story'),
+                domTarget         : $('#host'),
+                titleTarget       : $('#title'),
+                inventoryTarget   : $('#inventoryHost'),
+                interactionTarget : $('#interactionHost'),
+                undoTarget        : $('#undoHost'),
+                undoStageTarget   : $('#undoStageHost'),
+                saveTarget        : $('#saveHost'),
+                restoreTarget     : $('#restoreHost'),
+                resetTarget       : $('#reseteHost'),
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DedalusWeb Story</title>
+
+    <script src="http://olado.github.io/doT/doT.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dedalus.js"></script>
+    <script src="dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+ </head>
+<body>
+    <div id="story">
+
+        <initscript>
+        {{story.roomsvisited=0;}}
+        {{story.killNickolev="false";}}
+        {{story.killWIW="false";}}
+        {{story.WIWDead==false;}}
+        {{story.nickDead==false;}}
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+        <!-- Novel -->
+        <title>This is a Place Holder</title>
+        <page id="intro">
+            The year is 2175. The world is not the same place it is currently. A strangeness has taken oven the United States of America, to no ones surprise.
+        </page>
+        <page id="chapterThree" class="first">
+            <p>Jeanette Deniz was a descendant of the gangsters in the Old-Vegas. After the terrible drought that came across the desert of Nevada, Las Vegas had become a desolate and rotting city. A great firestorm swept over the rotting corpse of the city and wiped it clean with one breath of inferno. Jeanette’s family inheritance burned down alongside Caesar's Palace casino as for the second time Rome fell. They were forced to waste away among the  poor in the rotten blood district. In case the name does not inform you, the rotten blood district is not a pleasant place to live. The buildings are built on the landfill where all the bodies were dumped after the great fire which unfortunately, causes some serious structural integrity. This week along three buildings will concave trapping sixteen people inside the rubble, never to be saved. Their cries will so silent into the bustling night as only a thousand feet away a woman will throw away an entire roasted duck because he ex-boyfriend looked at it. </p>
+            <p> Then at just twenty-two years of age, Jeanette Deniz was appointed by Chairwoman Isobel to lead the National Heritage Foundation of the Greater Neo-Vegas area, and with one flick of the pen, the Deniz family was whisked out of destitute and back into the silver spoon district. It also meant they had sworn their allegiance to the Kythreal family, no matter the cost, and no matter the price. Just like her name, her house was old fashioned. Jeanette, who was as foreign to the high collared Neo-Vegas scene as you were, seemed to build her facade of wealth on her family tree; nailing oil paintings into its bark and hanging antique vases from its branches. </p>
+            <p> The building serves as the colosseum and you a gladiator as you enter through the double doors and into the stone cold interior. However, instead of rushing into battle, sword draw and teeth gnashing, you walk with leisure to your pace. Yoou sword is sheathed. You are here by instruction of Tabitha with an invitation she snatched, only Tom Cruise knows how. Therefore you keep your blood lust at bay and try to think of an incognito way to dispose of Jeanette Deniz.</p>
+            <p>The <turn to="fountianCenter">party</turn> looms ahead of you.</p>
+        </page>
+      <page id="fountianCenter">
+      {{? story.roomsvisited == 6}}
+            <p>You return to the grand entryway - unsuccessful in your quest to find the hostess of the party. It seems that not showing up to your own fundraising party would be a social faux-pas that not even Jeanette Deniz would attempt. Therefore, you enter into the fountain center with a new determination in your uncontrollable mind. </p>
+            <p>As you enter, a commotion seems to erupt from the far side of the room. The grand front door swing open and even though the mansion seemed to be sparsely populated before, a new hoard of people swarm from seemingly nowhere to flock the new members of attendance. Over all of the commotion you hear one voice rise over the crowd,</p>
+            <p><i> “No, thank you, for your support.”</i></p>
+            <p><i> “I assure you, I will make sure that never happens again.”</i></p>
+            <p><i> “Me too! It was probably the most stressful two minutes of my life.”</i></p>
+            <p><i> “I’m shocked a fight didn’t break out!”</i></p>
+            <p>It’s the same voice you have heard over the speakers of billboard that flash visuals across the already blinding landscape of downtown Neo-Vegas.</p>
+            <p><i> “Let Isobel live on. Lobby for Damian Kytheal.”</i></p>
+            <p><i> “A supported of Damian Kytheal is a supporter of Neo-Vegas!” </i></p>
+            <p>Damian Kytheal, the legendary younger brother of the deceased chairwoman, Isobel, has just walked through the door, accompanied by no other than the missing woman of the hour, Jeanette. The aforementioned woman steps forward and addresses her audience of people.</p>
+            <p> “Thank you. Thank you.” She begins. What she is thanking the mindless mass of people for. you haven’t the slightest. “I would like to first and foremost apologize to each and everyone of you. My absence her today was no doubt noticed, as evident by each of your intelligence if not by my Twitter newsfeed.” This earned a few laughs. “But, there are certain special circumstances that have arisen which called for my attention. As many of you probably know, something has just happened that will change the course of Neo-Vegas history - hopefully for the better.” This got another round of laughter from the audience. Why they are laughing, you don’t know why. “Damian Kytheal, one of my closest friends, who has seen too much of this world for one of his age, has just been confirmed for inauguration to be the next chairperson of the Greater Neo-Vegas area.” The room erupts into polite rich people clapping but all you hear is an incomprehensible silence. Suddenly, someone grabs your arm. </p>
+            <p>“We’re not too late.” The woman whispers into your ear. “We need to act, <i>now.</i>” You get a look at her face and recall her figure crouched over a series of sapling trees. That seems like <i>months</i> ago. Before you can reminisce any more of your assassin journey, the woman speaks again. “Tabitha dropped me a direct line and says that if you can somehow make Damian… disappear… before the word gets out in the morning, than it will look like he abandoned his post AND the city.” She turns back to face you, “You better get to it.” She points to where you see Damians dark form slink up the north east staircase. “There he goes. I’m sure I don’t need to tell you what to do further.”</p>
+            <p><turn to="followDamian">FOLLOW DAMIAN</turn></p> 
+        {{??}}
+           <p> There is something about white people and the wasting of water. While technology has fixed many things such as: bad chemicals in one’s brain that makes people see things that aren’t actually there, (but only if you’re rich enough -- capitalism will be pried from the cold dead radioactive wasteland of the Earth) the curiosity about space (turns out everything was just an elaborate hoax by NASA to encourage wonder among humans), but it seems among all of the new innovation someone forgot to mention the water shortage. Therefore Nestle continued to cut off water sources and government continue to stick pipelines through Native American land (until there were no Native Americans left, they we all killed in the Great Shoshone Massacre of 2090)  and water became an elite commodity.. . even though it was a necessary one.</p>
+            <p>Therefore there was no greater display of <i>I’m so fucking rich, Karen</i> than sticking a giant fountain in the middle of your giant marble mansion in the middle of a giant desert. Therefore that’s just what Jeanette Deniz did. The pure water, straight from the the water cycle itself, none of this bonding oxygen and hydrogen together, that was peasants water, gurgled happily from where it was pumped from some recyclable vat deep beneath the stone cold floors. For a mansion based on a Roman the decor was very… Grecian. Tall pillars rose from the corners, spiralling towards a dome ceiling which was painted with delicate figures of  deities of years past. If not for the historical context of angels and cherubs, and if not for the money that ran through the veins of every member of this party you have no doubt they would be socially ostracised for even breathing in the direction of a Christian figure.</p> 
+            <p>You look around, wondering where you might find the hostess herself. You had entered from the front entrance leaving you facing a room with two doors, one leading <turn to="poolJean">east</turn> the other <turn to="kitchenJean">west</turn>. Then, pasted the fountain of wealth, there were two staircases, one going <turn to="upperLevelSouth">right</turn> and one <turn to="upperLevelNorth">left</turn>, that spiralled up to a mezzanine second floor. You could hear the murmurs of those above you, no doubt talking about the events of the past few nights. </p>
+         {{?}}           
+        </page>       
+        <page id="poolJean">
+            <p>You have seen two pools so far in your time in Neo-Vegas. The first, belonging to a cryptic crime boss, the second belonging to a woman who seemed to tower over a city that was failing to build her back up in turn. So far you are seeing a high correlation between troubled trillionaires and owning a pool. Maybe all Tabitha had to do was convince Damian to buy a pool, then he would just fail his way out of being Chairman of the Greater Neo-Vegas Area. But truly, you have describe the pool inaccurately - for you see, there is not just one pool, oh no, that would be child's play, but sixteen countable pools. All flow in and out of each other creating an impossible chain. Some drip down slowly while other cascade white water into the largest, making a foamy broth and spills over into a short jellybean shaped one. The only way is <turn to="fountianCenter">back</turn></p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="kitchenJean">
+            People love to use the past to justify wrongs in the present. The future is no different. While the year 2175 has come and will soon be gone just like all the years that have fell to make it possible to breathe, the humans that walk the Earth say, <i> “This is the twenty second century! Transphobia doesn’t exist anymore! What do you think this is? 2075?”</i>And while certain exponential growths have come about, such as the election of Elizabeth Warren in 2020 proved that the people of the United States had finally grown a conscious, there are certain irrevocable sexists truths that still live unnoticed in the subconscious of people who now walk around with cybernetic implants. One that still lives on before your eyes is a kitchen full of woman. Many had hoped that the barefoot in the kitchen meme would have burned in the fires of Las Vegas, but like any great plague it survives among the festering flesh of those who survive the wreckage. For Jeanette had fired her long time cook in favour of hiring an all female kitchen staff in order to meet certain social requirements. The only way is <turn to="fountianCenter">back</turn>.
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="upperLevelSouth">
+            You <turn to="fountianCenter">leave</turn> and enter into and open hallway that is the accumulation of both fine taste and tasteful distance for those who are considered ‘fine taste’. For as anyone who decorates multi-kelapire mansions should know that art work should be any focal point of a room - due to the current inflation of physical art work after the Madison-Johnson Studio Art Boom that took place during the late 2080’s. However, while the walls are lined with priceless paintings, such as a Madison original <i>closure</i>, the hallway seems to be consumed with blooming wild flowers. The flank a large oak <turn to="studyJean">door</turn> and wrap their way around an ivory <turn to="sittingRoomJean">archway</turn>, through you can a large congregation of furniture you can sit on, most popularity called - sofas. 
+        </page>
+        <page id="studyJean">
+            <p>Knock-Knock. Who's there? Productivity. From the paper strewn across the massive desk that stand opposite you, to the charts - literal paper charts, because apparently Jeanette hasn’t heard of holographics yet - tacked up across the walls like some vintage virtual video the room seems bursting to inform you that <i> shit gets done here</i>. As if people couldn’t already tell from the countless speeches that the primary user of this room gives. So many that Jeanette Deniz has become a household name, not only for wealth and prosperity but also for commencement speeches, high profile weddings, rallies for the people, the Oscars or the Darensens, or sometimes just to random people on the street she deems worthy of hearing her words.  The only way is <turn to="upperLevelSouth">back</turn>.</p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="sittingRoomJean">
+            <p>The word ‘living room’ was coined in the nineteenth century after semi-rich people got jealous of really rich people for having rooms adjacent to their bedrooms which served no other purpose than for their rich people buddies to come and talk about whatever rich people talk about.</p>
+            <p><i>Geraldine you would never believe what Carfarence wore to the Measles Fundraiser! A Paul Blane original!</i></p>
+            <p><i>I can’t believe that she would wear a Paul Blane dress! Everyone knows he was a pro-vaxxer! Who in their right mind would support such a heinous cause such as poisoning our children!</i></p>
+            <p><i>It’s just distasteful!</i></p>
+            <p>Or something like that.</p>
+            <p>The only way is <turn to="upperLevelSouth">back</turn>.</p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="upperLevelNorth">
+            You <turn to="fountianCenter">leave</turn> and enter into a new hallway. The south hallway holds in it the decoration of sound instead of visuals. The walls are barren, save for a table with a deplorable holophoto of the late Bellthyran Halvard, but music sits in the air of the hallway and never ceases to alert you to it’s presence. It’s seems to be produced from the walls itself as it pulsates toward you from all directions. There is a <interact with="ohDangCouple">couple</interact> that stands off to the side - seeming to be the only ones who can stand the classical music. The only avenues of escape are a large set of double <turn to="diningRoomJean">doors</turn> and a grand <turn to="libraryJean">archway</turn> obstructed by a glass curtain. 
+        </page>
+        <page id="diningRoomJean">
+            <p>There are dining tables in this world and then there are <i>dining tables</i>. You know, the long ones made of some expensive wood, like mahogany or African Blackwood - which currently doesn’t exist any more - or Ebony. They stretch across rooms made too large for any one party and make it impossible to talk with anyone except who is directly in contact with you, making for, in your humble assassin opinion, a very poor party. For how is someone supposed to enjoy the company of friends when they are stretched across a four foot distance. Set on the table currently, is a variety of bird looking meats and vegetables that seem to have been slaughtered with knives that are more exquisite than the ones you have hidden in your boots. The only way is <turn to="upperLevelNorth">back</turn>. </p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="libraryJean">
+            <p>Jeanette, though being part of the top one percent of the one percent, seemed to only half-heartedly attempted in her facade of wealth, The library that you enter into, though looked like the library that would be present at an institute of higher learning -- for all it was missing was some pretentious philosophy student telling you how Ray Bradbury was the pinnacle of old-age science fiction when everyone new damn well it was Kurt Vonnegut -- seemed to be half heartedly stocked with books written in languages no one spoke by people everyone talked about. The rest of the shelves, the ones higher up where no one but an assassin with severe dedication and the ability to scale walls could reach, were filled with things that would certainly cause a scandal. The tabloids dug deep into the past looking for dirt of the woman when what they really needed was hidden on the top shelf plainly in view. For all the books on the shelves over twenty feet where nothing but porn magazines of classical literature characters. The only way is <turn to="upperLevelNorth">back</turn>.</p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <!-- Follow Damian -->
+        <page id="followDamian">
+            <p> You slink into the study behind Damian, just at the door closes you pull yourself into the room. He faces away from you and as the door clicks it seems a string is cut from the man’s shoulders and they hunch in on themselves as his souls seems to concave in. </p>
+            <p> You step forward. </p>
+            <p> DO YOU <turn to="killAndSpare">KILL DAMIAN</turn> OR <turn to="killAndSpare">SPARE HIM?</turn> </p>
+        </page>
+        <page id="killAndSpare">
+            <p>Suddenly the study shifts before your eyes, like if you had discovered colour when previously you had seen nothing but black and white. It sent a sensation over your body as if you were putting on dirty clothes after taking a nice hot shower. To say in bricklayers terms -- it felt nasty. You did not enjoy it. </p>
+            <p> The study is all at once exactly the same and completely different. You are alone now, Damian seemingly to have disappeared before your eyes and in his place stands a forlorned looked woman who sits leaning back in a chair, precariously you might add. Her face is the stark look of someone who doesn’t care if they live or die.</p>
+            <p> “Okay Google.” The woman says. “Start new letter.”</p>
+            <p><i> “Starting new letter.” </i> The voice responds. </p>
+            <p> The woman sighs. “Twenty-third, November twenty-one seventy. I have been examined by thirty-six medical professionals as of this afternoon. Each one giving me a different cause for my deterioration of health. Their suggestions range from radioactive poisoning to tuberculosis. The latter much more possible than the former in this economy. “ There is a beat. “I have yet to tell anyone of my condition. I feel no guilt except for my siblings. Damian will recover I am sure, but little sist-” Her word are caught by a cough that erupt from her lungs. They are strangled in her throat as you see them swell up inside her trachea, cutting off all oxygen. Blood, instead, spills out from her mouth and clots onto the desk in oozing lumps that seems to walk off the wooden surface and hop to the floor. In exactly thirty two seconds and twelve millisecond she slumps face forward into the red mass and ceases to breath.</p>
+             <p>She is however, not dead yet. One is not pronounced dead until resuscitation has been performed. Therefore, she  is not pronounced dead until twenty six minutes and eleven seconds later when Jeanette Deniz, Katharane Dexter, and Nickolev Zakharov enter (or should you say entered as it seems they are all alive and well and seemingly seven years younger by your estimation) and attempt to before a crude version of CPR. And It isn’t until, Hampton Frazier, Darus Harper, and Jedus Atticus enter do they stop. For when the later trio proclaims the aforementioned murderers everything really starts to go downhill from there. With the woman left lying in a pool of her own blood the six begin a mad rush of slander.  </p>
+            <p>You see the the letter has been automatically signed</p>
+            <p><i>Forever indubitably,</i></p>
+            <p><i>Isobel Kytheal</i> </p>
+            <p>You decide it best if you <turn to="diningRoomPast">left</turn>.</p>
+        </page>
+        <page id="diningRoomPast">
+            <p>You enter into the dining room, which is all at once the same dining room you had previously seen and nothing like it at all. A simple round table sits center with three people you recognize to be Hampton Frazier, Darus Harper, and Jedus Atticus, the owners of the MGM Grand and the champions of the current radical movement you’re vying for. </p>
+            <p> Frazier speaks first, “Listen, don’t pretend that this isn’t what we wanted.” </p>
+            <p> “What do you mean?” Atticus says slowly looking to the other man. 
+            <p> “Come on. Wasn’t it you who was just talking about how some twenty year old shouldn’t be in charge?” Frazier questions him. </p>
+            <p> “I was talking about Nick and Katharane! Not about plotting treason!” </p>
+            <p> “It’s not treason if we didn’t actually kill her.” Harper speaks up for the first time. “Who’s Katharane?” </p>
+            <p> “The Regional Consultant for the Great Neo-Vegas Area on Science and Engineering.” Frazier responds. “Where have you been for the past six years?”</p>
+            <p> “I didn’t even know she had a name.”Harper laments. </p>
+            <p> “Anyway,” Frazier continues, “if there was ever a time to move into power it’s now. We need to make sure that Nick, Jean, and Katharance take the fall for this. Then we can restore Vegas to at least a fraction of its former potential - before all these damn snowflakes came in.” </p>
+            <p>You decide it best if you <turn to="libraryPast">left</turn>.</p> 
+        </page>
+        <page id="libraryPast">
+            <p> The next room you enter into is the library. Except the shelves seem to be stocked with an array of eclectic books. From your view you can piece together an off brand copy of Les Mis, a Japanese knock off of A Tale of Two Cities, and a LGBT version of the Great Gatsby. Even though the loyalist trio is standing around the small room, there seems to be more distance between them than ever before.</p>
+            <p> “They are going to frame us for murder. The murder of a public figure, the murder of a public figure, the murder of our friend for Cruise’s sake! So no, I am not going to ‘calm down’ Nickolev.” Jeanette exclaims from her seat by a glass globe of the world.</p>
+            <p> “Jean, all I am saying is that there is nothing people do better than take a rumor and talk. Trust me, I know.” There seems to be a glance that conveys more words to that sentence between the two. “So yes, we need to move quickly but we can’t be stupid about it.” </p>
+            <p> “We need to move to disband the cabinet.” The woman in white, dressed in regular clothes, says from where she leans against a case of books pensively staring at the floor. </p>
+            <p> “What?” Jeanette whispers. </p>
+            <p> “Yeah, because that would make us look innocent.” Nickolev remarks.”</p>
+            <p> “It’s not supposed to make us look innocent. It’s supposed to save us from being killed. Or would you rather have your husband in charge of two trillion keplos and a casino empire?” She takes a breath. “I don’t even want to know how many people will die with those three in charge - with their talk of ‘social order’ and ‘the class system’ and ‘reverting back to the good christian ways’. Sometimes we have to so things the hard way because they are the right way.”</p>
+            <p> “That’s the most I’ve ever heard you speak.” Jeanette comments.</p>
+            <p>You decide it best if you <turn to="kitchenPast">left</turn>.</p>
+        </page>
+        <page id="kitchenPast">
+            <p> The kitchen seems to be next. A single chef stands in the corner chopping some carrots and squash into a pot of stew.  The radicals who you have fought for sit around a wooden table.</p>
+            <p> “This is fantastic.” Harper says, breaking the silence. </p>
+            <p> “I do not appreciate your use of sarcasm in a moment like this.” Frazier snaps. “They didn’t even take control of the city for themselves! No! They just fucked all of us over!” He yells out to no one in particular. </p>
+            <p> “What happened?” Atticus says, picking his head off of the table. </p>
+            <p> Frazier answers, “Those <i>kids</i> just disbanded the cabinet. “So essentially there is no government.”</p>
+            <p> “Oh there is still a government.” Harper corrects. “The library is still going freaking strong.” </p>
+            <p> “So… What now?” Atticus asks, looking around as if the air contains more words he could use. “They can’t install a new cabinet unless things get to states of emergency level.”</p>
+            <p> “Then we just have to make things bad enough to declare a state of emergency.” Frazier responds.</p>
+            <p> Harper gives him a concerning look, ‘What do you mean?”</p>
+            <p> “Come on,” Frazier says to his cohort, “it’s not like we have room to have any conscious here! If you want to overthrow the government you got to leave your personal beliefs at the door!” </p>
+            <p> Harper is silent for a while, but then speaks quietly. “If we are to do this, we ourselves can’t be part of it at all. I know a group though who would align themselves with our cause.” He stops again for a moment. “And if need be, they can take the fall for this adventure.”</p>
+            <p> Fraizer nods, “Very well. Go talk to this group. What’s their name?” </p>
+            <p> “The Church for the Children of Edith.” Harper answers. </p> 
+            <p>You decide it best if you <turn to="nickolevEnding">left</turn>.</p>
+        </page>
+        <page id="nickolevEnding">
+        {{? story.killNickolev =="false"}}
+            <p> You enter into the sitting room. This time instead of hearing the gossip of woman dressing in clothes six sizes too large for them -- but just big enough for their egos -- you see the radical trio sitting amongst themselves. They look older now and the room looks like it did at the party. Among them is a woman. </p>
+            <p> “He eloped. He straight up eloped.” Frazier says looking like he wants the ground to straight up swallow him whole.</p>
+            <p> “Technically they were already married.” The woman says.</p>
+            <p> “I don’t care. This is a crisis.” Frazier continues. “What sort of person leaves behind a trillion keplo empire for some UPS runner.” </p> 
+            <p> “You said that this person you found was the best of the best.” Harper says leaning forward in his wooden chair.</p>
+            <p>  “They were trained in stealth with the Chairwoman.” She retorts. “Besides, Nickolev is gone isn’t he?”</p>
+            <p> “You must be mistaken, Tabitha.” Frazier says. “Only the royal family is trained with the Chairwoman.”</p>
+            <p>DO YOU <turn to="WIWEnding">CONTINUE?</turn></p>
+        {{??}}
+            <p> You enter into the sitting room. This time instead of hearing the gossip of woman dressing in clothes six sizes too large for them -- but just big enough for their egos -- you see the radical trio sitting amongst themselves. They look older now and the room looks like it did at the party. Among them is a woman. </p>
+            <p> “Now the UPS runners are out of commission.” Frazier says smiling. </p>
+            <p> “Why? They have no business with Nickolev.” Harper comments lounging on an arm chair. “They’re an independent group.” </p>
+            <p> “Thank you, Harper. The sun is also a star.” The woman says. “Jack was married to Nickolev.” </p>
+            <p> “Jack?” Harper asks. “The captain?” </p> 
+            <p> “Yeah.” Atticus chirps in. “Seven years and counting.” </p>
+            <p> The woman cuts him off. “He was the one who found Nickolev’s body. Security came in while his body was still cooling and found the poor kid covered in blood. Going to death row for murder now.” </p>
+            <p> “Which is good for us.. I suppose” Frazier says a little bit too cheerful. </p>
+            <p> “Who’d a thought… A guy like that married to a runner.” Harper trails off.”</p>
+            <p> “Your person is doing fantastic! Where did you find them?” Fraizer asks.</p>
+            <p> “You should know them. They were trained with the Chairwoman in stealth.” </p>
+            <p> “You must be mistaken, Tabitha.” Frazier says. “Only the royal family is trained with the Chairwoman.”</p>
+            <p>DO YOU <turn to="WIWEnding">CONTINUE?</turn></p>
+        {{?}}
+        </page>
+        <page id="WIWEnding">
+            {{? story.killWIW =="false"}}
+                <p>The sitting room changes before you once again. Decorations, flowers, and light fill the room and it becomes identical to the one that you saw during the party. The radical trio which you have defied stand around the room -- if they sat down their agitation would boil over and kill them. The woman is with them once again.</p>
+                <p>Frazier breaks the silence. “Now everyone thinks she’s some type of scientific martyr AND that someone is trying to sabotage the installment of Damian!”</p>
+                <p>“Isn’t that what we’re trying to do though?” Atticus, bless his heart, asks.</p>
+                <p>“Yeah! But we don’t want anyone to know about it!” Frazier yells. “The synthetic amnesia clearly was butchered.” </p>
+                <p>“Tabitha,” Harper says to the woman, “I have concerns about your assassin's ability for the next mission. If they are unable to kill Katharane, and they barely knew them, how are they going to react when they have to kill their own brother?”</p>
+                <p>DO YOU <turn to="finale">CONTINUE?</turn>
+            {{??}}
+                <p>The sitting room changes before you once again. Decorations, flowers, and light fill the room and it becomes identical to the one that you saw during the party. The radical trio lounge around the room, relaxation seeping from their bones. The woman is with them once again. Harper throws up the <i>Neo-Vegas Times</i> via the TabletTable. The blue light fills the space.<i>The Regional Consultant for the Great Neo-Vegas Area on Science and Engineering commits suicide at age 27</i> the headline reads.</i></p>
+                <p>“Well. I’ll be damned.” Atticus says. </p>
+                <p>“I was going to say that she’s not the most subtle of assassins... but now everyone is discussing Katharane’s thousand foot fall to the Neo-Vegas sidewalk instead of the installation.” Harper says. </p>
+                <p>“I had concerns at first too, I’ll admit.” Fraizer says. “But it seems our synthetic amnesia worked.” </p>
+                <p>“We never had a successful case with the meat-packing district.” Atticus said. “They were all able to recognize their families faces.”</p>
+                <p>“Well then, let’s just hope that your assassin doesn’t come face to face with Damian.” Frazier says to Tabitha. </p>
+                <p>DO YOU <turn to="finale">CONTINUE?</turn></p>
+            {{?}}
+        </page>    
+        <page id="finale">
+            <p>The concept of time-travel was popularized in H.G Wells's short story <i>The Time Machine</i>. At the time is was characterized as a fiction story.  However, as you are pulled back out of the past and into the study that exists in the year 2175 you feel a real sense of patriotic duty to inform the masses it is now more realistic fiction.</p> 
+            <p> However you have little time to contemplate the mis-labeling of classic literature as you are shipped back into someone’s past and the approaching future; also known as your present. Damian stands in front of you once more the tension having just faded from his shoulders and the door still in route to shutting, even though you have experienced several hours of…. time… travel…. </p>
+            <p> Damian suddenly stands rigid.<p>
+            <p> He breathes in sharply.</p>
+            <p> He starts to turn around..</p>
+            <p>DO YOU <turn to="endingKill">KILL HIM</turn> OR <turn to="endingSpare">SPARE</turn> HIS LIFE?</p> 
+        </page>
+        <page id="endingKill">
+            <p> You are quite impressed with his throwing skills. The knife soars through the air -- directly towards your glabella. You are quicker though and strafe just in time to dodge the impact thrown in your direction. So that’s how it’s going to be? If he doesn’t want to play by the rules neither will you. The bartender was right. Everything about this man is cold. You run towards him jumping up and sliding across the conference table that he has step up workshop on. Pieces of machinery fall to the floor sending out noises that seem to deafen your ears. In one quick movement you grab the arm that has become trapped in the cyber world and rip it from the computer. As you do so Nickolvev lets out a scream of pain as a sudden, but not unexpected, wetness coats your fingers. You shove your fingers deep into the laceration that travels down the man’s forearm making him wince, but not scream. Before he can get a single defense move in your sword has cut through his major tendons and he falls to the ground.  You imagine him to be the man in your preconceived vision as you slide your sword into his stomach. It helps the metal slide between his ribs a little bit easier. </p>
+            <p>He’s unable to move -- equal parts because of pain and because he simply can’t.</p>
+            <p>You wait for fifteen minutes watching him regurgitate up his own blood. You don’t get to see his last breath however as a sudden movement outside the window alerts you to the fact the you will soon be not alone.</p>
+            <p> You decide to take your LEAVE knowing your job is done and your promise to the bartender fulfilled.</p>
+            {{? story.nickDead==true}}
+                The major benefactor for the state is gone. Nickolev Zakharov is buried under the soil. His body will sone decompose and for the soil that a new city will be built on top of. His money making it rise to greater and more lavish heights as his bones turn to dust next to his lover that hung for his death. Two innocent men, lost to the dirt and to the greed of three more who wanted the dry cake of Neo-Vegas. 
+            {{??}}
+                The major benefactor for the state is gone. Nickolev Zakharov is lost to somewhere to the hazy distance that spreads itself in a promiscuous fashion along the outskirts of Neo-Vegas. Seven hundred thousand people used to live in this great city at the beginning of the week and as that number dropped to sixty hundred and ninety nine thousand nine hundred and ninety eight it changed more than a sudden mass exodus. But somewhere, out there in the great unknown, as the population of Neo-Vegas dropped - the number of people who lived happier lives increased. 
+            {{?}}
+            {{? story.WIWDead==true}}
+                <p>The intellectual think tank for the state is gone as well. Katharane Baxter is dead to this Earth. If you were a more dramatic person you would say she has been purged from this Earth, but no one is truly purged from this Earth until intergalactic space travel is invented. You’ll have to remind NASA to get on that -- that is when NASA is re-established.  If  people have to die for the sake of progress, then the inverse must be true. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{??}}
+                <p>The intellectual think tank of the state is gone as well. Oh Katharane Baxter still breathes, and walks, and talks, and smiles, she remembers nothing of the past. It seems that she has been wiped clean, as you once were. She, however, will not fall into the wrong hands. You send all that knew her to her side so that she may look into their face and synapses can fire old memories back into  her reach. It proves difficult, as people seem only to know <i>of</i> her. </i> Soon new inventions will roll out into the hand of Vegeons and there will be flying cars, and jetpack backpacks, and cool pools that defy the laws of gravity. Everything will become tinted blue and white like in every single futuristic movie as every citizen gets good dental care. Or they won’t. You can’t see the future. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{?}}
+        </page>
+        <page id="endingSpare">
+           <p>You come face to face with your brother.</p>
+            <p>That is something you never would have thought to run through your head. The thought trips and falls, crippled to the ground with a sensation you haven’t felt in a long time. It swarms through your body like a blast of warm air and makes your blood run quickly through your veins. You feel your body being squeezed as your body is pressed against Damians. You are receiving your first ever hug. The sensation seems to grow in size as you lift your arms and wrap them in tandem around the strange being in front of you. </p>
+            <p>When your brother says quietly, for only you to hear, <i> “I’ve found you.</i> you realize what the sensation is. </p>
+            <p>Joy.</p>
+            <p>There are certain ticks people displayed when overwhelmed with emotions and your brother is displaying all of them in this moment. Questions start to bubble from his lips. You can probably think of them on you own, <i> When, where, how, who why?</i> As some guy named T.S. Eliot once wrote, “... when the evening is spread out against the sky, like a patient etherized upon a table, let us go, through certain half-deserted streets - Oh, do not ask, “What is it?” Let us go and make our visit.” You aren’t sure why those words come to you now, or where you ever heard them in the first place, but you say them outloud, without a works cited, and they seem to bring some satisfaction to your compatriot. </p> 
+            {{? story.nickDead==true}}
+                The major benefactor for the state is gone. Nickolev Zakharov is buried under the soil. His body will sone decompose and for the soil that a new city will be built on top of. His money making it rise to greater and more lavish heights as his bones turn to dust next to his lover that hung for his death. Two innocent men, lost to the dirt and to the greed of three more who wanted the dry cake of Neo-Vegas. 
+            {{??}}
+                The major benefactor for the state is gone. Nickolev Zakharov is lost to somewhere to the hazy distance that spreads itself in a promiscuous fashion along the outskirts of Neo-Vegas. Seven hundred thousand people used to live in this great city at the beginning of the week and as that number dropped to sixty hundred and ninety nine thousand nine hundred and ninety eight it changed more than a sudden mass exodus. But somewhere, out there in the great unknown, as the population of Neo-Vegas dropped - the number of people who lived happier lives increased. 
+            {{?}}
+            {{? story.WIWDead==true}}
+                <p>The intellectual think tank for the state is gone as well. Katharane Baxter is dead to this Earth. If you were a more dramatic person you would say she has been purged from this Earth, but no one is truly purged from this Earth until intergalactic space travel is invented. You’ll have to remind NASA to get on that -- that is when NASA is re-established.  If  people have to die for the sake of progress, then the inverse must be true. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{??}}
+                <p>The intellectual think tank of the state is gone as well. Oh Katharane Baxter still breathes, and walks, and talks, and smiles, she remembers nothing of the past. It seems that she has been wiped clean, as you once were. She, however, will not fall into the wrong hands. You send all that knew her to her side so that she may look into their face and synapses can fire old memories back into  her reach. It proves difficult, as people seem only to know <i>of</i> her. </i> Soon new inventions will roll out into the hand of Vegeons and there will be flying cars, and jetpack backpacks, and cool pools that defy the laws of gravity. Everything will become tinted blue and white like in every single futuristic movie as every citizen gets good dental care. Or they won’t. You can’t see the future. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{?}}
+        </page> 
+        <!-- Characters --> 
+        <character id="ohDangCouple">
+            <action id="Listen">
+                    <p>"This place used to be so different." The man says to his all but five foot nothing of a wife.</p>
+                    <p>"Umm... I guess. I never really saw it before Isobel's death." Is her articulate reply.</p>
+                    <p>"Oh yeah. This place used to be like... basically abandoned. This floor was built back right before Isobel died and was supposed to house like incoming dignitaries but then... yeah."</p>
+            </action>        
+        </character> 
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="inventoryHostWrapper">
+            <h2>Inventory</h2>
+            <div id="inventoryHost"></div>
+        </div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <div id="footer">
+        <a id="undoHost" href="#">Undo</a> &bull; <a id="saveHost" href="#">Save</a> &bull; <a id="restoreHost" href="#">Restore</a> &bull; <a id="reseteHost" href="#">Reset</a>
+    </div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource         : $('#story'),
+                domTarget         : $('#host'),
+                titleTarget       : $('#title'),
+                inventoryTarget   : $('#inventoryHost'),
+                interactionTarget : $('#interactionHost'),
+                undoTarget        : $('#undoHost'),
+                undoStageTarget   : $('#undoStageHost'),
+                saveTarget        : $('#saveHost'),
+                restoreTarget     : $('#restoreHost'),
+                resetTarget       : $('#reseteHost'),
+            });
+        });
+
+    </script>
+</body>
+</html>

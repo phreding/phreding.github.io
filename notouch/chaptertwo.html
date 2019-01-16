@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DedalusWeb Story</title>
+
+    <script src="http://olado.github.io/doT/doT.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dedalus.js"></script>
+    <script src="dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+ </head>
+<body>
+    <div id="story">
+
+        <initscript>
+        {{story.kills=0;}}
+        {{story.doorStatus="broken";}}
+        {{story.Serum="notserum";}}
+        {{story.Serum2="notTaken";}}
+        {{story.killWIW=false;}}
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+        <!-- Novel -->
+        <title>This is a Place Holder</title>
+        <page id="intro">
+            The year is 2175. 
+        </page>
+        <page id="levelone" class="first">
+            <p>The Stratosphere Casino was the only triple A casino not located on the strip, however by not being located on the strip, it is the only casino within the actual city limits of Las Vegas. Notice the use to the past tense. During the fire of Las Vegas, the casino portion of what made up the Stratosphere Casino and Tower was transformed into what many refer to as a pile of hot nothing. The valley of ash formally known as the Stratosphere Casino sits under a complex of shopping centers called Mallvetica, as most of the funds came from the great-great-great-great granddaughter of Max Miedinger, the creator of the sweatpant font. </p>
+            <p>The 1,129 foot tall tower however, was unfazed by the burning inferno that raged beneath it on that July night because after all <i> rocket fuel can’t burn steel beams. </i> </p>
+            <p>Therefore the reinforced glass observatory that sits atop the tower managed to struggle through a fire, corporations, capitalistic greed and remain standing despite all gentrification odds. Even though it doesn't tower over the city anymore, it serves as a relic (and a bit of a reminder) of good times and years passed.</p>
+            <p>Which is why it was given to the only person who could smear nostalgia in the dust.</p>
+            <p>The woman in white was a legend; both because she was an academic genius and because many believed she didn’t exists. In a society where most are connected through a series of glass filament tubes shooting electrons that contain information, it was much easier to say that people who were very smarter than you were simply created by a group of people slightly smarter than you. This made people feel better about their own failed life goals and expectations. The woman in white was however, very really and therefore, a very large threat. </p>
+            <p> Tabitha hadn’t given you much information about the woman in white, which could not be more evident by the fact you are referring to her as <i>the woman in white </i>. The name came from the entirely white attire she donned whenever she pried herself from the laboratory fashioned out of the observatory that now stood before you. From the white lab coat, to the high Victorian collar, right down to the velcro boots only someone with six doctorates could pull off. </p>
+            <p> You are able to enter into the the base of the tower and ascend in the elevator with little difficulty. With the election a day closer, the higher citizens of the state have been flinging themselves into campaigns and the city has been quieter in person and exploding on the internet. The elevator drops you at the bottom of the observation deck and you step out into the <turn to="ReceptionArea">reception area</turn> to look for a way to get to the top floor.</p>
+        </page>  
+        <page id="ReceptionArea">
+                <p>Reception desks. They have plagued the social anxious for decades. Not even the year 2175, with its high tech cakes and removal of library books, can stop the anxiety that arises in the pit of the stomachs of those who dread talking to other members of society.  For better or for worse, you haven’t decided, the lobby of Stratosphere Laboratories is empty. Completely, totally, and one hundred percent devoid of life. It’s a lifeless place in itself; after all, there are dead bodies sitting.. mmmmmm… twenty feet away from you fermenting in their own rotting atmosphere. </p>
+                <p>The <interact with="DeskWIW">desk</interact> is organized in a sterile fashion that complements the pasty walls and white floor in a way no interior decoration ever could. The only thing that seems to be out of place is a single piece of <interact with="DeskNoteWIW"> paper</interact> that has the seams of crinkles running throughout it even though someone has obviously tried to flatten it out. Past the reception desk is a <turn to="HallwayWIW">hallway</turn> that seems to spread only deeper into the building. </p>
+        </page>        
+        <page id="HallwayWIW">
+            The hallway is lit with fluorescent tubes called LED light bulbs. They were accidently invented in 1962 after some man just wanted to invent a laser. The man who owned incandescent light bulbs, aka the lightbulbs that were about to be replaced, felt a little peeved by this new and improved product and called it “the magic one”. Back in those days everything that wasn’t accepted by large corporations was damned and called ‘black magic’. Now, of course, corporations just steal their ideas and profit off of them. Underneath the black magic lightbulbs is a plain white <turn to="SupplyRoom">door</turn> that has the letter S-U-P-P-L-Y written across it. Therefore, you concur that it must be a supply closet. Directly across from the supply closet is a non descript <show paragraph="BoilerRoom">door</show>; all the doors are non descript as the woman in white doesn’t believe in signs, but this one is particularly bland. Further down the hallway is a sharp right <turn to ="BodyHolding">turn</turn> and from it wafts the terrible acidic stench of acids and flesh. Just before the turn seems to be a pair of pried open pair of silver <turn to="ElevatorOne">doors</turn>. The <turn to="ReceptionArea">lobby</turn> lurks behind you. 
+        </page>
+        <page id="SupplyRoom">
+            There is a <interact with="SupplyDoor">door.</interact> The <turn to="HallwayWIW">hallway</turn> stand behind you.
+        </page>
+        <paragraph id="BoilerRoom">
+            <p>You approach door. It stares back at you in all of it’s non identifiable glory. You reach out to touch the door handle and are about to open the door when you hear a voice from within. </p>
+            <p>“Babe, I didn’t know her. It was just a snapchat.” </p>
+            <p>A snort of laughter follows.</p>
+            <p>“Cameron do not change the group chat name to ‘David’s Fucked’. Just fix the boiler okay!”</p> 
+            <p>You decide for the best not to open the door. </p>
+        </paragraph>
+        <page id="BodyHolding">
+            You follow the stench of formaldehyde and decaying organic material, leaving behind the <turn to="HallwayWIW">hallway</turn>,  and enter into a long corridor room lined with black bags. Casements line the great corridor that stretched from only millimeters off the floor to unreachable heights and the thought of how those can even be used passes through your head. There is a large black sign painted on the floor in what seems to be futura. Futura is a font that used to be used by some people called the Nazi’s and was quite unpopular until another group of people, called astronauts, started to use it when they wanted some cool looking moon rocks. Both Nazi’s and astronauts hated the Russians. The large black signs says <show paragraph="Autopsy">autopsy</show> and points directly ahead of you. 
+        </page>
+        <paragraph id="Autopsy">
+            <p>There are just straight up naked, dead, and dissected bodies. You aren’t quite sure what you expected. They sit around the circular subsection like a disturbed sort of meeting. </p>
+            <p><i>So Jyther, how are you today?</i></p>
+            <p><i>You know, Hythem, I’m feeling pretty dead today.</i></p>
+            <p>Or whatever the dead talk about these days. </p>
+            <p>Shoved back, out of the way to make room for the dead, is a small doorway that reads <show paragraph="TempControlRoom">TEMP CONTROL</show> on a hastily made sign. </p>
+        </paragraph>
+        <paragraph id="TempControlRoom">
+            You cross the room, minding the precarious assembly of those passed on, and enter through the doorway. Passed the doorway is only a small room, matched in interior decor to the last. CyberTek computers are mounted on the south east wall, each displaying the national emblem of the Greater Plateau area. It spins and spins and spins around seeming to want your attention in the midst of a geopolitical crisis. Next to the congregation of computers is a <interact with="powerBox">power box.</interact> 
+            that has seen better days. It seems to run on old tech - spark plugs. Those haven’t been used since the late 2060’s after Hannah Coliope created a nuclear powered battery shell that could run continuously for 567 years.  One spark plug seems to be missing. 
+        </paragraph>
+        <page id="ElevatorOne">
+            {{? story.doorStatus=="broken"}}
+                You leave the <turn to="HallwayWIW">hallway</turn> and approach the interior elevator. If Tabitha has told you correctly, this elevator should take you up the laboratory and into the upper offices where the woman in white works. Tabitha had said ‘lives’ but you gather that since her work is her life (she doesn’t have much of a home life to speak of.) The elevator doors are pried open with a metal bar of sorts and from the cranny a cold wind gusts up and washes around your feet.  There are tools precariously balanced on the edge of the elevator shaft as well. There is a hastily scrawled <interact with="ElevatorNote">note</interact> taped haphazardly on the side of the open crevice. 
+            {{??}}
+                You leave the hallway and approach the interior elevator. If Tabitha has told you correctly, this elevator should take you up the laboratory and into the upper offices where the woman in white works. Tabitha had said ‘lives’ but you gather that since her work is her life, she doesn’t have much of a home to life speak of. You see that the doors are shut and it looks fully operational. Would you like to <turn to="floorTwoWIW">ASCEND?</turn> (Once you do, you can not return.)
+            {{?}}
+        </page>
+        <page id="lethalOne">
+            This sets the kill count to one and opens the <turn to="ElevatorOne">elevators.</turn>
+            {{story.kills=story.kills+1;}}
+            {{story.doorStatus="fixed";}}
+        </page> 
+        <page id="nonlethalOne">
+            This keeps the kills count at zero and opens the <turn to="ElevatorOne">elevators.</turn>
+            {{story.doorStatus="fixed";}}
+        </page>
+        <!-- Floor Two -->
+        <page id="floorTwoWIW">
+            <p>The doors click open with well oiled synchronicity and you gaze out onto what the old TV channel HGTV would call an ‘open floor plan’. Like the floors below you, and most likely like the floors above you, the laboratory that lounges in front of you is nothing but a white sterile landscape that seems to hold a plethora of scientific data. You feel like a test subject stepping into a test tube to be combined with Hydrochloric Acid and mention in an obscure medical paper. As you step out, probably contaminating the room with your less than sterile attire, you take in the four sections of the room. In the far right hand corner seems to be a durasteel door holding the entrance to a <turn to="vault">Black Box Room TM</turn> closed. To your <turn to="dataStorage">left</turn> are rows, and rows, and rows, of data processing units the hum quietly to themselves as they spin one and zeros into letters. Directly <show paragraph="labCounters">across</show> from you is a series of lab counters, each more complex than the last. Directly to your <turn to="chemStorage">right</turn> is what you think to be a chemical storage center. As above the door it reads.. WARNING CHEMICAL STORAGE. But these days, with these kinds of people, you never know. You also have the option to retreat into the elevator and <turn to="floorThreeWIW">ASCEND</turn> further. (You may not return to this level.)</p>
+        </page>
+        <page id="vault">
+            You see that the <interact with="vaultLock">keypad</interact> only has room for eight letters. What should you do? Should you <turn to="floorTwoWIW">go back</turn> and return later?
+        </page>
+        <page id="chemStorage">
+            <p> The American Physiological Association classified petrichor as one of the most recognizable and influential smells stored in the human consciousness. The American Physiological Association failed to state why this was or why so many people enjoyed the aerosol of wet pavement shooting into their nostrils, but nevertheless, in the 2085 issue of <i>The Psychology Times</i> a twenty six page spread was published about iconic smells of the human race. Petrichor was the first, but Hydrochloric Acid was number three, (Crayola crayons stole the number two slot... curse those colorful bastards) which is what you get to smell when you enter into the chemical storage area, without proper safety equipment you might add.  This is truly the most dangerous thing you have done all day. The chemical safe free <turn to="floorTwoWIW">floor</turn> stands behind you. The storage facility is lined with rows of cabinets that seem to go on in either direction. The first one you see is Abietic Acid, then Acenaphthene, then Acenaphthene, then Acenaphthylene...</p>
+        </page>
+        <page id="dataStorage">
+            <p>The word hacker, like most technology, had its origins at the Massachusetts Institute of Technology. M.I.T. was a university based in a town called Cambridge, which was in a state called Massachusetts, which was demolished when the United States of America was. The name hasn’t change in the hundred years since the fall however. There, in the minutes of an university honoring a dead geographical location, on April 1955 in the meeting of the Tech Model Railroad Club states, “Mr. Eccles requests anyone working or hacking on the electrical system turn these power off to avoid blowing a fuse.” The term ‘hacker’ was used by computer enthusiast to describe computer programs. The term as we know it, which means, “A malicious meddler who tries to discover sensitive information through electronic means.” originated in the work, <i>cracker</i>. </p>
+            <p>White people. Ruining everything.</p>
+            <p>The woman in white has a impressive computer network set up in her fortress of science. The intense amount of wires running in and out of the walls should mean something to you, but the voice that once whispered information into your head seems to be silent. You imagine that the red blinking of the lights through the, of course, pristine glass means that whatever the woman in white has storage in the ones and zeros being process she has protected against the crackers. You move down the aisles, further from the <turn to="floorTwoWIW">door</turn>, of the black computers; all whirling trillions upon trillions of data. The voice from the part of your brain that is still a child provides conversations as if the brittle boxes were old spinsters making their lively hoods with the treads the wove. </p>
+            <p><i> “It is just a shame the Vanessa turned down Kurt’s proposal. Now she’ll be forced to marry Tyrth and he’s one with the bottle.. If you read my words.”</i></p> 
+            <p><i> “Oh it is just a travesty. Poor Courtney too. She’s absolutely heart broken Kurt proposed. She’s been soft on him for quite some time now. If he rebounds on her, she’ll probably say yes, even with the heartache .”</i></p> 
+            <p>A dim white light shines from the end of the row you are currently trapeasing through. The screen displays what seems to be an unfinished <interact with="computerEntry">entry</turn> in the database. </p>
+        </page>
+        <paragraph id="labCounters">
+            <p>There are two kinds of people in this world. Normal people and those who think that not having their pencils exactly two cm apart is a high felony under the court of law. Three guesses at which one the woman in white was. She was the unmentioned third option because she didn't believe in pencils. This was a paperless place. Ride or Die technology. You run your hand delicately over the counter tops that hold a smorgasbord of experiments that will probably improve the quality of life for millions of people over the course of the next couple decades. You won’t lie, the amount of passion one woman has managed to poor into the progression of the human nation floors you to some extent. Though one must weigh the costs. Above you hangs a particular popular <show paragraph="periodicTable">poster</show> that can be viewed in most high school chemistry classrooms. </p>
+        </paragraph>
+        <paragraph id="periodicTable">
+            <p>A periodic table hangs on the wall. Periodic tables look like this.</p>
+            <p>PNG of Periodic Table</p>
+            <p>The periodic table was invented in 1869 by a Russian fellow named Dimitri. Russia was a country in the north east hemisphere. 17% of it regressed underwater when the ice caps melted. Now it is a country in in the lower tide hemisphere. </p>
+        </paragraph>    
+        <obj id="computerEntry" inventoryName="Note Two">
+            <action id="Read">
+                <p>23 January 2175 </p>
+                <p>Serum #164 has yielded positive results in creating stagnant activity in patients neurological synapses. The TCA scan of 22 January 2175 results in the decrease of 10 billion neurons in the brain causing the patient to result to ‘muscle memory’ activities only. It can be very effective in rendering a person to a most basic, vegetable like, useless basically, state. When paired with Serum #654 there is a high possibility of combating against the 'mind erasure' currently taking place in the meatpacking district. Over the course of the past six months, over twenty individuals have disappeared and been found with synthetic amnesia. </p>
+                <p>NOTE to LEV: Contact the head of security at the Palace for more details on . Don’t so much as breathe in the direction of those MGM tyrants with this in mind.
+                <p> Further testing must be done before we move forward. Contact Deniz for more subjects, if   possible bring it to her attention at the pre-election fundraiser on Tuesday.</p>
+                <p>NOTE to LEV: Store serum #164 in vault on second level. After the last break in Nickolev hasn’t had time is assess the integrity of the security of the building. </p>
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('computerEntry')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("computerEntry"); }}
+            </action>
+        </obj>
+        <obj id="vaultLock" inventoryName="Vault Lock">
+            <action id="Use">
+                <with id="DeskNoteWIW">
+                    <p>You enter in the words printed on the bottom. AmPUTaTe. This causes the smooth metal to slowly click open and regress back into the walls leaving before you a new door way which to enter. You step gingerly into the newly accessible area and see rows upon rows of needles storage and label carefully. The ones you can read are labelled, </p>
+                    <p><interact with="notSerum" id="notSerumInteraction">145</interact>
+                    <interact with="notSerum" id="notSerumInteraction">146</interact>
+                    <interact with="notSerum" id="notSerumInteraction">147</interact>
+                    <interact with="notSerum" id="notSerumInteraction">148</interact>
+                    <interact with="notSerum" id="notSerumInteraction">149</interact>
+                    <interact with="notSerum" id="notSerumInteraction">150</interact>
+                    <interact with="notSerum" id="notSerumInteraction">151</interact>
+                    <interact with="notSerum" id="notSerumInteraction">152</interact>
+                    <interact with="notSerum" id="notSerumInteraction">153</interact>
+                    <interact with="notSerum" id="notSerumInteraction">154</interact>
+                    <interact with="notSerum" id="notSerumInteraction">155</interact>
+                    <interact with="notSerum" id="notSerumInteraction">156</interact>
+                    <interact with="notSerum" id="notSerumInteraction">157</interact>
+                    <interact with="notSerum" id="notSerumInteraction">158</interact>
+                    <interact with="notSerum" id="notSerumInteraction">159</interact>
+                    <interact with="notSerum" id="notSerumInteraction">160</interact>
+                    <interact with="notSerum" id="notSerumInteraction">161</interact>
+                    <interact with="notSerum" id="notSerumInteraction">162</interact>
+                    <interact with="notSerum" id="notSerumInteraction">163</interact>
+                    <interact with="serum" id="serumInteraction">164</interact>
+                    <interact with="notSerum" id="notSerumInteraction">165</interact>
+                    <interact with="notSerum" id="notSerumInteraction">166</interact>
+                    <interact with="notSerum" id="notSerumInteraction">167</interact>
+                    <interact with="notSerum" id="notSerumInteraction">168</interact></p>
+                </with>
+                    You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id="notSerum" inventoryName="Syringe">
+        <action id="Take">
+            You remove one from the container. The rest of the cases go into lock down and you are unable to remove any more. 
+            {{ story.disable('notSerumInteraction'); }}
+            {{ story.disable('serumInteraction'); }}
+            {{story.Serum2="Taken";}}
+        </action>
+        </obj>
+        <obj id="serum" inventoryName="Syringe">
+        <action id="Take">
+            You remove one from the container. The rest of the cases go into lock down and you are unable to remove any more. 
+            {{ story.disable('serumInteraction'); }}
+            {{ story.disable('notSerumInteraction'); }}
+            {{story.Serum="Serum";}}
+            {{story.Serum2="Taken";}}
+        </action>
+        </obj>
+        <!-- Floor Three -->  
+            <page id="floorThreeWIW">
+                <p> As soon as the elevator arrives at the third floor a terrible stench floats from the previously closed off section and into the elevator, an elevator which seems to have stopped once again. This time just one floor short your intended target. You try not to see a morbid metaphor in that. You manage to push yourself out of the broken container and into the sickening mist of formaldehyde that leisurely drapes itself across the room. Said room that you have just entered, is the black sheep of Stratosphere Laboratories.  If the other floors were the perfect children this would be the one that depression went undiagnosed and now sell cocaine for a living. Depression is a disease that is called when the bad chemicals in your brain start working too much. Cocaine is a white powdery substance that looks like powdered sugar; both can make people addicted to it. The first thing brought to your attention is just how dark this room is compared to the others. While the lower levels where almost blindingly lit with flourescent lightbulbs, level three seems to being more partial to having what 20th century teenagers called a <i>rave</i>. The illumination that was supposed to be coming from the ceiling now seemed to expresses itself from all around as the lights seemed insistent on having a strobe effect.</p>
+                <p>You take a step further out, and as you do so your foot lands in a sticky substance that coats the bottom of your boot. You cast your attention downwards and see that you are standing in a thin pool of liquid. As you take another, more careful, step forward you see the ripples shatter throughout the floor and continue on until the hit the far wall before boomeranging back to you. </p> 
+                <p>Fat coils of wire drape from the ceiling, all haphazardly pulled out of the tiles, making a cascading river of electrons  that cut canyons down the walls. They all seem to flow to four separate… four individual… four circular…. tanks? Your brain only seems to recognize the cylindrical objects that dominate the majority of the putrid room as over sized fish tanks. A gelatinous fluid sloshes around, being propelled by something that is coming out of the plethora of wires that sucker themselves to the bottom of each tank. The image could be compared to that of a synthetic octopus, if there were any octopuses left for it to be compared to that is. </p>
+                </p> Through the inconsistent illumination of the room, you can make out the bold label numbering off the four containers according the the western Arabic numeral system.</p>
+                <p>The first one reads <turn to="tankOne">TANK ONE.</turn></p>
+                <p>The second one reads <turn to="tankTwo">TANK TWO.</turn></p>
+                <p>The third one reads <turn to="tankThree">TANK THREE.</turn></p>
+                <p>The fourth one read <turn to="tankFour">NK FO.</turn></p>
+            </page>
+            <page id="tankOne">
+                <p>You step away from the <turn to="floorThreeWIW">main floor</turn> to examine the first tank. The first tank seems to empty, drained of both experiments and the putrid jelly that seems to be coating the floor in a news type of carpet that should never have been invented. Another thing that should never have been invented, Red Dye No. 2. Don’t know why, but everyone seems to hate it. You circle the tank looking for signs that might lead you to understanding the decomposing scene before you, Your hunt ends you to finding one of the lab assistants, or what you assume to be a lab assistant, in this economy, you never know. He is slouched against the tank, breathing still, most likely just passed out due to the horrid stench that even now makes you queasy, his body congealing in the thick liquid. Clutched in his hand is a piece of <interact with="letterTwoWIW">paper</interact>.</p>
+            </page>
+            <page id="tankTwo">
+                The second tank seems to have a series of… abstract figures preserved in the formaldehyde that slowly churns within. As the blades of air spin the mixture around, a severed hand pass you by, waving through the window. You tear your eyes away from it as it passes around to the other side of the tank and look down to see a <interact with="tankTwoBody">body</interact> curled up around the base of the tank. You freeze as you realize they are conscious, but just barely. The only motor function they seem capable of is muttering incoherently to themselves. You feel uneasy an would like to <turn to="floorThreeWIW">leave</turn> now.
+            </page>
+            <page id="tankThree">
+                The third tank seems to be the oldest of the two. The plexiglass is now tainted with scratches and spiderweb fractures and the formaldehyde inside looks as if to have reached new levels of fermentation. The usually clear   liquid has become a terrible red colour that can obscure your vision to the other side, but just isn't dark enough to hide the human shaped figure inside. A study conducted in 2089 revealed that the human silhouette dropped thirteen slots in the most recognizable figure after John Risch developed Bamme, a corporation dedicated to changing the human form to the mind’s whim. Bamme is currently grossing three trillion teros per quarter and performing three thousand operations per day. Hidden out of sight, and you would have not noticed it if you had not been looking for it, is a <turn to="circuitRoom">door</turn>.
+            </page>
+            <page id="circuitRoom">
+                The handle moves but the door doesn’t budge. It seems there is an old fashioned <interact with="circuitRoomLock">lock</interact> attached to the door handle that blocks your path.
+            </page>
+                <obj id="blueKey" inventoryName="Old Fashioned Key">
+                    <action id="Take">
+                        <when>!story.isInInventory('blueKey')</when>
+                        You put it into your pocket. It might come in handy.
+                        {{ story.putInInventory("blueKey"); }}
+                    </action>
+                    <action id="Use">
+                        <with id="circuitRoomLock">
+                            You insert the key into the lock. It makes a clicking noise. You can now open the door. This is very surreal for you. You know nothing about key locks. There is nothing for you to comment about as you step into the room. It is dimly lit. You see a POWER BOX located in the back corner -- an old fashioned power box. It has levers. Like, you stick your hand out and pull it, levers. Levers were invented around the third century by the Archimedes to move large rocks. 
+                        </with>
+                            You try, and try again, but without any appreciable result.
+                    </action>
+                </obj>
+                <obj id="circuitRoomLock" inventoryName="Circuit Room">
+                    <action id="Use">
+                        <with id="blueKey">
+                           You insert the key into the lock. It makes a clicking noise. You can now open the door. This is very surreal for you. You know nothing about key locks. There is nothing for you to comment about as you step into the room. It is dimly lit. You see a <show paragraph="powerBox">power box</show> located in the back corner -- an old fashioned power box. It has levers. Ike, you stick your hand out and pull it, levers. Levers were invented around the third century by the Archimedes to move large rocks. 
+                        </with>
+                            You try, and try again, but without any appreciable result.
+                    </action>
+                </obj>
+            <paragraph id="powerBox">
+                WOULD YOU LIKE TO MOVE POWER THROUGH <turn to="theFloor">THE FLOOR</turn>, THROUGH <turn to="theTanks"> THE TANKS, </turn> OR <turn to="floorThreeWIW">WAIT?</turn> (Once you make a choice -- you can not return.)
+            </paragraph>    
+            <page id="theFloor">
+                This adds one to the body count. The <turn to="theOffice">elevator</turn> now works.
+                {{story.kills=story.kills+1;}}
+            </page>
+            <page id="theTanks">
+                This keeps the body count stable. The <turn to="theOffice">elevator</turn> now works.
+            </page>
+            <page id="tankFour">
+                <p>If one were to visit www.thesaurus.com/browse/destoryed they would find thirty synonyms for the word destroyed. The most similar synonym listed is broken while wiped out is the least. If one were to visit www.dictionary.com/browse/destroyed they would find that the origin of the word destroyed cones from the Middle English word ‘destroyen’ which comes from the Old French word ‘desturire,’ which comes from the Vulgar Latin word ‘destrugere’, which comes from the Basic Latin word destruere; which means “to pick up, build”.  Ironic how that works. Yet, despite all of the synonyms listed on www.thesaurus.com/browse/destoryed, there fails to be one that can describe the type of destruction that has taken place here. Where what must have been a billion kelpo tank once stood, now was only occupied by a light dusting of crushed glass and the source of the formaldehyde spillage. Taped gingerly to the largest piece of glass still connected to the base of the tank was a <interact with="breakInNote">note</interact>, covered in the putrid substance and looking like it had seen easier days. You feel uneasy an would like to <turn to="floorThreeWIW">leave</turn> now.</p>  
+            </page>
+            <obj id="breakInNote" InventoryName="Letter 3">
+                <action id="Read">
+                    <p>NOTE to LEV;</p>
+                    <p>At approximately 3:34 am on Tuesday, June 4, 2175 there was a security breach on  the upper labratory deck. At 3:36am the nuclear reactor in the level three regenerative deck, was disabled and operation D-minus was compromised. At approximately 3:42am Subject I was removed from module four by force and due to the failure of module four the electrically integrity of the pathophysiology level has been set to code black. Further stasis chamber have since been frozen and should be ready for reinstatement by 16 June 2175. Patient II has been moved to the highest security level and Tank three should at all time remain with the security system on. Patient II now remains the only synthetic amnesia patient and thus, the lynchpin in our experiments.</p>
+                </action>
+                <action id="Take">
+                    <when>!story.isInInventory('breakInNote')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("breakInNote"); }}
+                </action>
+            </obj>
+            <obj id="tankTwoBody">
+                <action id="Examine">
+                    You decide there is no level of low you can not stoop to so you decide to root around in the the man's pockets. You look through the man's pockets and it’s hits you that looking over an unconscious body doesn’t phase you. You find a wadded up piece of paper, three strips of gum, and a metal jagged obelisk you think is called a <interact with="blueKey">key</interact>
+                </action>
+            </obj>
+            <obj id="letterTwoWIW" inventoryName="Letter Two">
+                <action id="Read">
+                    <p>Frank,</p>
+                    <p>You remember that time we went and did Arctic Blast shots at the Cosmo and then went round for round with those guys from the Prairie Bioregion, then we thought it would be a great idea to head down to A Good Strip Club and become one with the dance floor, then we brought those Brazilian dudes back and then….. just, remember our hotel room afterwards? Floor two makes that look like freaking Buckingham Palace. Something happened to one of the tanks and now the Shifta gel is everywhere. And I mean everywhere. Some of it even got into the circuit room and now the power is wiggin’ out. I think we can kill two jobs with one switch if we re-route the power from the ceiling coils to the electrical grid in the floor. The heat should evaporate some of that Shifa and the power should be working fine. Just throw the left switch in the circuit room and make sure no one’s on the floor when you do it? Formaldehyde might be a bad smell but I’m sure charred flesh is worse. </p>
+                    <p>Hang in there,</p>
+                    <p>Peyier</p>
+                </action>
+                <action id="Take">
+                     <when>!story.isInInventory('letterTwoWIW')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("letterTwoWIW"); }}
+                </action>
+            </obj>
+        <!-- Office -->
+            <page id="theOffice">
+                <p>The building that once held so much life and gambling is now a white, sterile, medical facility at it’s heart. The woman in white stands against the wall of windows that encompasses the laboratory, a coal black backdrop framing her silhouette against the city skyline. Printed over the windows, in letters that not even the blind could miss are the words.</p>
+                <p>ADAPT </p>
+                <p>IMPROVISE </p>
+                <p>OVERCOME</p>
+                <p>You enter into the room, with no more fear in your heart than had been there while you waded through formaldehyde or rushed passed decomposing bodies. The woman who towers over Neo-Vegas, both figuratively - and now quite literally, must be aware of your presence by now; for as you cross the circular room you are doing nothing to block the sound wave that echo from your feet and the woman before you is not hard of hearing. Her eyes register the sound waves that are pushed from the floor, those vibrations are converted into messages in the brain which fire synapses that alerted her to your presence.</p>
+                <p>DO YOU <turn to="approachFirstWIW">APPROACH</turn> OR <turn to="approachFirstWIW">STAY STILL?</turn></p>
+            </page>
+            <page id="approachFirstWIW">
+                <p>“Someone sent you to kill me.”</p> 
+                <p>The words aren’t asked. You wonder if the woman in white ever asks anything of everyone. You’ve hear not but five words from the woman but it seems to be the type to demand or otherwise do it herself.</p>
+                <p>DO YOU <turn to="confirmWIW">CONFIRM IT</turn> OR <turn to="denyWIW">DENY IT?</turn></p>
+            </page>
+            <page id="confirmWIW">
+                <p>“What does it matter if you kill me or not?” She moves towards the desk that sits just behind her and retrieves something, but does not look at you. “You have already made that decision hundreds of times already. Whom am I but one more body to hit the floor? My life counts as no more than the guards downstairs.” She turns back to face the window now. A new, sudden, disposition about her. “We had the chance to push humanity forward from the ashes of complete and utter failure. I was prepared to do what needed to be done to make that happen, it is none of my concern that others weren’t. The fact of the matter is sometimes the uncivilized things have to go.</p>
+                <p>DO YOU <turn to="respondWIW">RESPOND</turn> OR <turn to="sayNothingWIW">SAY NOTHING</turn></p>
+            </page>
+            <page id="respondWIW">
+                <p><i>“Who are you to say who’s culture is unsophisticated?”</i></p>
+                <p>“Why I’m the one with the bigger stick.” She answers calmly. She looks at you with this false sense of wisdom behind her eyes and it pours out now in pity for you. As if you, a greasy little mercenary, could ever fathom the complexity of rearranging the social structure of a metropolitan city. “Or in this case, I guess, the one with four doctorates.” Maybe one of those doctorates is in sarcastic comments.</p>
+                <p>DO YOU RESPOND <turn to="malWIW">MALICIOUSLY</turn> OR <turn to="beneWIW">BENEVOLENTLY?</turn></p>
+            </page>
+            <page id="sayNothingWIW">
+                She throws a glance over her shoulder, as if that’s all you deserve. “We set out to progress humanity; we never said it would be a moral movement. These radicals you no doubt work for tell you that we are nothing better than tyrants, but look around you. The quality of life is improving exponentially before our eyes! People are living longer, being healthier, the global poverty rate is declining, child mortality is at an all time low, the planet has stopped heating, and for Cruise’s sake people are richer now than they have ever been. For the majority to rise a few must die. And if I must die for the cause too then so be it.”
+                <p>DO YOU RESPOND <turn to="malWIW">MALICIOUSLY</turn> OR <turn to="beneWIW">BENEVOLENTLY?</turn></p>
+            </page>
+            <page id="malWIW">
+                <p>She doesn't turn back around as you approach. You think perhaps, that is for the better. You would rather not look into someone’s eyes as you kill them. Many attribute the saying, ‘eyes are the windows to the soul,’ to a man by the name of William Shakespeare. You may have heard of him. But the saying actually came from the Hebrew bible. You do not notice the irony as you slice her throat. </p>
+                {{story.kills=story.kills+1;}}
+                {{story.killWIW=true;}}
+                <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+            </page>
+            <page id="beneWIW">
+                {{? story.Serum=="Serum"}}
+                    <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear as you pull out the small syringe of <i>forget-me-not</i> serum from where you had hidden it. Her words, <i> a fate worse than death </i> still fresh in your mind. In one foul swoop, you rip off the safety cap and very unsafely inject it into her neck. She convulses, falls to the floor, convulses some more, throws up, then breathes a deep breath and asks…</p>
+                    <p><i>Where am I?</i></p>
+                    <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                {{??}}
+                    <p> Words of <i> It doesn’t have to be like this </i> and <i> there is another way </i> spill from your lips.</p>
+                    <p>“There are many things I am willing to do for my work. Steal, lie, kill - I’ve done them all before and I would do them all again.” She raises a device in her hand and twists it open and an ear splitting sound wave reverberates throughout the room and shatters into your head. Your claim about the woman in white being hard of hearing is surely false now. The glass windows that surround the laboratory shatter inward, firing glass bullets into the room. Your eyes water from the pain of it all but you manage to keep yourself upright and look the woman dead in the eye. “And I am forth and willing to die as well.” And with no more words, the wind reaches up from the skyline below and grabs her pulling her towards the sidewalk. And with no more words, all is over. </p>
+                    <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{story.kills=story.kills+1;}}
+                    {{story.killWIW=true;}}
+                {{?}}
+            </page>
+            <page id="denyWIW">
+                {{? story.Serum2=="Taken"}}
+                    <p>“For what? A fate worse than death?” She turns around now and looks at you fully. “I know those markings, I know where you come from. Do you hope I’ll come quietly?” She steps back closer to the window. </p>
+                    DO YOU TRY TO <turn to="quellWIW">QUELL HER</turn> or <turn to="injectWIW">RUSH FORWARD</turn> (INJECT WITH SERUM)?
+                {{??}} 
+                     <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear. It’s a bloodbath. Children are crying. A fire randomly starts somewhere. People are screaming. You look down at the sword in your hands. When you look up the woman in white has become the woman in red.</p>
+                     <p>She’s also dead on the floor.</p> 
+                     <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{story.kills=story.kills+1;}}
+                    {{story.killWIW=true;}}
+                {{?}}
+            </page>
+            <page id="injectWIW">
+                {{? story.Serum=="Serum"}} 
+                        <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear as you pull out the small syringe of <i>forget-me-not</i> serum from where you had hidden it. Her words, <i> a fate worse than death </i> still fresh in your mind. In one foul swoop, you rip off the safety cap and very unsafely inject it into her neck. She convulses, falls to the floor, convulses some more, throws up, then breathes a deep breath and asks…</p>
+                        <p> <i>Where am I?</i></p>
+                        <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{??}}
+                        <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear as you pull out the small syringe of <i>forget-me-not</i> serum from where you had hidden it. Her words, <i> a fate worse than death </i> still fresh in your mind. In one foul swoop, you rip off the safety cap and very unsafely inject it into her neck. However, instead of the usual convulsions that should accompany the ‘forget-me-not’ serum blood seems to start spurting from every possible orifice. It’s a bloodbath. Children are crying. A fire randomly starts somewhere. People are screaming. You look down at the syringe in your hand and see you accidentally grabbed one of the untested serums.When you look up the woman in white has become the woman in red.</p>
+                        <p>She’s also dead on the floor.</p>
+                        {{story.kills=story.kills+1;}}
+                        {{story.killWIW=true;}}
+                        <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{?}}
+            </page>
+        <!-- Objects -->
+        <obj id="DeskWIW">
+            <action id="Examine">
+                   There are three sets of <interact with="DeskDrawersWIW">drawers</interact>. 
+            </action>
+        </obj>
+        <obj id="DeskDrawersWIW">
+            <action id="Top">
+            It seems to be locked.
+            </action>
+            <action id="Middle">
+            There is nothing in here but a pile of staples, paper-clips, unused pencils, and the will to live of a man named Kenith Youngth.
+            </action>
+            <action id="Bottom">
+            There is a <interact with="SupplyKey">black key</interact> card that sits atop a pile of mints. 
+            </action>
+        </obj>    
+        <obj id="SupplyKey" inventoryName="Black Key">
+            <action id="Take">
+             <when>!story.isInInventory('SupplyKey')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("SupplyKey"); }}
+            </action>
+            <action id="Use">
+                <with id="SupplyDoor">
+                   The door opens when you use the keycard with it. The darkness of the room swallows you whole but your flashlight provides just enough light to see the cluttered shelves that stand wall to wall. Each shelf holds a smorgasbord of technical items dating back to the last centennial. There are <interact with="sockets">PROCESSOR SOCKETS</interact>, <interact with="ramChips">RAM CHIPS</interact>, <interact with="lanPorts">LAN PORTS</interact>, and <interact with="sparkPlugs">SPARK PLUGS</interact>.
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>    
+        <obj id="SupplyDoor" inventoryName="Supply Door">
+            <action id="Use">
+                <with id="SupplyKey">
+                    The door opens when you use the keycard with it. The darkness of the room swallows you whole but your flashlight provides just enough light to see the cluttered shelves that stand wall to wall. Each shelf holds a smorgasbord of technical items dating back to the last centennial. There are <interact with="sockets">PROCESSOR SOCKETS</interact>, <interact with="ramChips">RAM CHIPS</interact>, <interact with="lanPorts">LAN PORTS</interact>, and <interact with="sparkPlugs">SPARK PLUGS</interact>.
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id="DeskNoteWIW" inventoryName="Letter 1">
+            <action id="Read">
+                <p>[A page torn from a lab report]</p>
+                <p>For reason unclear - when subjects 2A through 2D are injected with the same carbon based serum, the pulmonary artery swells to a size of 3.4 cm and makes the subject unable to pass oxygenated blood through the system. This leads to either total organ failure (78 of 155 patients) or to asphyxiation (55 of 122 patients). Depending on the method of injection, the time of swelling begins at 4.34 seconds if injected into the jugular artery or 5.89 seconds in injected into the femoral artery.  More conclusive date will be needed for shipment and launch of Minaji. </p>
+                    <p>[Scribbled down at the bottom]</p>
+                    <p>NOTE for LEV: </p>
+                    <p>Americium</p>
+                    <p>Phosphorus </p>
+                    <p>Uranium</p>
+                    <p>Tantalum</p>
+                    <p>Tellurium</p>
+                    <p>Don’t ask again.</p>
+            </action>
+            <action id="Take">
+                    <when>!story.isInInventory('DeskNoteWIW')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("DeskNoteWIW"); }}
+            </action>
+            <action id="Use">
+                <with id="vaultLock">
+                    <p>You enter in the words printed on the bottom. AmPUTaTe. This causes the smooth metal to slowly click open and regress back into the walls leaving before you a new door way which to enter. You step gingerly into the newly accessible area and see rows upon rows of needles storage and label carefully. The ones you can read are labelled, </p>
+                    <p><interact with="notSerum" id="notSerumInteraction">145</interact>
+                    <interact with="notSerum" id="notSerumInteraction">146</interact>
+                    <interact with="notSerum" id="notSerumInteraction">147</interact>
+                    <interact with="notSerum" id="notSerumInteraction">148</interact>
+                    <interact with="notSerum" id="notSerumInteraction">149</interact>
+                    <interact with="notSerum" id="notSerumInteraction">150</interact>
+                    <interact with="notSerum" id="notSerumInteraction">151</interact>
+                    <interact with="notSerum" id="notSerumInteraction">152</interact>
+                    <interact with="notSerum" id="notSerumInteraction">153</interact>
+                    <interact with="notSerum" id="notSerumInteraction">154</interact>
+                    <interact with="notSerum" id="notSerumInteraction">155</interact>
+                    <interact with="notSerum" id="notSerumInteraction">156</interact>
+                    <interact with="notSerum" id="notSerumInteraction">157</interact>
+                    <interact with="notSerum" id="notSerumInteraction">158</interact>
+                    <interact with="notSerum" id="notSerumInteraction">159</interact>
+                    <interact with="notSerum" id="notSerumInteraction">160</interact>
+                    <interact with="notSerum" id="notSerumInteraction">161</interact>
+                    <interact with="notSerum" id="notSerumInteraction">162</interact>
+                    <interact with="notSerum" id="notSerumInteraction">163</interact>
+                    <interact with="serum" id="serumInteraction">164</interact>
+                    <interact with="notSerum" id="notSerumInteraction">165</interact>
+                    <interact with="notSerum" id="notSerumInteraction">166</interact>
+                    <interact with="notSerum" id="notSerumInteraction">167</interact>
+                    <interact with="notSerum" id="notSerumInteraction">168</interact></p>
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id="ElevatorNote" inventoryName="Note 1">
+            <action id="Read">
+                <p>Fillup, </p>
+                <p>If you keep leaving the door to the cold body storage open, these doors will keep freezing up. And if these door keep freezing up I have to come up here and fix them. And if I have to come up here and fix them I risk running into that woman in white. And if I run into that woman in white I’m going to get killed. And if I get killed my wife is going to have to get a job. And if my wife has to get a job then she can’t take care of the kids. And if she can’t take care of the kids they’re gonna join a casino gang. </p>
+                <p>Don’t let my kids join a casino gang. </p>
+                <p>Just unfreeze the doors by running the heat through the boiler room AND make sure no one is in there BEFORE you do it. Justin got third degree burns last time!!! And whatever you do DO NOT SEND IT THROUGH COLD STORAGE Tyran once ruined 3 bodies and we haven’t seen him since.</p> 
+                <p>-Maintenance Dan</p>
+            </action>
+            <action id="Take">
+                    <when>!story.isInInventory('ElevatorNote')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("ElevatorNote"); }}
+            </action>
+        </obj>
+        <obj id="sockets" inventoryName="Sockets">
+            <action id="Take">
+                    <when>!story.isInInventory('sockets')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("sockets"); }}
+            </action>
+        </obj>
+        <obj id="ramChips" inventoryName="Ram Chips">
+            <action id="Take">
+                    <when>!story.isInInventory('ramChips')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("ramChips"); }}
+            </action>
+        </obj>
+        <obj id="lanPorts" inventoryName="Lan Ports">
+            <action id="Take">
+                    <when>!story.isInInventory('lanPorts')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("lanPorts"); }}
+            </action>
+        </obj>
+        <obj id="sparkPlugs" inventoryName="Spark Plug">
+            <action id="Take">
+                    <when>!story.isInInventory('sparkPlugs')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("sparkPlugs"); }}
+            </action>
+            <action id="Use">
+                <with id="powerBox">
+                    Do you want to redirect it through the <turn to="leatalOne">BOILER ROOM</turn>,<turn to="nonleathalOne"> COLD STORAGE</turn> or <turn to="HallwayWIW">WAIT</turn>. (Once you choose an option -- you can not return.)
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id='powerBox' inventoryName='Power Box'>
+            <action id="Use">
+                <with id="sparkPlugs">
+                    Do you want to redirect it through the <turn to="lethalOne">BOILER ROOM</turn>,<turn to="nonlethalOne"> COLD STORAGE</turn> or <turn to="HallwayWIW">WAIT</turn>. (Once you choose an option -- you can not return.)
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="inventoryHostWrapper">
+            <h2>Inventory</h2>
+            <div id="inventoryHost"></div>
+        </div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <div id="footer">
+        <a id="undoHost" href="#">Undo</a> &bull; <a id="saveHost" href="#">Save</a> &bull; <a id="restoreHost" href="#">Restore</a> &bull; <a id="reseteHost" href="#">Reset</a>
+    </div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource         : $('#story'),
+                domTarget         : $('#host'),
+                titleTarget       : $('#title'),
+                inventoryTarget   : $('#inventoryHost'),
+                interactionTarget : $('#interactionHost'),
+                undoTarget        : $('#undoHost'),
+                undoStageTarget   : $('#undoStageHost'),
+                saveTarget        : $('#saveHost'),
+                restoreTarget     : $('#restoreHost'),
+                resetTarget       : $('#reseteHost'),
+            });
+        });
+
+    </script>
+</body>
+</html>

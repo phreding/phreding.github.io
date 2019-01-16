@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DedalusWeb Story</title>
+
+    <script src="http://olado.github.io/doT/doT.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dedalus.js"></script>
+    <script src="dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+ </head>
+<body>
+    <div id="story">
+
+        <initscript>
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+        <!-- Novel -->
+        <title>This is a Place Holder</title>
+        <page id="intro">
+            The year is 2175. 
+        </page>
+        <page id="levelone" class="first">
+            <p>The Stratosphere Casino was the only triple A casino not located on the strip, however by not being located on the strip, it is the only casino within the actual city limits of Las Vegas. Notice the use to the past tense. During the fire of Las Vegas, the casino portion of what made up the Stratosphere Casino and Tower was transformed into what many refer to as a pile of hot nothing. The valley of ash formally known as the Stratosphere Casino sits under a complex of shopping centers called Mallvetica, as most of the funds came from the great-great-great-great granddaughter of Max Miedinger, the creator of the sweatpant font. </p>
+            <p>The 1,129 foot tall tower however, was unfazed by the burning inferno that raged beneath it on that July night because after all <i> rocket fuel can’t burn steel beams. </i> </p>
+            <p>Therefore the reinforced glass observatory that sits atop the tower managed to struggle through a fire, corporations, capitalistic greed and remain standing despite all gentrification odds. Even though it doesn't tower over the city anymore, it serves as a relic (and a bit of a reminder) of good times and years passed.</p>
+            <p>Which is why it was given to the only person who could smear nostalgia in the dust.</p>
+            <p>The woman in white was a legend; both because she was an academic genius and because many believed she didn’t exists. In a society where most are connected through a series of glass filament tubes shooting electrons that contain information, it was much easier to say that people who were very smarter than you were simply created by a group of people slightly smarter than you. This made people feel better about their own failed life goals and expectations. The woman in white was however, very really and therefore, a very large threat. </p>
+            <p> Tabitha hadn’t given you much information about the woman in white, which could not be more evident by the fact you are referring to her as <i>the woman in white </i>. The name came from the entirely white attire she donned whenever she pried herself from the laboratory fashioned out of the observatory that now stood before you. From the white lab coat, to the high Victorian collar, right down to the velcro boots only someone with six doctorates could pull off. </p>
+            <p> You are able to enter into the the base of the tower and ascend in the elevator with little difficulty. With the election a day closer, the higher citizens of the state have been flinging themselves into campaigns and the city has been quieter in person and exploding on the internet. The elevator drops you at the bottom of the observation deck and you step out into the <turn to="receptionarea">reception area</turn> to look for a way to get to the top floor.</p>
+        </page>  
+        <page id="receptionarea">
+                <p>Reception desks. They have plagued the social anxious for decades. Not even the year 2175, with its high tech cakes and removal of library books, can stop the anxiety that arises in the pit of the stomachs of those who dread talking to other members of society.  For better or for worse, you haven’t decided, the lobby of Stratosphere Laboratories is empty. Completely, totally, and one hundred percent devoid of life. It’s a lifeless place in itself; after all, there are dead bodies sitting.. mmmmmm… twenty feet away from you fermenting in their own rotting atmosphere. </p>
+                <p>The <interactwith="deskwiw">desk</interact> is organized in a sterile fashion that complements the pasty walls and white floor in a way no interior decoration ever could. The only thing that seems to be out of place is a single piece of <interactwith="desknotewiw>paper</interact> that has the seams of crinkles running throughout it even though someone has obviously tried to flatten it out. Past the reception desk is a <turn to="hallwaywiw">hallway</turn> that seems to spread only deeper into the building. </p>
+        </page>        
+        <page id="hallwaywiw">
+            The hallway is lit with fluorescent tubes called LED light bulbs. They were accidently invented in 1962 after some man just wanted to invent a laser. The man who owned incandescent light bulbs, aka the lightbulbs that were about to be replaced, felt a little peeved by this new and improved product and called it “the magic one”. Back in those days everything that wasn’t accepted by large corporations was damned and called ‘black magic’. Now, of course, corporations just steal their ideas and profit off of them. Underneath the black magic lightbulbs is a plain white DOOR that has the letter S-U-P-P-L-Y written across it. Therefore, you concur that it must be a supply closet. Directly across from the supply closet is a non descript <show paragraph="BoilerRoom">door</paragraph>; all the doors are non descript as the woman in white doesn’t believe in signs, but this one is particularly bland. Further down the hallway is a sharp right <turn to ="BodyHolding">turn</turn> and from it wafts the terrible acidic stench of acids and flesh. Just before the turn seems to be a pair of pried open pair of silver <turn to="ElevatorOne">doors</turn>. The <turn to="reception">lobby</turn> lurks behind you. 
+        </page>
+        <paragraph id="BoilerRoom">
+            <p>You approach door. It stares back at you in all of it’s non identifiable glory. You reach out to touch the door handle and are about to open the door when you hear a voice from within. </p>
+            <p>“Babe, I didn’t know her. It was just a snapchat.” </p>
+            <p>A snort of laughter follows.</p>
+            <p>“Cameron do not change the group chat name to ‘David’s Fucked’. Just fix the boiler okay!”</p> 
+            <p>You decide for the best not to open the door. </p>
+        </paragraph>
+        <page id="BodyHolding>
+            You follow the stench of formaldehyde and decaying organic material, leaving behind the HALLWAY,  and enter into a long corridor room lined with black bags. Casements line the great corridor that stretched from only millimeters off the floor to unreachable heights and the thought of how those can even be used passes through your head. There is a large black sign painted on the floor in what seems to be futura. Futura is a font that used to be used by some people called the Nazi’s and was quite unpopular until another group of people, called astronauts, started to use it when they wanted some cool looking moon rocks. Both Nazi’s and astronauts hated the Russians. The large black signs says AUTOPSY and points directly ahead of you. 
+        </page>
+        <paragraph id="Autopsy">
+            <p>There are just straight up naked, dead, and dissected bodies. You aren’t quite sure what you expected. They sit around the circular subsection like a disturbed sort of meeting. </p>
+            <p><i>So Jyther, how are you today?</i></p>
+            <p><i>You know, Hythem, I’m feeling pretty dead today.</i></p>
+            <p>Or whatever the dead talk about these days. </p>
+            <p>Shoved back, out of the way to make room for the dead, is a small doorway that reads <show paragraph="TempControlRoom">TEMP CONTROL</show> on a hastily made sign. </p>
+        </paragraph>
+        <paragrpah id="TempControlRoom">
+            You cross the room, minding the precarious assembly of those passed on, and enter through the doorway. Passed the doorway is only a small room, matched in interior decor to the last. CyberTek computers are mounted on the south east wall, each displaying the national emblem of the Greater Plateau area. It spins and spins and spins around seeming to want your attention in the midst of a geopolitical crisis. Next to the congregation of computers is a POWER BOX that has seen better days. It seems to run on old tech - spark plugs. Those haven’t been used since the late 2060’s after Hannah Coliope created a nuclear powered battery shell that could run continuously for 567 years.  One spark plug seems to be missing. 
+        </paragraph>
+        <page id="ElevatorOne"
+        </page>
+        
+        <!-- Objects -->
+        <obj id="deskwiw">
+            <action id="Examine">
+                   There are three sets of <interact with="deskDrawersWiw">drawers</interact>. 
+            </action>
+        </obj>
+        <obj id="deskDrawersWiw">
+            <action id="Top">
+            It seems to be locked.
+            </action>
+            <action id="Middle">
+            There is nothing in here but a pile of staples, paper-clips, unused pencils, and the will to live of a man named Kenith Youngth.
+            </action>
+            <action id="Bottom">
+            There is a <interact with="SupplyKey">black key</interact> card that sits atop a pile of mints. 
+            </action>
+        <obj id="SupplyKey" inventoryName="Black Key">
+            <action id="Take">
+             <when>!story.isInInventory('SupplyKey')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("SupplyKey"); }}
+            </action>
+        <obj id="desknotewiw" inventoryName="Letter 1">
+            <action id="Read">
+                <p>[A page torn from a lab report]</p>
+                <p>For reason unclear - when subjects 2A through 2D are injected with the same carbon based serum, the pulmonary artery swells to a size of 3.4 cm and makes the subject unable to pass oxygenated blood through the system. This leads to either total organ failure (78 of 155 patients) or to affixation (55 of 122 patients). Depending on the method of injection, the time of swelling begins at 4.34 seconds if injected into the jugular artery or 5.89 seconds in injected into the femoral artery.  More conclusive date will be needed for shipment and launch of Minaji. </p>
+                    <p>[Scribbled down at the bottom]</p>
+                    <p>NOTE for LEV: </p>
+                    <p>Americium</p>
+                    <p>Phosphorus </p>
+                    <p>Uranium</p>
+                    <p>Tantalum</p>
+                    <p>Tellurium</p>
+                    <p>Don’t ask again.</p>
+            </action>
+            <action id="Take">
+                    <when>!story.isInInventory('deskletterwiw')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("deskletterwiw"); }}
+            </action>
+        </obj>
+        <obj id="ElevatorNote" inventoryName="Note 1">
+            <action id="Read">
+                <p>Fillup, </p>
+                <p>If you keep leaving the door to the cold body storage open, these doors will keep freezing up. And if these door keep freezing up I have to come up here and fix them. And if I have to come up here and fix them I risk running into that woman in white. And if I run into that woman in white I’m going to get killed. And if I get killed my wife is going to have to get a job. And if my wife has to get a job then she can’t take care of the kids. And if she can’t take care of the kids they’re gonna join a casino gang. </p>
+                <p>Don’t let my kids join a casino gang. </p>
+                <p>Just unfreeze the doors by running the heat through the boiler room AND make sure no one is in there BEFORE you do it. Justin got third degree burns last time!!! And whatever you do DO NOT SEND IT THROUGH COLD STORAGE Tyran once ruined 3 bodies and we haven’t seen him since.</p> 
+                <p>-Maintenance Dan</p>
+            </action>
+            <action id="Take">
+                    <when>!story.isInInventory('ElevatorNote')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("ElevatorNote"); }}
+            </action>
+        </obj>
+            
+        <!-- Characters -->
+            <character id="bathtublady">
+                    <action id= "Who Are You">
+                       “Oh!” The woman says pulling he hands out of the tub. They are stained with the dark substance but she wipes them off on here even darker skirt and move towards you. “ I see you're finally up! That’s such good news!” She grabs your hand and shakes it rigorously. “I’m Zipporah. We’ve been anxiously awaiting your awakening.’
+                    </action>
+                    <action id= "Where am I?">
+                       “Oh goodness! I am so ever terribly sorry.” The woman says, “I bet you are just full of questions. Well you see--” She stops suddenly and the pleasant maternal smile falls from her face. “You know what? You better have Tabitha explain. She’s in the offices upstairs when you’re ready. Here take this map.” Then without another word she goes back to her bathtub and silently stirs it. 
+                        {{story.bathtublady = true;}}
+                    </action> 
+            </character>
+        
+
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="inventoryHostWrapper">
+            <h2>Inventory</h2>
+            <div id="inventoryHost"></div>
+        </div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <div id="footer">
+        <a id="undoHost" href="#">Undo</a> &bull; <a id="saveHost" href="#">Save</a> &bull; <a id="restoreHost" href="#">Restore</a> &bull; <a id="reseteHost" href="#">Reset</a>
+    </div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource         : $('#story'),
+                domTarget         : $('#host'),
+                titleTarget       : $('#title'),
+                inventoryTarget   : $('#inventoryHost'),
+                interactionTarget : $('#interactionHost'),
+                undoTarget        : $('#undoHost'),
+                undoStageTarget   : $('#undoStageHost'),
+                saveTarget        : $('#saveHost'),
+                restoreTarget     : $('#restoreHost'),
+                resetTarget       : $('#reseteHost'),
+            });
+        });
+
+    </script>
+</body>
+</html>

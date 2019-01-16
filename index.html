@@ -1,0 +1,1275 @@
+<Module>
+<ModulePrefs title="Custom Gadget"/>
+<Content type="html">
+<![CDATA[
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DedalusWeb Story</title>
+
+    <script src="http://olado.github.io/doT/doT.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dedalus.js"></script>
+    <script src="dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+ </head>
+<body>
+    <div id="story">
+
+        <initscript>
+        {{story.bathublady=false;}}
+        {{story.areDoorsOpen=false;}}
+        {{story.talkTabitha=true;}}
+        {{story.offer="open";}}
+        {{story.havenottalkedtobartender=true;}}
+        {{story.havenottalkedtoJeff=true;}}
+        {{story.stripper="non-visited";}}
+        {{story.havecodes=false;}}
+        {{story.visitdesk=false;}}
+        {{story.slots=false;}}
+        {{story.havekey==false;}}
+        {{story.kills=0;}}
+        {{story.doorStatus="broken";}}
+        {{story.Serum="notserum";}}
+        {{story.Serum2="notTaken";}}
+        {{story.killWIW=false;}}
+        {{story.roomsvisited=0;}}
+        {{story.killNickolev="false";}}
+        {{story.killWIW="false";}}
+        {{story.WIWDead==false;}}
+        {{story.nickDead==false;}}
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+         <!-- Novel -->
+        <title>This is an Interregnum</title>
+        <page id="intro">
+            The year is 2175. The world is not the same place it is currently. A strangeness has taken oven the United States of America, to no ones surprise.
+        </page>
+        <page id="wakeup" class="first">
+            <p>The first thing you notice is that it is cold. You open yours eyes slowly and as the light streams into your retinas it begins a fire in your brain. You manage to pull yourself up slowly off of the cot you were laying on. You swing your feet over the edge and set your bare feet down onto the floor. Your feet are greeted by the soft touch of dirt. It sporadically covers the intricate tiling of the floor ingraining itself into the soft green tiles. Plants of every shape and size surround the perimeter of the room. They crawl up towards the walls and block out the windows casting their organic shadows all around.</p> 
+            <p>You stand up slowly still not sure of where you are or even how you got there. As you try to remember anything past waking up two minutes ago a shock is sent through the base of your spine and an oozing warmth overcomes you.</p> 
+            <p>There is only one door in the room. As you usher yourself through it, carefully of course you aren’t sure if anyone could be posed to attack, you come into a <show paragraph="churchlh">hallway</show> that stretches out in front of you. It is darkly lit and you can not see the end of it. To your right is a <turn to="churchroom">doorway.</turn> The door lies on the ground, broken and battered. In its place hangs soft blue silk draped over the door frame and obscuring the room from your view. Lastly, to your left is a rickety iron <turn to="churchstairs">staircase</turn> the spins into the ceiling and disappears beneath the floorboards of the upper floor.</p>   
+            <paragraph id="churchlh">
+                You carefully traverse the darken landscape taking one step at a time. Doors paper the walls and as you keep walking you notice them changing . Where you were sure the smallest was stands a large oak door. You blink for a moment and the hallway you have attempted to understand has rearranged itself once again. Your pace speeds up as you whisk towards what you hope is the end. You enter a large room filled with tables. An empty kitchen stands to your right. There is no one in slight. There is nothing interesting about this room. All the food is puréed anchovies. No one likes anchovies.
+            </paragraph>
+        </page>  
+        <page id="churchroom">
+                A <interact with="bathtublady">woman</interact> stands over an old wooden bathtub. There seems to be a strange smell emanating from it. The water is a dark and murky blue color and often you see bubbles pop to the surface. The floor is cracked like a lighting bolt and from the crevice sprouts tiny sky blue saplings. The <turn to ="wakeup">doorway</turn> stands behind you  
+        </page>        
+            <!--Upstairs--> 
+        <page id="churchstairs">
+                <p>You carefully ascend the stairs. The <turn to="wakeup">basement</turn> is left behind you. The whines of the steel swallow the sounds of your foot steps. As you emerge, light pours onto you warming your skin. The sun is a bright sword ever piercing into your soft retinas. It is liquid fire as the stained glass windows colour it red, orange, and yellow. Through the depicted pictures of wildflowers and mountains you get a distorted glance at the world outside. There is nothing to see.</p> 
+                <p>Instead you turn your attention to the room you find yourself in currently. Fat comfortable sofas adorn the sides of the small chamber. They are untouched by the Ivy that crawls up the sides of the walls and bores through the ceiling. There is the soft sound of running water to your left as a trickling rivers sweeps through the industrialized floor and out into the blank expanse outside. Beyond the river,bleach stained bark of two great sycamore trees intertwine together to form an <turn to="chapel">arch</turn> saluting over the destroyed maroon carpet that protrudes from the floorboards. Dark blue fabric is interwoven between the melded wood and blows slightly in the breeze that drifts in from the open windows behind you.</p> 
+                <p>A <interact with="churchlady">woman </interact> stands in the corner. Her frame is hunched over the burnt remains of a flower bed. Words shoot out of her mouth as she rocks back and forth over the ashes. A mass of sheer blue fabric is wrapped around her body. It covers everything from her neck down to her feet but you can see her knees digging into the crispy flowers as she carefully rakes her hands through the ash.</p> 
+                <p>Past the woman is a <turn to="antiroom">small door</turn>. It’s tucked into the corner and if you weren’t attempting to gauge your surroundings your eyes would have certainly swept over it and focused on something more important. It’s be far the most metropolitan thing in the room even though it looks as if someone has attempted to paint a mountain landscape on the steel surface. The paint now peels back and reveals a sad, apocalyptic picture.</p> 
+                <p>However standing directly in front of you is a grand set of <turn to="mainoffice">double doors</turn> adorned with sea glass that depict a woman standing in the center of a massive crowd.</p> 
+        </page>
+        <page id="antiroom">
+                You sneak into the door. The light from the <turn to="churchstairs">main room</turn> shines in softly. The room is extremely small and smells like burnt flowers. On several brass hooks hang <interact with="bluerobes">dark blue robes</interact> and white shawls. There are a series of expensive looking candle holders as well as a basket of hand carved crosses. 
+        </page>
+        <page id="chapel">
+            The room is large. <turn to="churchstairs">The door stands behind you.</turn> Trees rise up from broken floor boards and set themselves into a circular fashion around a fountain that sinks into the centre of the floor. The ceiling raises up seemingly forever and puncture the ceiling letting bullets of sunlight drift down to meet you. You see a dark red bird enter through a particularly large hole and take nest in a small sapling. Women are scattered around. Their faces are covered with white shawls and they mumble to themselves as they wash their hands in smaller bowls of water. Beyond them is the largest tree you have ever seen. Granted you haven't seen many trees since you woke up twenty minutes ago but it has to be pretty large because a
+            {{? story.areDoorsOpen}}
+                <turn to="openingChapterOne">set of doors</turn>
+            {{??}}
+                set of doors
+            {{?}} 
+            , carved from wood form a different tree you notice, have been set in a hole in the centre of the trunk. You take a step forward and step on a <interact with="churchletter2">piece of paper</interact>.
+        </page>
+        <page id="mainoffice">
+            {{? story.bathtublady}} You take a hold of the door handle and push open the door. It leads to a short hallway, no more than ten feet with two doors on opposite sides of the hall. The one on the
+            {{? story.areDoorsOpen}}
+                 left
+            {{??}}
+                <turn to="leftoffice">left</turn>
+            {{?}} 
+                is a deep redwood that is covered in deep lacerations. The one on your <turn to="rightoffice">right</turn> is a glassy white material the shines with an almost eerie glow about it. 
+                Of course the third door, behind you, allows you to <turn to="churchstairs">go back.</turn> 
+                {{??}} Your try the handle but the door doesn't move. You look around, seeing if there is someone who you can talk to for more information. You decide to<turn to="churchstairs"> go back</turn>.
+                {{?}}
+        </page>
+        <page id="rightoffice">
+            You decide to go to the right first. You walk past the eerie glow of the doorway and a cold chill falls over your body. The room you enter is darkened, almost with a sepia filter - like if there was a fire burning nearby. The only furniture in the room is a <interact with="rusteddesk">rusted metal desk</interact> and a bent <interact with="floorlamp">floor lamp.</interact> The <turn to="mainoffice">glowing archway looms behind you.</turn> 
+        </page>
+        <page id="leftoffice">
+            You push open the heavy door and enter into a forest. Plants cover every inch of the room except for a small channel of bare floor that leads to <interact with="Tabitha1">a woman</interact> hunched over a great wodden desk. She doesn't notice you, so you have the option to<turn to="mainoffice"> flee.</interact>
+        </page>
+        </page>
+        <page id="windowmono">
+             <p>What you gaze out upon can’t even be called a city. The beautiful line of flickering metropolis buildings that stand off on the horizon could be called a city but the small area is surrounded by nothing but garbage. With gross, contagious, veins pulsating poverty through the slums that lay decaying on the edge of the desert sand it looks more like a decaying corpse than a city of wealth and prosperity. The strip of Neo-Vegas stands alone; it’s wealth is dwarfed by the pestilence that winds around it like a cobra, waiting to choke its life out. From the distance of the church, safely separated by miles of sand, you can’t see anything else except fro the stark contrast of buildings that shoot up out of the ground, and then the ones that don’t. Tabitha lays her hands on your shoulder as if to force your eyes upon the destruction.</p> 
+             <p>“Ten Years. This is what can happen in Ten Years with a single death and a lot of bad leadership. Well, more like with no leadership at all.” Tabitha corrects herself. “There isn’t anything more contagious than panic when the Chairman of your city turns up randomly dead one day and there is no one you can point fingers at. There isn’t anything that falls apart faster than the systems of government.” You look away from the scene before you and over at Tabitha. Her wide eyes seem to be memorizing every detail of the city before her with meticulous care.</p> 
+             <p>”Now we have a chance to make things right. To undo what we did. Some radicals want to get things moving again by unlocking the gridlocked council and get someone -- anyone, into the Chairman position. But, in order to that they have to dismantle the loyalist party that has stalled the council ever since the fall of the Chairman and want her useless brother to be installed to the position. Damien, said useless brother, is seeing a joint session of Council tomorrow to review his eligibility. The loyalists are pulling all the strings they have to get some of Neo-Vegas’ best and brightest to vie for his case.” Tabitha turns from her destroyed city and meanders back to her desk where she pulls an envelope from a desk drawer. She turns and hands it to you.</p>
+             <p> “Inside this envelope contains all of the people who are detrimental to the election of Damien Moros. It’s paper. Virtually untraceable- unless of course you lose it. We need you to make sure they aren’t there. 
+             That's the only way to restore Neo-Vegas back to even the shell of what to was. I’m not claiming that the city used to be a holy and but, it had to be better than this.” She gestures to the desolation rotting outside of the window. 
+             <p>“I’m also not telling you to join us. <turn to="gameover">You can leave,</turn> but just know that there might not be a city to return to for much longer. So.” Tabitha asks. <show paragraph="Leave">"Are you with us?"</show></p>
+        </page>
+        <page id="gameover">
+            <p>You leave the institute. You discover the secret ending where YOU the player are the real villain because SOMEBODY didn't want to spend any more time playing this game that took almost three months to program -- from hand. That's fine. I just hope you enjoy this game over page.</p>
+            <p>Because that's what it is.</p>
+            <p>You Prick.</p>
+            <p>GAME OVER</p>
+        </page>
+        <!-- Objects -->
+        <obj id="bluerobes">
+            <action id="Examine">
+                    They are soft to touch. A cotton polyester blend, well crafted. You learn forward and smell the faint scent of lavender. Inside the pocket is a <interact with="churchletter1">note</interact>.
+            </action>
+        </obj>
+            <obj id="churchletter1" inventoryName="Letter 1">
+                <action id="Read">
+                    <p>Daughter Euodia,</p>
+                    <p>I am sorry for my absence from the church these past weeks. Tabitha has sent me to talk to the Brothers of the Isles and the Daughters of Job. They're all just as fearful as we are about the new rising that it taking place in downtown Neo-Vegas this month. With the ascension of the new chairmen everyone of the Abrahamic religions is more on edge than ever. In my meeting with the Daughters of Job they spoke of their connections with the Abu Lahab and their ranks have been dropping steadily for months now. All craving the ‘scientific release’ that Scientology will give them. I remember the stories Daughter Abel would tell us -- the ones about Abrahamic religions being powerful enough to control the government. What a sweet thought! Now we live by these rules,</p>
+                    <p>Man is an immortal spiritual being.</p>
+                    <p>His experience extends well beyond a single lifetime.</p>
+                    <p>His capabilities are unlimited, even if not presently realized.</p>
+                    <p>How true those words are and how much I hate them for that truth. If I have learned anything from this life Euodia, is that man is a sick monster to those weaker than him. I myself have seen the things happening in the so called ‘safe houses’ on the strip. They are no more than the casinos that were gutted all those years ago. I can not wait to return to the safety of The Refuge and to your arms.</p>
+                    <p>Your Dearest,</p>
+                    <p>Daughter Syntyche</p>
+                </action>
+                <action id="Take">
+                    <when>!story.isInInventory('churchletter1')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("churchletter1"); }}
+                </action>
+            </obj>
+        <obj id="churchletter2" inventoryName="Letter 2">
+            <action id="Read">
+                <p>[Except from a larger work on Neo-Vegas Religions]</p>
+                 <p>The Church for the Children of Edith (CCE) is one of the newest factions to join the several Abrahamic practices since the major religions took a split in 2078 after the sudden rise of The Church of Scientology. The organisation was originally a branch of the Daughters of Job, but when Christelle Branwell became Honored Queen in 2103 she issued an armistice against the coal tycoon, Tyrell Veritch, and his company CONSOL Energy. A series of defectors formed an environmentalist movement dedicated to raise awareness of humanity's fragile balance with the Earth. One member was future CCE founder, Yutheria Retwell. </p> 
+                 <p>The organizations scripture, “Dust to Dust” was in direct disagreement with Scientology’s beliefs of human immortality. The resisters fled to the city-state of Neo-Vegas where Yutheria Retwell established the Church for the Children of Edith as an institute for rehabilitating the Earth. The name came from Lot’s Wife who turned to salt after glancing back at the burning city of Sodom, according to current Eldest, Jones Mureel, it “...is a symbol that we are made from this Earth and to the Earth we shall return.”</p>
+                <p> Their doctrine can be found at ClickLink 213.</p>
+            </action>
+            <action id="Take">
+            <when>!story.isInInventory('churchletter2')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("churchletter2"); }}
+            </action>
+        </obj>        
+        <obj id="rusteddesk">
+            <action id="Examine">
+                You run your finger across the top of the desk. It is covered with an oily black substance that burns your fingers. You try to wipe if off onto your clothes only to find that it stains your fingers.
+            </action>    
+        </obj>
+        <obj id="floorlamp">
+            <action id="Examine">
+                You flick on the lamp. It slowly comes to life and puffs out light into the room. You can now see that a small chest of <interact with="smalldrawers">drawers</interact> sits in the back corner of the room
+            </action>
+       </obj>
+        <obj id="smalldrawers">
+            <action id="Examine">
+                You pull open the top drawer. It contains a single leaflet entitled, 'The Dangers of Classic Literature'. You do not bother to read it. The second drawer contains twenty four thermal charged batteries. You have no need for them so you shut the drawer quietly. The last drawer holds a <interact with="churchletter3"> folded up piece of paper.</interact>
+            </action>
+        </obj>
+        <obj id="churchletter3" inventoryName="Letter 3">
+            <action id="Unfold">
+                <p>[A torn page from a worship hymnal]</p>
+                <p>Remember these phrases Daughter Easter.“We came from this Earth and to the Earth we will return.” Let those words guide your actions.</p>
+                <p>In the sweat of thy face shalt thou eat bread, till thou return unto the ground; for out of it wast thou taken: for dust thou art, and unto dust shalt thou return. -- Gen 3:19</p>
+                <p>Now that I have been so bold as to speak to the Lord, though I am nothing but dust and ashes, -- Gen 18:27</p>
+                <p>For what happens to the children of man and what happens to the beasts is the same; as one dies, so dies the other. They all have the same breath, and man has no advantage over the beasts, for all is vanity.  All go to one place. All are from the dust, and to dust all return” but the difference is that “God will judge the righteous and the wicked, for there is a time for every matter and for every work” -- Ecclesiastes 3:19-20</p>
+                <p>Therefore I retract, And I repent in dust and ashes.”--Job 42:6</p>
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('churchletter3')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("churchletter3");}}
+            </action>
+         </obj>     
+        <!-- Characters -->
+            <character id="bathtublady">
+                    <action id= "Who Are You">
+                       “Oh!” The woman says pulling he hands out of the tub. They are stained with the dark substance but she wipes them off on here even darker skirt and move towards you. “ I see you're finally up! That’s such good news!” She grabs your hand and shakes it rigorously. “I’m Zipporah. We’ve been anxiously awaiting your awakening."
+                    </action>
+                    <action id= "Where am I?">
+                       “Oh goodness! I am so ever terribly sorry.” The woman says, “I bet you are just full of questions. Well you see--” She stops suddenly and the pleasant maternal smile falls from her face. “You know what? You better have Tabitha explain. She’s in the offices upstairs when you’re ready. Here take this map.” Then without another word she goes back to her bathtub and silently stirs it. 
+                        {{story.bathtublady = true;}}
+                    </action> 
+            </character>
+            <character id="churchlady">
+                <action id="Interrupt her prayer.">
+                    You walk over to her slowly. You can see that her hands are stained with a deep black oil. It is the same substance that is smeared across her eyes creating a black bar from temple to temple. Her eyes dart up to meet you.“You shouldn’t be so loud daughter. Your footsteps keeps life in the ground. Should you go into the chapel,” she pauses and taps the shell of her ear, “remember that Joanna hears all in God’s Earth.” She continues to sift through her destroyed flower bed. 
+                </action>
+            </character> 
+            <character id="Tabitha1">
+                <action id="Make yourself known">
+                    <p>You an unsure what how to disturb the woman from her work. You decide to just awkwardly walk forward until you are looming over her curled form. This makes you feel very awkward so you cough lightly. The woman doesn't move. You cough again.</p>
+                    <p>"Please stop coughing. You'll get my plants sick. They aren't used to foreign bacteria." She says every single syllable of her words laced with an uncaring attitude. The silence stretches on only permeated by the soft friction of her pen against a piece of paper. </p>
+                    <p>“I bet there are a lot of questions you want to ask me.” The woman says still not looking up. You don’t answer her question just stand there, lips closed tight. She continues anyway, “Waking up in a place with no memory to speak of, no one trying to promise you you're safe.” Setting her pen down the woman finally turns her face up to meet yours. Her face, like the entire building, is smeared with dirt and the telltale signs of black smeared across her eyes mark her as a member of the church. “Creates a lot of question.” She says it factually without any doubt in her voice. “But the fact is I won’t be able to answer any of them. You are as much of a mystery to me as you are to yourself.” The sigh that comes out of her mouth seems to exhaust even you.</p>
+                    <p>“Here is what I know. You have an incredible set of skills that could be useful in restoring order to Neo-Vegas. One that we could really use.”</p>
+                    <p><interact with="Tabitha2">You Respond</interact></p>
+                </action>
+            </character>
+            <paragraph id="Leave">
+                    "You are now part of something bigger than yourself. Go see Atarah. She's outside and will take you into Neo-Vegas. Exit through the chapel." Tabitha returns to her desk. You turn to leave, "Don't forget this." Tabitha hands you the envelope of names. "Make sure you burn each profile when you complete the mission. Best of luck." You <turn to= "mainoffice">exit</turn>.
+                    {{ story.areDoorsOpen = true; }}
+                    {{ story.talkTabitha = false; }}
+            </paragraph>
+            <character id="Tabitha2">
+                <action id="What skill set?">
+                    "We found you after you had rendered thirteen of the Bellagio elite guards unconscious in the Accra District." She pauses. "I don't think you even broke a sweat." Her chair creaks as she leans back and she gives you a once over, eyes scanning top to bottom. "You then proceeded to walk into the crowd and disappear. Daughter Eve found you unconscious in a dumpster behind a bar on Promenade Ave."  
+                </action>
+                <action id="I don't even know your name.">
+                    <p>"And I don’t know yours. That doesn’t stop me from offering you a job. Now does it?” She extends a hand nonetheless and says, “Tabitha Gituku. Current director of the Neo-Vegas division of The Church of the Children of Edith, if that makes any difference on your decision.” You shake her hand and some of the dirt come off onto your skin. This bothers you for some reason. “So. Would you like to be apart of a revolution?”</p>
+                    <p>You remain silent.</p>
+                    <p>“Come. Look.” Tabitha says coming out from behind her desk.  She walks over and rips aside a pair of rotting brown curtains. Light shoots into the room from the outside world from the first un stained glass window you’ve seen in your time here - wherever that is. “This might encourage your...view” She says jerking her head. “It isn’t going anywhere.” You stand up cautiously and walk over to <turn to="windowmono">the light.</turn></p>
+                </action>
+            </character>
+ <!-- CHAPTER ONE -->
+        <page id="openingChapterOne">
+            <p>You find yourself standing in front of a building, but building is the wrong word to describe the figure that towers before you. It is a monument of power, built on the ashes of an ancient metropolitan city. The Cosmopolitan Casino, which stretches up one hundred and four floors, has the capacity to hold close to twenty four thousand people. People around you flock to the giant black block of a building like pilgrims used to flock to Mecca. You recall the layout of the building, as told to you by Tabatha quickly as she thrust a sword into your hand. It has six pools including a daytime pool, a nighttime pool, and a relaxation pool. There is an art gallery on the fifty second floor currently featuring video screenings of classical performance artist Marina Abramovic. The lower floors contain signature attractions such as Marquee Nightclub & Dayclub. Both were part of the original Cosmopolitan Casino that was demolished in 2150. There wasn’t much there to demolish in the first place because everything was mostly burned down but that didn’t stop the contractors from rolling in and making sure that the rest of the buildings went to rubble. No stone left behind, or something like that. </p>
+            <p>Despite all the amenities that the Cosmopolitan has to offer, it is most famous for selling its customers something that can’t be bought on the shelves of the Save-n-Shop that has taken over every street corner. The Cosmopolitan has managed to mass product the sale of lust. It was quite easy to do once Naomi Hall was able to liquefy hormones into injectable capsules. EM-O-TION was now one of the leading synthetic companies with stock up over 3 points in the last week alone.</p> 
+            <p>But you aren’t hear for Naomi Hall and her synthetic empire. You are here for the man that lives on the top floor of this edifice. Nickolev Zakharov is the son of one of the founding members of Neo Vegas. When The Great Fire of Las Vegas destroyed 100 square miles of downtown Las Vegas Nickolev’s father Yakoev, was the main architect and technology expert to design the new strip for the city of Las Vegas. All of the pulsating electric lights, from the Margent Corp Building and the thousands of men handling the finances for Great Basin bioregion right down to the Neo-Vegas Public library and the thousands of books that reside within its glass frame came from Yakoev’s mind.</p>  
+            <p>You only know the facts of your mission target. Nickolev went studied at the Moscow Institute of Physics and Technology. He returned only when his father passed away and now he rules over an empire built on the image of societal beauty. He is the main benefactor of the faction going up against the man you need to be elected. But the man inside of the all black suit is a mystery to everyone else as he is to you -- someone who first heard his name four hours ago. </p>
+            <p>Even though it is a cloudless night, you can just barely see the electric blue kool-aid lights from the private terraces that signifies elite presence at the <turn to="outerAtrium">cosmopolitan.</turn> </p>
+        </page>
+		<page id="outerAtrium">
+			<p>You enter into the crescent par-thru of the Cosmopolitan's outer atrium. The solar roadways have been tinted black to match the façade of the building. Par-transports pull up, their sleek white exteriors hum softly as the richest citizens in step into the soft blue glow of the <turn to="InteriorA">interior</turn>.</p>
+			<p>You look around a little more glancing further out, past the Cosmo grounds and into the busy street of the Neo-Vegas strip. Pars- transports stream past, each following their specific route, gracefully interweaving throughout each other. Above them the endless black sky is a plain backdrop to the fluorescent lights screaming to be read. </p>
+			<p><i>Dover Insurance Covers Cross Borders!</i></p>
+			<p><i>Unlock your full potential -- Join Scientology Today!</i></p>
+			<p><i>McDonald's Little Triple Big Wrap is BACK.</i></p>
+			<p>Some things last the test of time, you guess.</p>
+			<p>Behind you you stands an intricate looking <turn to="fountain">fountain.</turn> It must have been an Old-Vegas relic saved from the Great Fire by somebody on the hotel staff. The marble structure almost radiates Statehood times with it’s smooth white curves and small cherubs adorning the obelisk that slowly pours out actual water. Opposite the crowded street you get a glimpse of an Oxidizer. It has been custom fitted to match the aesthetic of the building but the tell tale signs of oxygen junkies surrounding it give away it’s purpose. An invention by Great Basin native, Norman Beller no doubt. His inventions have taken the region by storm for replacing natural processes. Speaking of natural processes, you notice a very small sign tucked into the back left hand corner of the par-thru that reads, <turn to="garden">Memorial Gardens.</turn></p>
+		</page>
+		<page id="fountain">
+			<p>You take a seat on the smooth surface of the fountain and it immediately sends coldness up your spine that is soothing against the dry hot air.  You gaze are the <turn to="outerAtrium">outer atrium.</turn> Why not enjoy the institute you plan to dismantle? It’s really one of the finer parts of being a mercenary, you know, you get to see so many different sides of things! The before, the during, the inevitable collapse and struggle for power. Simple things. A <interact with="fountainCouple">couple</interact> sits together whispering fast and angrily to each other disrupting your thoughts.</p> 
+		</page>
+		<page id="garden">
+			<p>Silence-Dispensers must surround the garden because when you enter all traffic noise and constant chatter from <turn to="outerAtrium">behind you</turn> halts. You can no longer see the street from here as you walk deeper into the garden. The turf under you is soft, a softness that can only be produced by Fabric Herb™. Another invention to lower the dependency on the environment produced by Norman Beller.  There is a semi circle of uncomfortable looking glass benches that surround a <interact with="gardensStatue">statue</interact> of a stern faced man. It’s an old statute, one made out of a stone material as opposed to light particles.</p>
+		</page>
+		<!-- Interior A -->
+		<page id="InteriorA">
+            The interior of the Cosmopolitan matches the <turn to="outerAtrium">exterior</turn>, brick for brick, or more correctly, borosilicate slate for borosilicate slate. There is nothing to compare the sheer amount of wealth that accumulates inside this room, and that’s not because you have only been conscious for eighteen hours. It’s how the ceiling stretches up into a black escape, creating the illusion of infinite space inside the black box. It eats the secrets and lost coins from the tables below in a monstrous fashion. It’s how the tables themselves seem to be levitating off the ground, each game of chance pulsating a different colour, red for <show paragraph="roulette"> roulette</show>, green for <show paragraph="craps">craps</show>, and purple for poker. You wonder absent mindly if blackjack is lit with vantablack. There is a <turn to="highRollerTables">section</turn> walled off with DuraGlass, lightly tinted to hide the people inside. The <turn to="slotMachine">slot machine</turn> sit spinning and flashing individual scores, each coloured a different shade of yellow. You weren’t aware the human eye could register so many colours at the same time. It’s all disorienting yet seems to be able to beat together, like a infected patient not yet ready to crawl out into the desert and die. You turn away from the gambling and notice a <turn to="circleBar">circle bar</turn> protruding from the floor off to the left. A team of sharply dressed bartenders whirl around in an intense dance throwing alcohol at already drunk patrons.  Past everything you can see is a set of <turn to="InteriorB">stairs</turn> leading up and deeper into the building. 
+		</page>
+            <paragraph id="roulette">
+				The ball spins round and round and each click sends an intrusive fact into your brain. Click. There are 5.26 percent on all bets but one. Click. There is a 7.89 percent house edge on all bets. Click. There are 45 spins per hour. Click. The roulette player who bets $5 spin faces an expected loss per hour only slightly higher than that of an average blackjack player. This information comes to your mind without any prompting. You aren’t sure how you know it and it unsettles you. 
+			</paragraph>
+			<paragraph id="craps">
+                <p>A woman in a dress that resembles the blown off side of a mountain whispers into the ear of a man with a stomach larger than the rest of his body. The dice hit the table, which reminds you more of vintage football, and a question in a voice you don’t recognizes asks you,</p>
+                <p><i>Let N denote the (random) number of rolls in the game and let (Xi,Yi)(Xi,Yi) denote the outcome of the iith roll for i∈{1,2,…,N}i∈{1,2,…,N}. Finally, let Zi=Xi+YiZi=Xi+Yi, the sum of the scores on the iith roll, and let N denote the event that the shooter wins. What is the total formula for a single craps play?</i></p>
+                <p>The woman in the white dress adorned with delicate feathers rolls the dice. As the people cheer the final formula comes to mind.</p> 
+                <p>P(N=n)=1236,n=1124(34)n−2+581(1318)n−2+55648(2536)n−2,n∈{2,3,…}</p>
+			</paragraph>
+		<page id="slotMachine">
+            “You win big money for little money.” A man with no future ahead of him says to the unimpressed woman next to him. She pays him no attention and instead focuses on her VirtualDesk(an implant that allows the user to access the internet with a cyber enhancement in the ocular nerve). Eventually he slumps over onto a machine labeled, <i>The Carousel of Wealth</i>,  accompanied by a sparsely clad women riding a unicorn. It’s a contemporary art design, to keep with the aesthetic of course. The woman walks back into the center of the <turn to="InteriorA">atrium</turn>, leaving him for the sharks. The insert-money-here-slot seems to be blocked by a <interact with="slotMachineLetter">piece of paper</interact>, actual paper, wedged in tightly. 
+		</page>
+		<page id="highRollerTables">
+            <p>The putrid scent of money floats around the people who sit around the sleek black tables hits you as you pass by their little haven of incomprehensible wealth in the middle of the lower class of only millionaires. They are separated from the petty millionaires of society by thick translucent ropes of light that oscillate up and down, up and down, forming not only a physical barrier but a social on as well.</p>
+            <p>“I heard that Avalon is now having a general audience for the boxing match on Saturday.” A woman whose face has been replaced with a plastic synthetic, making impossible to tell her age. “I did not pay two and a half teros to be surrounded by people from Cascadia.” </p>
+            <p>“Don’t they have some lumber to chop or something? Don’t they still use natural fuel up there?” A man responds to her. From a hole in the side of his neck protrudes a pipe that is connected to a clunking machine on the floor. His smile is greasy, like his hair and eyes, but he pays no attention to them as he leans over into a serious looking woman with a shaved head and mumbles, “I heard they don’t even use the class system.”<p>
+            <p>The rest of the <turn to="InteriorA">atrium</turn> stands before you still.</p>
+		</page>
+		<page id="circleBar">
+             <p>In the 1920’s there were speakeasy's while the foolish government of the old America tried to cap the freedom of the American people under the claim of protecting the country from criminal activity caused by scandalous drinking. Now the people just straight up came out and said they hated the lower class and called it a good day. One might confuse the circular enclave with a tavern. Taverns were a place of business where people could do business while heightening their blood alcohol content. Unfortunately they fell out of favor when women decided that they wanted to enter without their husbands.  That’s when someone invented… the bar. A revolutionary invention that would come to kill millions of people and have no real positive influence on the human race. This was whole heartedly a bar. There were no positive influences to come from this place.</p>
+             <p>The man inside of the alcohol pit was fitted with six bionic arms that moved in tandem with each other pouring booze into already smashed guests glasses. Women were draped across stools or slouched over the counter, while men swallowed back ethanol, more popularly called vodka. Other bartenders, dressed all in black, there is a theme here after all, float around gayly pouring charm and beer into guests. You lock eyes with a dark skinned man and he nods for your attention. You push your way through the sweat stained wealth and up to the counter.</p> 
+             <p>The <interact with="bartender"> bartender</interact> is a ripped dude who looks like he means business. The <turn to="InteriorA">lobby</turn> is behind you.</p>
+		</page>
+         <page id="takeOffer">
+            <p>“You can’t even comprehend how you are going to change the world.” He smiles a smile full of shark teeth at you. “Here take this key.” He takes a slide key out of his pocket a slides it across the counter to you. <turn to="InteriorB">The atrium stands behind you.</turn></p>
+            <p>You can now access the elevator.</p>
+            {{ story.offer = 'kill'; }}
+            {{story.havekey=true;}}
+        </page>
+        <page id="declineOffer">
+            <p>"I’m not sure what you see in him. Hopefully whatever you have in store for him gives him as much pain as he caused to others.” He pours the untouched drink down into the sink. “You might need this. Hopefully you’ll change your mind.” <turn to="InteriorB">The atrium stands behind you.</turn></p>
+            <p>You obtain the map of the Cosmopolitan Casino. </p>
+            {{ story.offer = 'non-lethal'; }}
+        </page>
+        <page id="sayNothing">
+            <p> “The longer you wait the more people get hurt.” The bartender says to you. He downs the untouched glass in front of you. “When you make up your mind come talk to me again. For your troubles, take this.”<turn to="InteriorB">The atrium stands behind you.</turn></p>
+            <p>You obtain a map of the Cosmopolitan Casino. </p>
+            {{ story.offer = 'open'; }}
+        </page>
+        <!--InteriorB-->
+        <page id="InteriorB">
+            Casinos are supposed to have low ceilings. That is one of the guiding foundations passed down from seedy architect to seedy architect as a way to ensnare the youthful gambler into pawning away their college education. Not that anyone who wasn’t a millionaire now could afford college, there were more people with yatchs than college educations after the war ended federal funding. The Cosmopolitan however, didn’t care for such antiquated norms and was instead adorned with ceiling that stretched skywards. Upon the ceiling ending there were neat rows of fluorescent light bulbs that were meant to simulate sunshine. They shouldn't have made them glass of course because you couldn’t control actual sunlight and there needed to be some reliability in having workers see their papers. So alas, fluorescent tubes of energy would have to simulate it. This is the first thing you notice upon ascending the onyx staircase and being spat out into the heat of the hotel. Stretching up above you are balconies of tenants. The woman in 34R was leaning over the railing to view people down below while the man in 56T sipped alcoholic beverages that would cause him to become disoriented and fall to his death in twenty six minutes. His wife would receive his fortune and move to Germany. Ahead of you is a constant movement of people around a <turn to="mainDesk">desk</turn> while to your left you see the façade of an unpronounceable <turn to="restaurantCasino">restaurant</turn>. Far off passed all your eyes can process is a tremendous <turn to="InteriorC">archway</turn> leading only into blackness. In a far left corner to see doors swinging open to reveal the signs of a <show paragraph="poolCasino">pool</show>. You stand at the base of the <turn to="InteriorA">stairs.</turn>
+        </page>
+        <page id="restaurantCasino">
+             There are some things that don’t change over time. Wars will be fought over land, the Olympics will be held every four years, high school students will have to read the Odyssey, and despite the cultural integration has has come about from the invention of supersonic travel, French food has still maintained the stigma of being a higher class of calorie intake. The customers of  the restaurant, which displays a name only those with a through language degree or are a native of France could pronounce, sit around velvet coated tables laughing rich laughs, both in money and in humour. Their table cloth is red, as is their dress, as is the drapery that hangs across the floor to ceiling windows, but if you cut them open they would not bleed red blood, but instead diamonds from the south of Africa. A <interact with="tableCoupleCasino">couple</interact> sits in the front talking heatedly about some subject or another, whether it be about the new fashion line released or an upcoming bank heist you could not tell. Despite the high class atmosphere of perfection the hostess desk remains unattended.There is a ripped piece of <interact with="tableLetter">paper</interact> sticking out from one of the menus. The <turn to="InteriorB">atrium</turn> stands behind you, familiar and utterly American. 
+        </page>
+        <paragraph id="poolCasino">
+            The year 2175 has brought with it many technological advancements. Vehicles now drift in hyperspencion on three axis roadways while solar panel roads power city blocks. In half an hour a surgeon and implant a computer the size of a pea into one's brain without the symptom of death happening upon awakening. Amidst all of these technological revolutions someone has forgotten to invent a replacement for chlorine as a pool cleaner. Not even the future can improve on chlorine pool cleaner apparently, because you are greeted with the same pungent smell of chemicals that millions have smelled before you. 
+            The Morrocan tile is a nice touch though. It really brings together the stone masonry arches that stretch across the room, one right after the other. The blue of the hand crafted tiles the line not only the floors, but the walls and the ceiling, out shine the perfect blueness of the water and make it resemble liquid glass and its only purpose is to magnify the artisan craftsmanship rather than to have people swim in it. 
+        </paragraph>   
+        <page id="mainDesk">
+            <p>“I’m sorry but the reservation you made is not for the-”</p>
+            <p>“Yes we do offer packages for those traveling out of-”</p>
+            <p>“I will be with you in just a moment. Please hold.” </p>
+            <p>No matter how many people they hire to attend to the constant input of guest questions and demands there will never be a silent moment among the front desk workers. Those who work nine to five know too well the limitations of human patience. Attendants scuttle back and forth smiling a little to widely as the hustle tenants off from the desk and into the <turn to="InteriorB">inner atrium</turn>. The manager is stored in the back, waiting for the moment when somebody wearing a faux high fashion dress asks to see them. The abhorrent quality of her chainsaw cut dress soaks into her skin and ruins her personality. You observe the scene from a distance as the desk seems to move people along in the fashion a train would more than a front desk. You guess that’s what has to happen when servicing thousands of people. Two sharply dressed women stand off near a potted plant, or what you assume to be a potted plant - it could very well be an abstract piece of art for all you know - looking deathly and talking with the sides of their mouths to keep their conversation under wraps. You only hear a snippet of what they are saying.</p>
+            {{? story.offer == "non-lethal"}}
+                Do you <turn to ="offices"> approach? </turn>
+            {{?}}
+        </page>
+        <page id="offices">
+         {{console.log("visitdesk="+story.visitdesk);
+              console.log("slots="+story.slots);
+              console.log("stripper="+story.stripper);}}
+            {{? story.stripper == "non-visited"}}
+                <p>You walk towards the main desk remaining hidden in the small crowds of people that stand and stare at the sprawling luxury of the <turn to="InteriorB">casino.</turn> You navigate around the desk like the man told you and slip unnoticed into the back rooms. You move down the hallway and are about to go into the second door on the right when you hear talking from inside. 
+                <p> “I can’t just go and talk to her. She’s on call all of the time.” The first woman says. “They all hate it when people are all talk.”</p>
+                <p>“And your broke ass can’t even afford to look at her I get it.” The second one replies. “You just gotta catch her off. She’s gotta sleep sometime.” </p>
+                <p>”She’s the front liner for the second act, Kiera.” The first woman speaks again. “I can’t just go up and say, ‘Hi Suniee my name is Kath and I have the largest crush on you because I love your jokes.” </p>
+                {{story.visitdesk=true;}}
+            {{??}}
+                You slip into the office unseen once again and grab the note from the desk. It is a configuration of letters and numbers even you can't understand. <turn to="InteriorB">You head back.</turn>
+                {{story.havecodes=true;}}
+            {{?}}    
+        </page>
+        <!-- InteriorC -->
+        <page id="InteriorC">
+            <p>In the year 2089 the commonly known ‘Murphy's Law, which stated that anything that can go wrong will go wrong, was rewritten by the Broadcasters Associated Conglomerate Tribune to mean that, any cooperation that can make money, will make money. They trademarked it after the New York Time printed a column about it and sued them for copyright violation.</p>
+            <p>With such an inspirational move taking place others have since followed in BACT’s footsteps, but have changed their moves just enough so that they avoid lawsuits, by using new technology in ways that it should not be used. For instance, ever since the demolition of the stock market in 2109 when Yougten Ullyier and his roommate at MIT, Juirch Miller overrode the firewall and released sensitive information regarding the world's largest companies, instead of investing money into the stock market, wealthy to do people now instead bet on how the market will change and receive their winnings that way. Thus the Electronic Videomat Association (EVA)  arose out of the organization formerly known as the Nevada Gaming Control Board, which had been terminated when Nevada was itself, terminated. </p>
+            <p>EVA has gone onto be the premier provider in electronic betting with over one thousand different consuls in their repertoire, from machines where players can bet on the number of lightning strikes in a Somalian rain storm, to how many casualties in the raid on Los Angeles by the Mother Militant or Parent Group (MMorPG).</p>
+            <p>The Cosmopolitan offers an exclusive brand of EVA machines, which had nothing to do with the sudden and tragic accident that killed every single member of the anti-automation gang which tried to kidnap the CEO’s daughter, that appeared in late 2170. Called How the Crow Flies (some people think that it sounds more like the title of a young adult's novel but it draws in over two hundred thousand people per round so those people are largely ignored) the premise of the game has something to do with stacking and can be explored in depth in the number one bestselling novel, ‘Stacking the Game' written by Georges Tharoen. The MGM also offers a line of EVA machines, these give players the chance to gamble on the pollution particulate count in a random one inch by one inch square. The regular betting machines stand <turn to="InteriorB">behind you.</turn></p> 
+            <p>The rest of the Electronic betting lounge, a state of the art facility (whatever the means in 2175) that was added when the Cosmopolitan was newly constructed sprawls out before you like an upturned table. It’s the brainchild of the man who live atop it and proves that the apple doesn’t fall far from the metaphorical tree. The room seems to be split down the middle like some community college cadaver with human maggots crawling around staring dead at screens all thinking the same unoriginal prayers. On the <turn to="VirtualRoom">left</turn> is a neon luminescent sign proclaiming that it holds Virtual Reality betting while on the <turn to="Esports">right</turn> it screams ESPORTS. Sprawling ahead of you are pink lights that seem to be up to <turn to="InteriorD"> no good.</turn></p>
+        </page>
+        <page id="VirtualRoom">
+            <p>Virtual Reality is defined as the reality where people go when they deem the one they were given is not good enough to satisfy their needs. They are most popular among dreamers, thinkers, writers, and people who enjoy poorly written young adult novels. Virtual Reality might be the most transcendentally human aspect of the Cosmopolitan casino despite being made of nothing but ones and zeros processed at supersonic speed at the same time in a machine called a Quantum computer. Quantum computer just oozes naturality. It is here the man staying in 67T can leave behind his wife and six children who all hate him because he lost their money by investing it in a hydrogen car wash and the lady from 47W can forget that her girlfriend broke up with her over text while she was taking her college finals. The couple from 48U can finally see what it is like to dance together since Catherine was born without limbs and the mother in 67N can have the final words she never got to have with her long passed daughter.</p>
+            <p>When you walk into the space occupied by people in masks all sitting and experiencing individual fantasies, or in some cases nightmares, you never know what people are into these days, there is not a single soul who notices your entrance. People normally don’t pay you any attention, it was a characteristic you were born with, much like some ooze charm or some can do math in their head, or some like tomatoes, your skill is being forgotten. It’s what got you into this profession. Your eyes wander around the place looking at all the lost souls desperately looking for something to tell them they matter, that they will be found, that a matrix can reach out and hold them like the lover, daughter, or husband they lost. In the back, barely noticeable, is a <interact with="Jeff"> man</interact> sitting upright without a mask on. His eyes are trained on you but he make no motion to wave you over. You can always <turn to="InteriorC">return to the main floor</turn></p> 
+        </page>
+        <page id="takeOffer2">
+            "You can sneak past the main desk by using the side entrance. Once past it go into the second door on the right. The codes will be posted in there. Once you're done, come back and talk to me." <turn to="InteriorC">You stand up and leave.</turn>
+            {{ story.offer = 'non-lethal'; }}
+        </page>
+        <page id="declineOffer2">
+            “It’s your choice.” He stands up and starts to leave. “But you better put some air into your lungs and run, because you’re going to have all of Neo-Vegas after you.” <turn to="InteriorC">You stand up and leave.</turn>
+            {{ story.offer = 'kill'; }}
+        </page>
+        <page id="sayNothing2">
+            Time is not on our side. When you decide come talk to me. <turn to="InteriorC">You stand up and leave.</turn>
+            {{ story.offer = 'open'; }}
+        </page>
+        <page id="Esports">
+            <p>The year 2000 saw many great developments for the planet Earth such as Jessica Simpson's Edible Perfume and in the good timeline of America, the election of Al Gore as the president of the United States. However, trivial things such as the president of the United States have long been forgotten by the public in favour of much more important global changes, like the launch of the World Cyber Games and the Electronic Sports World Cup. For one hundred and seventy five years iconic games such as <i>League of Legends</i> and <i>Counter Strike:Global Offense</i> have paved the way for electronic games to get the credibility they have today. Without the players of the past, such as Soon-Yang Kim and Jin-Kung Park who founded the Korean ESport College in 2050, ESports could have never grown to the global phenomenon it is today. You stand surrounded by all the technology the future has to offer. The <turn to="InteriorC"> games of the past </turn> stand in their namesake - that is to say behind you. In the electronic lounge in the Cosmopolitan well to do people can sit and wage away money on the hopes and dreams of seventeen year old. Their skin is pulled back tight over their bones as they discuss how in their days they had to use <i>controllers</i> instead of using the PSI-Konnect that is standard today. Their smiles look more like grimaces as they see the Game of Masters team from Nairobi has overtaken the French team by six points. On table to their left is a <interact with="ebetLetter">book</interact> that has been forgotten.</p>
+        </page>
+        <!--InteriorD-->
+        <page id="InteriorD">
+            <p>There are those that look for comfort in the bottom of a whiskey glass or in the bottom of an ice cream tub. Then there are those that look for comfort in the bottom of another person and it is those people that usually end up at the Marquee Nightclub at least once in their unfulfilled lives. The Marquee Nightclub, located at the base of the Cosmopolitan Casino, is a staple of high class nightlife in Neo-Vegas --  a sort of sordid homing beacon for those who crave the illusion of love and the concrete definition of lust. The people who find themselves here can foot the bill to isolate themselves from the outside world with gorgeous women, so that’s what they do. The woman here provide a temporary service for the rotting souls until they have had their revelation and discover what true love is while a Roy Martin song plays in the background while a montage consisting of walks in the park and cuddling flies before them. </p>
+            <p>The woman here crave no montages.</p> 
+            <p>What they do crave is money to soothe their bruised knees, which are stark against their shining egos, and fund their expensive clothing, or lack thereof, and as you walk deeper into the room you hear them making this known to one man who craved a montage moment with a girl who looks like she would be a Candi.</p>
+            <p>“If I wanted love I would have signed to work for the MGM. Pay up or find someone else to save from this ‘lifestyle’.”</p> 
+            <p>The lighting of the room is dim, perhaps to hide the sensations being committed on lucite chairs and carbon coloured couches. The centerpiece in the room is a center stage adorned with Edison lightbulbs around the edge as a relic of , which draws the eyes of all who walk into the room. It seems to be a showgirl itself, greedy for attention, pleading <i>look at me.</i> The carbon filament in the lights curl around themselves again and again and again, much like the women who pull themselves onto bars with graceful ease. Everything in the room is hot, curvy, and shining.</p>
+            <p>A terrifying <show paragraph="privaterooms">door</show> looms across the landscape of libido and from it calls the promise of funtimes to be had. The things that exists beyond the silicon plexiglass are never known or spoken of once the men stagger out minutes, hours, or sometimes days after they enter. The private rooms eat them alive and spit them out without a dollar to their name, and some, of course, don’t ever come out. Located far from view, strategically place not to be seen, is an <turn to="elevator">elevator</turn> that is barely there under the illumination of the room. Guarding the unforeseen door is a group of <interact with="stripper"> women</interact> standing and talking, taking a break from the demands of being an objectified idol. They stand farthest from the <turn to="InteriorC"> door</turn> you entered from.</p> 
+        </page>
+        <page id="elevator">
+            {{? story.havekey==true}}
+                <p>You walk up to the elevator and are able to <turn to="upperlevel">ASCEND</turn> or <turn to="InteriorD">return</turn>.</p>
+                <p>Once you ascend, you can not return.</p>
+            {{??}}
+                <p>You approach the elevator but you are unable to open it. Next to it is a black key pad. Your only option is to <turn to="InteriorD">return</turn>.</p>
+            {{?}}
+        </page> 
+        <paragraph id="privaterooms">
+            You do not currently crave another woman's touch. 
+        </paragraph>
+        <!-- Upper Level -->
+        <page id="upperlevel">
+                <p>You aren’t sure what your expectations were for the office of a man who was only one step down from being a crime boss. </p>
+                <p> But let you be the first to say...</p>
+                <p>... this wasn’t it.</p>
+                <p>You had set the scene before your eyes had even had time to render the information before them. An office full with splendor and luxury would engulf you as soon as you took place inside the glass walls that looked over a city clinging to it oxygen tank and the rick twisted the breathing tube around its neck. There would be a chandelier, made of glass, or diamonds perhaps, that would hand from the ceiling sending fractions of light that would fall on technology that hadn’t even hit the market yet. There would be plans for buildings that would be built on the homes and with the hands of the poor. There would be a red tint to the room. Symbolic of the never ending quest  for love in a lust filled place and there would be the remains of nighttime lovers strewn across the room haphazardly. You swear you could picture it before you had even seen it. </p>
+                <p> What you walked in on was lifeless. There was a grey spirit that stained everything in the room a dull colour and made the glass windows shine an opaque reflection. There was no chandelier, no plans, no Ming-Dynasty vases, no hundred lefts laying around, nothing to signify that this was anything other than a rather large cubicle. What there was however, was old fashioned computer parts: desktops, monitors, keyboards, mainframes, server pieces, RAM chips, LAN cables. All were piled up on the table and spilled over onto the floor and flowed down the aisle until they met the focal point of the room.  Where you had hoped the epitome of wealth and power would stand, a man who could purchase the world twice over, was just a twenty seven year old man who stood gutting a rather large piece of hardware. A motherboard was ripped out rather viciously as you entered the room and thrown on to the pile to the left.</p>
+                <p> He looks up at you. Grease is smeared slightly across his cheek. His dirty blonde hair falls in his face. He’s wearing what appears to be a black cotton shirt. He looks into your eyes and you notice that his eyes are green. He tries to step back but it seems in his haste to remove the heart of his machine his hand has gotten trapped. He does a marvelous job of covering that fact up. Fear doesn’t show on his face for even a second, but nothing can be hidden from you. </p>
+                <p> “You aren’t supposed to be here.” Well, at least he’s observant. “But since you seem to be both smart and desperate enough to gain access is there something I might help you with?” This question takes you aback. Out of all the things you had calculated to come out his mouth, those were at least  #1345 on the list. He takes action in your moments hesitation to palm a throwing knife and throw it directly at you…</p>
+                <p>DO YOU STRAY <turn to="leftAndRight">LEFT</turn> OR <turn to="leftAndRight">RIGHT</turn>?</p>
+        </page>
+        <page id="leftAndRight">
+            {{? story.offer == "kill"}}
+                <p> You are quite impressed with his throwing skills. The knife soars through the air -- directly towards your glabella. You are quicker though and strafe just in time to dodge the impact thrown in your direction. So that’s how it’s going to be? If he doesn’t want to play by the rules neither will you. The bartender was right. Everything about this man is cold. You run towards him jumping up and sliding across the conference table that he has step up workshop on. Pieces of machinery fall to the floor sending out noises that seem to deafen your ears. In one quick movement you grab the arm that has become trapped in the cyber world and rip it from the computer. As you do so Nickolvev lets out a scream of pain as a sudden, but not unexpected, wetness coats your fingers. You shove your fingers deep into the laceration that travels down the man’s forearm making him wince, but not scream. Before he can get a single defence move in your sword has cut through his major tendons and he falls to the ground.  You imagine him to be the man in your preconceived vision as you slide your sword into his stomach. It helps the metal slide between his ribs a little bit easier. </p>
+                <p>He’s unable to move -- equal parts because of pain and because he simply can’t.</p>
+                <p>You wait for fifteen minutes watching him regurgitate up his own blood. You don’t get to see his last breath however as a sudden movement outside the window alerts you to the fact the you will soon be not alone.</p>
+                <p> You decide to take your <turn to="levelone">LEAVE</turn> knowing your job is done and your promise to the bartender fulfilled.</p>
+                {{story.kills=story.kills+1;}}
+            {{??}}
+                <p>You lose all sense of left and right and instead just hit the floor.</p>
+                <p> The lights flicker.</p>
+                <p>Once.</p>
+                <p>Twice.</p> 
+                <p>They don’t flicked a third time because everything goes dark as the power fades from the Cosmopolitan building. </p>
+                <p> You hear screaming from the direction you take to be downstairs.</p>
+                <p><i>“Nobody move or you will be shot!”</i></p>
+                <p><i>“Grab what you can Daniel!”</i></p>
+                <p><i>“I SAID NOBODY MOVE”</i></p>
+                <p><i>“Jamie? Where are you?”</i></p>
+                <p><i>“I’M GOING TO COUNT TO THREE”</i></p>
+                <p><i>“Give me back that cash!”</i></p>
+                <p><i>“ONE!”</i></p>
+                <p><i>“Nobody move or you will be shot!”</i></p>
+                <p><i>“TWO!”</i></p>
+                <p><i>“Nobody move or you will be shot!”</i></p>
+                <p>The last noise is a the firing of an automatic gun.</p>
+                <p> The lights come on and Nickolev is nowhere to be seen. In his place is a note that reads, “<i> Thanks for those codes. No money. No Nickolev. No problems.”</i></p>
+                <p> You decide to take your <turn to="levelone">LEAVE</turn> knowing your job is done and your promise to the bartender fulfilled.</p>
+            {{?}}
+        </page>    
+		<!-- Objects -->
+        <obj id="slotMachineLetter" inventoryName="Letter 1">
+            <action id="Read">
+                {{story.slots=true;}}
+                 <p>Jack,</p> 
+                 <p>I don’t know if this will find you in time. It’s not that I doubt your ability of running across roof tops like some B level superhero movie without juiced up actors I just know how far the Stratosphere is and those steps have got to be good for leg day. I still don’t know why you launch yourself across fifty story buildings for 34 vecos an hour when you are married to a man worth almost thirteen hundred kepos. Your body is worth 65 thousand keplos Jack. Try and be more cautious, if not for your sake for his….I don’t think he has ever had somebody he actually cared about before.</p> 
+                 <p>Anyway, the man is here. He’s in the E-Bet lounge. You’ll know him when you see him. 
+                 Good luck, if anyone deserves to get away from this festering hell hole it's you two.</p>  
+                    <p>Kisses,</p>
+                    <p>Fannisee</p>
+                    <p>XOXO</p>
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('slotMachineLetter')</when>
+                You pocket it. It might prove useful later.
+                {{ story.putInInventory('slotMachineLetter'); }}
+            </action>
+        </obj>
+		<obj id="tableLetter" inventoryName="Letter 2">
+			<action id="Read">
+                <p>When Yakoev Zakharov constructed such a vault as the Cosmopolitan Casino the man hired thirty three design engineers to examine thirteen of the wealthiest casinos worldwide and calculate their total casino win, slot win, number of slots, slot occupancy rate, player count, and the ratio of players to rooms. Out of this came the five principles that can be found in <i> The Design Comprehension for Laying Odds Hotel and Casino Manual </i> which was published by Yakoev Zakharov himself.  </p>
+                <p>First, gambling equipment should be immediately inside the casino entrance instead of a vacant lobby.</p>
+                <p>Second, the maze layout is more effective than long straight aisles.</p>
+                <p>Third, gambling equipment needs to be as memorable and impressive as the decor.</p>
+                <p>Fourth, pathways need to emphasize the gambling equipment.</p>
+                <p>Fifth, standard decor beats elaborative themes.</p>
+                <p>These principles have allowed the Cosmopolitan Casino to become on of the top ten ranking casinos worldwide. </p>
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('tableLetter')</when>
+                You take it. It might be useful later. 
+                {{ story.putInInventory('tableLetter'); }}
+            </action>
+        </obj>
+		<obj id="ebetLetter" inventoryName="Letter 3">
+			<action id="Read">
+                <p>[An except from a larger work on the history of Esports]</p>
+                <p>The late 2070’s saw one of the most ethical dilemmas the sports community has ever faced. With the constant growth of stronger athletes the steroid market produced Eir, a non traceable short lasting steroid which would increase the user's overall muscle capacity for the duration of ninety six minutes. Athletic associations around the world started using the drug for better performance since the FDA’s 2076 lab findings reported no adverse effects. Athletic sports became significantly more brutal….with injuries in soccer increasing by 67%..... and in American football by 304%....However, the NASC saw an increase of 84% in viewer ship and decided to keep Eir in place.  In response the NASC discarded all restrictions of testosterone enhancing or booster materials. The Athletic Association of America, which has been disbanded since, created the American Gaming Commission in order to create a new line of family friendly sports.</p> 
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('ebetLetter')</when>
+                You take the book. It might come in handy later.
+                {{ story.putInInventory('ebetLetter'); }}
+            </action>
+        </obj> 
+		<obj id="gardensStatue">
+			<action id="Investigate">
+                <p>Yakoev Zakharov</p>
+                <p>2060-2170</p>
+                <p>Yakoev Zarkharov was not only responsible for the restoration of the greater Neo-Vegas area. He was also a respected veteran in the Greater North America Militant Siege, where he served as a technological advisor to the States. When the United States government was disbanded after the defeat of the Militants by the States, Yakoev was appointed to serve as a technological strategist on the North American Development Committee of Ecoregions. Yakoev spent three years in Laurentia where he met his wife Sletvana. After the implementation of bioregional government over the destroyed United States and Canada, Yakoev moved to Great Basin where he had his first and only child, Nickolev. Sletvana passed away in childbirth due to a reaction to the drug Lempthphorin. Yakoev continued to be a beacon of advancement as he continued to build the Cosmopolitan in wake of the tragedy. He leaves behind a legacy of innovation in the face of destruction and perseverance when no hope was seen.  May the Cosmopolitan Casino before you stand as a mausoleum to an irreplaceable architect.</p>
+			</action>
+		</obj>
+		<!-- Characters -->
+		<character id="fountainCouple">
+			<action id="Listen">
+                <p>You listen in on the couple’s conversation.</p>
+                <p>“That was the craziest part Herik!” The woman exclaims. “He managed to get every single member convicted!”</p>
+                <p>“I don’t care if he saved ten thousand girls from sex trafficking rings,” the man responds, “Zakharov gets redeemed in my book when he shows us his books.” The woman rolls her eyes and walks away.</p>
+			</action>
+		</character>
+		<character id="bartender">
+			<action id="Ask him what he wants.">  
+                {{? story.offer== "open"}}
+                    {{? story.havenottalkedtobartender == true}}
+                        {{story.havenottalkedtobartender=false;}}
+                        <p>He sets a glass down in front of you and asks you in a tone no different than if he had asked about your drink order, “You look like someone who gets into places you don’t belong.” He pours a blue liquid into the glass and pushes it forward casually. “I recognize that stain.” He gestures to the black oil of the sisterhood smeared across your hands. “The Daughters sent you, didn’t they?” His eyes scant around and the easygoing nature of the conversation falls. “Look, I can get you into the upper levels. I got a key for the main elevator in the Marquee Nightclub. It leads straight up to Zakharov’s office in the restricted upper levels. I’ll give it to you, you just have to promise me something.” He looks around again and you get the feeling he might be slightly nervous. “You promise to shove your sword so deep in his gut his organs get rearranged.” You think that is a very gruesome metaphor. He seems to sense your hesitation.</p>
+                        <p>“Listen, if you’re sent by the sisterhood you aren’t from around here. Zakharov’s got more dead bodies on him than years on this damn planet. You name it, he’s done it. You think a place like this can be built on clean money?” He does not ask this question for the purpose of having it answered. It’s called a rhetorical question and people use them when they don't want to make statements because they might be wrong. “The people who managed to buy power here, now use everyone below them to make sure it stays that way. I saw my perfectly healthy parents get hauled off in a quarantine vehicle by Zakharov’s men. Whatever he’s doing, he ain’t doing it for the lower class.  And you gotta wonder what’s gonna happen when no one is left for him to haul off.”</p>
+                        <p>He pauses as if he expects you, an amnesiac assassin, to suggest how to fix the socio-economic inequality in Neo-Vegas.</p>
+                        <p>Do you <turn to="takeOffer">TAKE THE OFFER</turn>, <turn to="declineOffer">DECLINE THE OFFER</turn>, or <turn to="sayNothing">SAY NOTHING.</p>
+                    {{??}}
+                        <p>Do you <turn to="takeOffer">TAKE THE OFFER</turn>, <turn to="declineOffer">DECLINE THE OFFER</turn>, or <turn to="sayNothing">SAY NOTHING.</p>
+                    {{?}}
+                {{??}}
+                    {{? story.offer == "kill"}}
+                        <p> “You better get moving. There are eyes and ears all over this place.” The bartender says.</p>
+                    {{??}}
+                        <p>He says nothing and continues to pour drinks.</p>
+                    {{?}}
+                {{?}} 
+			</action>
+		</character> 
+        <character id="tableCoupleCasino">
+            <action id="Listen">
+                    <p>“We need the protection from casinos.” The man told to his companion. “ Without them everyone who don’t make ten thousand keplos a year would be-”</p>
+                    <p>“Better off.” The woman interrupts. “Yeah, they’re helpful now but you think they are doing it out of compassion? They’re doing out of their own self interest. The better the land is around these god damn strong holds the more its worth David.” </p>
+                    <p>“Then why not just buy it all and create a beneopolis like Seattle. Cascadia now has the lowest crime rate out of every bioregion.” The man name David retorts.</p> 
+                    <p>“Cascada also has two and a half people living in it. There’s no one to murder.” The woman responds sharply. “The sooner Frazier, Harper, and Atticus get the power back into the right hands we can all sleep a little sounder.”</p>
+                    <p>She takes a drink from her glass in what can only be describe as an end to their conversation.</p>
+            </action>
+        </character> 
+        <character id="Jeff">
+            <action id="Walk towards him">
+            {{? story.havecodes == true}} 
+                <p> You approach the man once again this time with the codes in your hand. You hand them over to him and he snatches them from you in a manner which you think is rather appaling but you decide not to comment on it.</p>
+                <p> "Thanks. Here is that key - for your troubles." He hands you a plain black key card. </p>
+                <p> You can now open the elevator.</p>
+                {{story.havekey=true;}}
+            {{??}} 
+                {{? story.offer=="open"}}
+                    {{? story.havenottalkedtoJeff == true}}
+                        <p>“I know what you're here to do.”  His voice is low and his eyes encompass you as you sit down. “And I think I have a way to make us both of us win. You see I’m interested in keeping Mr. Zakharov very much alive, for reasons of my own.” The technicolor lights which flicker around sporadically seem wildly out of place for the conversation you seem to be wading into. You sit in an aura of harmless fun whilst debating whether someone deserves to live. You have never felt more like a capitalist. “I’m in the business of making people disappear and I have a client very interested in making sure that the Cosmopolitan goes dark along with Zarkharov himself. Now, I have a way to do this, I just need some door codes which are kept in offices behind the front desk. You get me these codes and then just knock him out and I'll take care off the rest. So. What do you say?"</p>
+                        <p>Do you <turn to="takeOffer2">TAKE THE OFFER</turn>, <turn to="declineOffer2">DECLINE THE OFFER</turn>, or <turn to="sayNothing2">SAY NOTHING.<p>
+                        {{story.havenottalkedtoJeff=false;}}
+                    {{??}}
+                        <p>Do you <turn to="takeOffer2">TAKE THE OFFER</turn>, <turn to="declineOffer2">DECLINE THE OFFER</turn>, or <turn to="sayNothing2">SAY NOTHING.<p>
+                    {{?}}
+                {{??}} 
+                    {{? story.offer == "non-lethal"}}
+                        <p>“I know what you're here to do.”  His voice is low and his eyes encompass you as you sit down. “And I think I have a way to make us both of us win. You see I’m interested in keeping Mr. Zakharov very much alive, for reasons of my own.” The technicolor lights which flicker around sporadically seem wildly out of place for the conversation you seem to be wading into. You sit in an aura of harmless fun whilst debating whether someone deserves to live. You have never felt more like a capitalist. “I’m in the business of making people disappear and I have a client very interested in making sure that the Cosmopolitan goes dark along with Zarkharov himself. Now, I have a way to do this, I just need some door codes which are kept in offices behind the front desk. You get me these codes and then just knock him out and I'll take care off the rest. The longer you wait the more my client gets… agitated. I suggest you hurry along.”</p>
+                    {{??}}
+                        <p>You don't think it's in your best interest to approach him. </p>
+                    {{?}}
+                {{?}} 
+            {{?}} 
+            </action>    
+        </character> 
+        <character id="stripper">
+            <action id="Interact">
+            {{? story.visitdesk==false}}
+                <p>“I’ve been wearing the same outfit for the past three days and he hasn’t even noticed.”</p>
+                <p>"Hon, you could wear the same outfit for a year and they only thing his eyes would land on is your set of tits dude.”</p>
+                <p>"Did your mom have gene splicing when she was pregnant with you? Those can not be real. They are exactly the same”</p>
+                <p>"I guess you could call them,” she takes a dramatic pause, “idenititties.”</p>
+            {{??}}
+                <p>The woman seem to be repelled by your presence, for as you approach all but one seem to give their goodbyes and depart. She stands in front of you confidently sipping a purple slush from a rose coloured glass.</p>
+                <p> “I haven’t seen those marking round here for a while.” The woman says taking a sip from her glass again. “You must be looking for trouble coming in here looking like that.” She sets her glass down carefully and takes a seat on the couch looking completely at ease. “You must be here for something. What is it? <turn to="spitItOut">Spit it out.</turn>”</p>
+            {{?}}
+            </action>
+         </character>
+        <page id="spitItOut">
+             {{? story.slots==false}}
+                    <p>You tell the exotic dancer of your plight. Leaving out the essential details you inform her of your plight to get the codes from the front desk and the new found information that a certain desk woman might be distracted by Suniee’s presence.</p>
+                    <p> “And what are these codes for?” You didn’t expect her to even pay attention to your story. It’s pleasant not having to pumult people into doing what you want them too.</p> 
+                    <p>“Listen, Nickolev’s heart might be as black as his suits but this establishment keeps me off the street. It it falls I do too. Come see me when you have a reason for me to trust you.”</p>
+                    <p>You think it best to <turn to="InteriorA">leave</turn> now.
+                {{??}}
+                    <p>You tell the exotic dancer of your plight. Leaving out the essential details you inform her of your plight to get the codes from the front desk and the new found information that a certain desk woman might be distracted by Suniee’s presence.</p>
+                    <p> “And what are these codes for?” You didn’t expect her to even pay attention to your story. It’s pleasant not having to pumult people into doing what you want them too.</p> 
+                    <p>“Listen, Nickolev’s heart might be as black as his suits but this establishment keeps me off the street. It it falls I do too. Come see me when you have a reason for me to trust you.” She looks like she is about to walk away but you quickly thrust the letter you found in the slot machines into her hands.</p>
+                   <p> “Oh Jack,” she says under her breath. “What have you gotten yourself into?” you believe you weren’t supposed to here this last part. “Alright. I’ll do it. You can go back to the desk and get your codes. Nobody should bother you now.”</p>
+                   <p>You think it best to <turn to="InteriorA">leave</turn> now.
+                   {{story.stripper="visited";}}
+                {{?}}
+        </page> 
+<!-- CHAPTER TWO -->
+         <page id="levelone">
+            <p>The Stratosphere Casino was the only triple A casino not located on the strip, however by not being located on the strip, it is the only casino within the actual city limits of Las Vegas. Notice the use to the past tense. During the fire of Las Vegas, the casino portion of what made up the Stratosphere Casino and Tower was transformed into what many refer to as a pile of hot nothing. The valley of ash formally known as the Stratosphere Casino sits under a complex of shopping centers called Mallvetica, as most of the funds came from the great-great-great-great granddaughter of Max Miedinger, the creator of the sweatpant font. </p>
+            <p>The 1,129 foot tall tower however, was unfazed by the burning inferno that raged beneath it on that July night because after all <i> rocket fuel can’t burn steel beams. </i> </p>
+            <p>Therefore the reinforced glass observatory that sits atop the tower managed to struggle through a fire, corporations, capitalistic greed and remain standing despite all gentrification odds. Even though it doesn't tower over the city anymore, it serves as a relic (and a bit of a reminder) of good times and years passed.</p>
+            <p>Which is why it was given to the only person who could smear nostalgia in the dust.</p>
+            <p>The woman in white was a legend; both because she was an academic genius and because many believed she didn’t exists. In a society where most are connected through a series of glass filament tubes shooting electrons that contain information, it was much easier to say that people who were very smarter than you were simply created by a group of people slightly smarter than you. This made people feel better about their own failed life goals and expectations. The woman in white was however, very really and therefore, a very large threat. </p>
+            <p> Tabitha hadn’t given you much information about the woman in white, which could not be more evident by the fact you are referring to her as <i>the woman in white </i>. The name came from the entirely white attire she donned whenever she pried herself from the laboratory fashioned out of the observatory that now stood before you. From the white lab coat, to the high Victorian collar, right down to the velcro boots only someone with six doctorates could pull off. </p>
+            <p> You are able to enter into the the base of the tower and ascend in the elevator with little difficulty. With the election a day closer, the higher citizens of the state have been flinging themselves into campaigns and the city has been quieter in person and exploding on the internet. The elevator drops you at the bottom of the observation deck and you step out into the <turn to="ReceptionArea">reception area</turn> to look for a way to get to the top floor.</p>
+        </page>  
+        <page id="ReceptionArea">
+                <p>Reception desks. They have plagued the social anxious for decades. Not even the year 2175, with its high tech cakes and removal of library books, can stop the anxiety that arises in the pit of the stomachs of those who dread talking to other members of society.  For better or for worse, you haven’t decided, the lobby of Stratosphere Laboratories is empty. Completely, totally, and one hundred percent devoid of life. It’s a lifeless place in itself; after all, there are dead bodies sitting.. mmmmmm… twenty feet away from you fermenting in their own rotting atmosphere. </p>
+                <p>The <interact with="DeskWIW">desk</interact> is organized in a sterile fashion that complements the pasty walls and white floor in a way no interior decoration ever could. The only thing that seems to be out of place is a single piece of <interact with="DeskNoteWIW"> paper</interact> that has the seams of crinkles running throughout it even though someone has obviously tried to flatten it out. Past the reception desk is a <turn to="HallwayWIW">hallway</turn> that seems to spread only deeper into the building. </p>
+        </page>        
+        <page id="HallwayWIW">
+            The hallway is lit with fluorescent tubes called LED light bulbs. They were accidently invented in 1962 after some man just wanted to invent a laser. The man who owned incandescent light bulbs, aka the lightbulbs that were about to be replaced, felt a little peeved by this new and improved product and called it “the magic one”. Back in those days everything that wasn’t accepted by large corporations was damned and called ‘black magic’. Now, of course, corporations just steal their ideas and profit off of them. Underneath the black magic lightbulbs is a plain white <turn to="SupplyRoom">door</turn> that has the letter S-U-P-P-L-Y written across it. Therefore, you concur that it must be a supply closet. Directly across from the supply closet is a non descript <show paragraph="BoilerRoom">door</show>; all the doors are non descript as the woman in white doesn’t believe in signs, but this one is particularly bland. Further down the hallway is a sharp right <turn to ="BodyHolding">turn</turn> and from it wafts the terrible acidic stench of acids and flesh. Just before the turn seems to be a pair of pried open pair of silver <turn to="ElevatorOne">doors</turn>. The <turn to="ReceptionArea">lobby</turn> lurks behind you. 
+        </page>
+        <page id="SupplyRoom">
+            There is a <interact with="SupplyDoor">door.</interact> The <turn to="HallwayWIW">hallway</turn> stand behind you.
+        </page>
+        <paragraph id="BoilerRoom">
+            <p>You approach door. It stares back at you in all of it’s non identifiable glory. You reach out to touch the door handle and are about to open the door when you hear a voice from within. </p>
+            <p>“Babe, I didn’t know her. It was just a snapchat.” </p>
+            <p>A snort of laughter follows.</p>
+            <p>“Cameron do not change the group chat name to ‘David’s Fucked’. Just fix the boiler okay!”</p> 
+            <p>You decide for the best not to open the door. </p>
+        </paragraph>
+        <page id="BodyHolding">
+            You follow the stench of formaldehyde and decaying organic material, leaving behind the <turn to="HallwayWIW">hallway</turn>,  and enter into a long corridor room lined with black bags. Casements line the great corridor that stretched from only millimeters off the floor to unreachable heights and the thought of how those can even be used passes through your head. There is a large black sign painted on the floor in what seems to be futura. Futura is a font that used to be used by some people called the Nazi’s and was quite unpopular until another group of people, called astronauts, started to use it when they wanted some cool looking moon rocks. Both Nazi’s and astronauts hated the Russians. The large black signs says <show paragraph="Autopsy">autopsy</show> and points directly ahead of you. 
+        </page>
+        <paragraph id="Autopsy">
+            <p>There are just straight up naked, dead, and dissected bodies. You aren’t quite sure what you expected. They sit around the circular subsection like a disturbed sort of meeting. </p>
+            <p><i>So Jyther, how are you today?</i></p>
+            <p><i>You know, Hythem, I’m feeling pretty dead today.</i></p>
+            <p>Or whatever the dead talk about these days. </p>
+            <p>Shoved back, out of the way to make room for the dead, is a small doorway that reads <show paragraph="TempControlRoom">TEMP CONTROL</show> on a hastily made sign. </p>
+        </paragraph>
+        <paragraph id="TempControlRoom">
+            You cross the room, minding the precarious assembly of those passed on, and enter through the doorway. Passed the doorway is only a small room, matched in interior decor to the last. CyberTek computers are mounted on the south east wall, each displaying the national emblem of the Greater Plateau area. It spins and spins and spins around seeming to want your attention in the midst of a geopolitical crisis. Next to the congregation of computers is a <interact with="powerBox">power box.</interact> 
+            that has seen better days. It seems to run on old tech - spark plugs. Those haven’t been used since the late 2060’s after Hannah Coliope created a nuclear powered battery shell that could run continuously for 567 years.  One spark plug seems to be missing. 
+        </paragraph>
+        <page id="ElevatorOne">
+            {{? story.doorStatus=="broken"}}
+                You leave the <turn to="HallwayWIW">hallway</turn> and approach the interior elevator. If Tabitha has told you correctly, this elevator should take you up the laboratory and into the upper offices where the woman in white works. Tabitha had said ‘lives’ but you gather that since her work is her life (she doesn’t have much of a home life to speak of.) The elevator doors are pried open with a metal bar of sorts and from the cranny a cold wind gusts up and washes around your feet.  There are tools precariously balanced on the edge of the elevator shaft as well. There is a hastily scrawled <interact with="ElevatorNote">note</interact> taped haphazardly on the side of the open crevice. 
+            {{??}}
+                You leave the hallway and approach the interior elevator. If Tabitha has told you correctly, this elevator should take you up the laboratory and into the upper offices where the woman in white works. Tabitha had said ‘lives’ but you gather that since her work is her life, she doesn’t have much of a home to life speak of. You see that the doors are shut and it looks fully operational. Would you like to <turn to="floorTwoWIW">ASCEND?</turn> (Once you do, you can not return.)
+            {{?}}
+        </page>
+        <page id="lethalOne">
+            This sets the kill count to one and opens the <turn to="ElevatorOne">elevators.</turn>
+            {{story.kills=story.kills+1;}}
+            {{story.doorStatus="fixed";}}
+        </page> 
+        <page id="nonlethalOne">
+            This keeps the kills count at zero and opens the <turn to="ElevatorOne">elevators.</turn>
+            {{story.doorStatus="fixed";}}
+        </page>
+        <!-- Floor Two -->
+        <page id="floorTwoWIW">
+            <p>The doors click open with well oiled synchronicity and you gaze out onto what the old TV channel HGTV would call an ‘open floor plan’. Like the floors below you, and most likely like the floors above you, the laboratory that lounges in front of you is nothing but a white sterile landscape that seems to hold a plethora of scientific data. You feel like a test subject stepping into a test tube to be combined with Hydrochloric Acid and mention in an obscure medical paper. As you step out, probably contaminating the room with your less than sterile attire, you take in the four sections of the room. In the far right hand corner seems to be a durasteel door holding the entrance to a <turn to="vault">Black Box Room TM</turn> closed. To your <turn to="dataStorage">left</turn> are rows, and rows, and rows, of data processing units the hum quietly to themselves as they spin one and zeros into letters. Directly <show paragraph="labCounters">across</show> from you is a series of lab counters, each more complex than the last. Directly to your <turn to="chemStorage">right</turn> is what you think to be a chemical storage center. As above the door it reads.. WARNING CHEMICAL STORAGE. But these days, with these kinds of people, you never know. You also have the option to retreat into the elevator and <turn to="floorThreeWIW">ASCEND</turn> further. (You may not return to this level.)</p>
+        </page>
+        <page id="vault">
+            You see that the <interact with="vaultLock">keypad</interact> only has room for eight letters. What should you do? Should you <turn to="floorTwoWIW">go back</turn> and return later?
+        </page>
+        <page id="chemStorage">
+            <p> The American Physiological Association classified petrichor as one of the most recognizable and influential smells stored in the human consciousness. The American Physiological Association failed to state why this was or why so many people enjoyed the aerosol of wet pavement shooting into their nostrils, but nevertheless, in the 2085 issue of <i>The Psychology Times</i> a twenty six page spread was published about iconic smells of the human race. Petrichor was the first, but Hydrochloric Acid was number three, (Crayola crayons stole the number two slot... curse those colorful bastards) which is what you get to smell when you enter into the chemical storage area, without proper safety equipment you might add.  This is truly the most dangerous thing you have done all day. The chemical safe free <turn to="floorTwoWIW">floor</turn> stands behind you. The storage facility is lined with rows of cabinets that seem to go on in either direction. The first one you see is Abietic Acid, then Acenaphthene, then Acenaphthene, then Acenaphthylene...</p>
+        </page>
+        <page id="dataStorage">
+            <p>The word hacker, like most technology, had its origins at the Massachusetts Institute of Technology. M.I.T. was a university based in a town called Cambridge, which was in a state called Massachusetts, which was demolished when the United States of America was. The name hasn’t change in the hundred years since the fall however. There, in the minutes of an university honoring a dead geographical location, on April 1955 in the meeting of the Tech Model Railroad Club states, “Mr. Eccles requests anyone working or hacking on the electrical system turn these power off to avoid blowing a fuse.” The term ‘hacker’ was used by computer enthusiast to describe computer programs. The term as we know it, which means, “A malicious meddler who tries to discover sensitive information through electronic means.” originated in the work, <i>cracker</i>. </p>
+            <p>White people. Ruining everything.</p>
+            <p>The woman in white has a impressive computer network set up in her fortress of science. The intense amount of wires running in and out of the walls should mean something to you, but the voice that once whispered information into your head seems to be silent. You imagine that the red blinking of the lights through the, of course, pristine glass means that whatever the woman in white has storage in the ones and zeros being process she has protected against the crackers. You move down the aisles, further from the <turn to="floorTwoWIW">door</turn>, of the black computers; all whirling trillions upon trillions of data. The voice from the part of your brain that is still a child provides conversations as if the brittle boxes were old spinsters making their lively hoods with the treads the wove. </p>
+            <p><i> “It is just a shame the Vanessa turned down Kurt’s proposal. Now she’ll be forced to marry Tyrth and he’s one with the bottle.. If you read my words.”</i></p> 
+            <p><i> “Oh it is just a travesty. Poor Courtney too. She’s absolutely heart broken Kurt proposed. She’s been soft on him for quite some time now. If he rebounds on her, she’ll probably say yes, even with the heartache .”</i></p> 
+            <p>A dim white light shines from the end of the row you are currently trapeasing through. The screen displays what seems to be an unfinished <interact with="computerEntry">entry</turn> in the database. </p>
+        </page>
+        <paragraph id="labCounters">
+            <p>There are two kinds of people in this world. Normal people and those who think that not having their pencils exactly two cm apart is a high felony under the court of law. Three guesses at which one the woman in white was. She was the unmentioned third option because she didn't believe in pencils. This was a paperless place. Ride or Die technology. You run your hand delicately over the counter tops that hold a smorgasbord of experiments that will probably improve the quality of life for millions of people over the course of the next couple decades. You won’t lie, the amount of passion one woman has managed to poor into the progression of the human nation floors you to some extent. Though one must weigh the costs. Above you hangs a particular popular <show paragraph="periodicTable">poster</show> that can be viewed in most high school chemistry classrooms. </p>
+        </paragraph>
+        <paragraph id="periodicTable">
+            <p>A periodic table hangs on the wall. Periodic tables look like this.</p>
+            <p>PNG of Periodic Table</p>
+            <p>The periodic table was invented in 1869 by a Russian fellow named Dimitri. Russia was a country in the north east hemisphere. 17% of it regressed underwater when the ice caps melted. Now it is a country in in the lower tide hemisphere. </p>
+        </paragraph>    
+        <obj id="computerEntry" inventoryName="Note Two">
+            <action id="Read">
+                <p>23 January 2175 </p>
+                <p>Serum #164 has yielded positive results in creating stagnant activity in patients neurological synapses. The TCA scan of 22 January 2175 results in the decrease of 10 billion neurons in the brain causing the patient to result to ‘muscle memory’ activities only. It can be very effective in rendering a person to a most basic, vegetable like, useless basically, state. When paired with Serum #654 there is a high possibility of combating against the 'mind erasure' currently taking place in the meatpacking district. Over the course of the past six months, over twenty individuals have disappeared and been found with synthetic amnesia. </p>
+                <p>NOTE to LEV: Contact the head of security at the Palace for more details on . Don’t so much as breathe in the direction of those MGM tyrants with this in mind.
+                <p> Further testing must be done before we move forward. Contact Deniz for more subjects, if   possible bring it to her attention at the pre-election fundraiser on Tuesday.</p>
+                <p>NOTE to LEV: Store serum #164 in vault on second level. After the last break in Nickolev hasn’t had time is assess the integrity of the security of the building. </p>
+            </action>
+            <action id="Take">
+                <when>!story.isInInventory('computerEntry')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("computerEntry"); }}
+            </action>
+        </obj>
+        <obj id="vaultLock" inventoryName="Vault Lock">
+            <action id="Use">
+                <with id="DeskNoteWIW">
+                    <p>You enter in the words printed on the bottom. AmPUTaTe. This causes the smooth metal to slowly click open and regress back into the walls leaving before you a new door way which to enter. You step gingerly into the newly accessible area and see rows upon rows of needles storage and label carefully. The ones you can read are labelled, </p>
+                    <p><interact with="notSerum" id="notSerumInteraction">145</interact>
+                    <interact with="notSerum" id="notSerumInteraction">146</interact>
+                    <interact with="notSerum" id="notSerumInteraction">147</interact>
+                    <interact with="notSerum" id="notSerumInteraction">148</interact>
+                    <interact with="notSerum" id="notSerumInteraction">149</interact>
+                    <interact with="notSerum" id="notSerumInteraction">150</interact>
+                    <interact with="notSerum" id="notSerumInteraction">151</interact>
+                    <interact with="notSerum" id="notSerumInteraction">152</interact>
+                    <interact with="notSerum" id="notSerumInteraction">153</interact>
+                    <interact with="notSerum" id="notSerumInteraction">154</interact>
+                    <interact with="notSerum" id="notSerumInteraction">155</interact>
+                    <interact with="notSerum" id="notSerumInteraction">156</interact>
+                    <interact with="notSerum" id="notSerumInteraction">157</interact>
+                    <interact with="notSerum" id="notSerumInteraction">158</interact>
+                    <interact with="notSerum" id="notSerumInteraction">159</interact>
+                    <interact with="notSerum" id="notSerumInteraction">160</interact>
+                    <interact with="notSerum" id="notSerumInteraction">161</interact>
+                    <interact with="notSerum" id="notSerumInteraction">162</interact>
+                    <interact with="notSerum" id="notSerumInteraction">163</interact>
+                    <interact with="serum" id="serumInteraction">164</interact>
+                    <interact with="notSerum" id="notSerumInteraction">165</interact>
+                    <interact with="notSerum" id="notSerumInteraction">166</interact>
+                    <interact with="notSerum" id="notSerumInteraction">167</interact>
+                    <interact with="notSerum" id="notSerumInteraction">168</interact></p>
+                </with>
+                    You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id="notSerum" inventoryName="Syringe">
+        <action id="Take">
+            You remove one from the container. The rest of the cases go into lock down and you are unable to remove any more. 
+            {{ story.disable('notSerumInteraction'); }}
+            {{ story.disable('serumInteraction'); }}
+            {{story.Serum2="Taken";}}
+        </action>
+        </obj>
+        <obj id="serum" inventoryName="Syringe">
+        <action id="Take">
+            You remove one from the container. The rest of the cases go into lock down and you are unable to remove any more. 
+            {{ story.disable('serumInteraction'); }}
+            {{ story.disable('notSerumInteraction'); }}
+            {{story.Serum="Serum";}}
+            {{story.Serum2="Taken";}}
+        </action>
+        </obj>
+        <!-- Floor Three -->  
+            <page id="floorThreeWIW">
+                <p> As soon as the elevator arrives at the third floor a terrible stench floats from the previously closed off section and into the elevator, an elevator which seems to have stopped once again. This time just one floor short your intended target. You try not to see a morbid metaphor in that. You manage to push yourself out of the broken container and into the sickening mist of formaldehyde that leisurely drapes itself across the room. Said room that you have just entered, is the black sheep of Stratosphere Laboratories.  If the other floors were the perfect children this would be the one that depression went undiagnosed and now sell cocaine for a living. Depression is a disease that is called when the bad chemicals in your brain start working too much. Cocaine is a white powdery substance that looks like powdered sugar; both can make people addicted to it. The first thing brought to your attention is just how dark this room is compared to the others. While the lower levels where almost blindingly lit with flourescent lightbulbs, level three seems to being more partial to having what 20th century teenagers called a <i>rave</i>. The illumination that was supposed to be coming from the ceiling now seemed to expresses itself from all around as the lights seemed insistent on having a strobe effect.</p>
+                <p>You take a step further out, and as you do so your foot lands in a sticky substance that coats the bottom of your boot. You cast your attention downwards and see that you are standing in a thin pool of liquid. As you take another, more careful, step forward you see the ripples shatter throughout the floor and continue on until the hit the far wall before boomeranging back to you. </p> 
+                <p>Fat coils of wire drape from the ceiling, all haphazardly pulled out of the tiles, making a cascading river of electrons  that cut canyons down the walls. They all seem to flow to four separate… four individual… four circular…. tanks? Your brain only seems to recognize the cylindrical objects that dominate the majority of the putrid room as over sized fish tanks. A gelatinous fluid sloshes around, being propelled by something that is coming out of the plethora of wires that sucker themselves to the bottom of each tank. The image could be compared to that of a synthetic octopus, if there were any octopuses left for it to be compared to that is. </p>
+                </p> Through the inconsistent illumination of the room, you can make out the bold label numbering off the four containers according the the western Arabic numeral system.</p>
+                <p>The first one reads <turn to="tankOne">TANK ONE.</turn></p>
+                <p>The second one reads <turn to="tankTwo">TANK TWO.</turn></p>
+                <p>The third one reads <turn to="tankThree">TANK THREE.</turn></p>
+                <p>The fourth one read <turn to="tankFour">NK FO.</turn></p>
+            </page>
+            <page id="tankOne">
+                <p>You step away from the <turn to="floorThreeWIW">main floor</turn> to examine the first tank. The first tank seems to empty, drained of both experiments and the putrid jelly that seems to be coating the floor in a news type of carpet that should never have been invented. Another thing that should never have been invented, Red Dye No. 2. Don’t know why, but everyone seems to hate it. You circle the tank looking for signs that might lead you to understanding the decomposing scene before you, Your hunt ends you to finding one of the lab assistants, or what you assume to be a lab assistant, in this economy, you never know. He is slouched against the tank, breathing still, most likely just passed out due to the horrid stench that even now makes you queasy, his body congealing in the thick liquid. Clutched in his hand is a piece of <interact with="letterTwoWIW">paper</interact>.</p>
+            </page>
+            <page id="tankTwo">
+                The second tank seems to have a series of… abstract figures preserved in the formaldehyde that slowly churns within. As the blades of air spin the mixture around, a severed hand pass you by, waving through the window. You tear your eyes away from it as it passes around to the other side of the tank and look down to see a <interact with="tankTwoBody">body</interact> curled up around the base of the tank. You freeze as you realize they are conscious, but just barely. The only motor function they seem capable of is muttering incoherently to themselves. You feel uneasy an would like to <turn to="floorThreeWIW">leave</turn> now.
+            </page>
+            <page id="tankThree">
+                The third tank seems to be the oldest of the two. The plexiglass is now tainted with scratches and spiderweb fractures and the formaldehyde inside looks as if to have reached new levels of fermentation. The usually clear   liquid has become a terrible red colour that can obscure your vision to the other side, but just isn't dark enough to hide the human shaped figure inside. A study conducted in 2089 revealed that the human silhouette dropped thirteen slots in the most recognizable figure after John Risch developed Bamme, a corporation dedicated to changing the human form to the mind’s whim. Bamme is currently grossing three trillion teros per quarter and performing three thousand operations per day. Hidden out of sight, and you would have not noticed it if you had not been looking for it, is a <turn to="circuitRoom">door</turn>.
+            </page>
+            <page id="circuitRoom">
+                The handle moves but the door doesn’t budge. It seems there is an old fashioned <interact with="circuitRoomLock">lock</interact> attached to the door handle that blocks your path.
+            </page>
+                <obj id="blueKey" inventoryName="Old Fashioned Key">
+                    <action id="Take">
+                        <when>!story.isInInventory('blueKey')</when>
+                        You put it into your pocket. It might come in handy.
+                        {{ story.putInInventory("blueKey"); }}
+                    </action>
+                    <action id="Use">
+                        <with id="circuitRoomLock">
+                            You insert the key into the lock. It makes a clicking noise. You can now open the door. This is very surreal for you. You know nothing about key locks. There is nothing for you to comment about as you step into the room. It is dimly lit. You see a POWER BOX located in the back corner -- an old fashioned power box. It has levers. Like, you stick your hand out and pull it, levers. Levers were invented around the third century by the Archimedes to move large rocks. 
+                        </with>
+                            You try, and try again, but without any appreciable result.
+                    </action>
+                </obj>
+                <obj id="circuitRoomLock" inventoryName="Circuit Room">
+                    <action id="Use">
+                        <with id="blueKey">
+                           You insert the key into the lock. It makes a clicking noise. You can now open the door. This is very surreal for you. You know nothing about key locks. There is nothing for you to comment about as you step into the room. It is dimly lit. You see a <show paragraph="powerBox">power box</show> located in the back corner -- an old fashioned power box. It has levers. Ike, you stick your hand out and pull it, levers. Levers were invented around the third century by the Archimedes to move large rocks. 
+                        </with>
+                            You try, and try again, but without any appreciable result.
+                    </action>
+                </obj>
+            <paragraph id="powerBox">
+                WOULD YOU LIKE TO MOVE POWER THROUGH <turn to="theFloor">THE FLOOR</turn>, THROUGH <turn to="theTanks"> THE TANKS, </turn> OR <turn to="floorThreeWIW">WAIT?</turn> (Once you make a choice -- you can not return.)
+            </paragraph>    
+            <page id="theFloor">
+                This adds one to the body count. The <turn to="theOffice">elevator</turn> now works.
+                {{story.kills=story.kills+1;}}
+            </page>
+            <page id="theTanks">
+                This keeps the body count stable. The <turn to="theOffice">elevator</turn> now works.
+            </page>
+            <page id="tankFour">
+                <p>If one were to visit www.thesaurus.com/browse/destoryed they would find thirty synonyms for the word destroyed. The most similar synonym listed is broken while wiped out is the least. If one were to visit www.dictionary.com/browse/destroyed they would find that the origin of the word destroyed cones from the Middle English word ‘destroyen’ which comes from the Old French word ‘desturire,’ which comes from the Vulgar Latin word ‘destrugere’, which comes from the Basic Latin word destruere; which means “to pick up, build”.  Ironic how that works. Yet, despite all of the synonyms listed on www.thesaurus.com/browse/destoryed, there fails to be one that can describe the type of destruction that has taken place here. Where what must have been a billion kelpo tank once stood, now was only occupied by a light dusting of crushed glass and the source of the formaldehyde spillage. Taped gingerly to the largest piece of glass still connected to the base of the tank was a <interact with="breakInNote">note</interact>, covered in the putrid substance and looking like it had seen easier days. You feel uneasy an would like to <turn to="floorThreeWIW">leave</turn> now.</p>  
+            </page>
+            <obj id="breakInNote" InventoryName="Letter 3">
+                <action id="Read">
+                    <p>NOTE to LEV;</p>
+                    <p>At approximately 3:34 am on Tuesday, June 4, 2175 there was a security breach on  the upper labratory deck. At 3:36am the nuclear reactor in the level three regenerative deck, was disabled and operation D-minus was compromised. At approximately 3:42am Subject I was removed from module four by force and due to the failure of module four the electrically integrity of the pathophysiology level has been set to code black. Further stasis chamber have since been frozen and should be ready for reinstatement by 16 June 2175. Patient II has been moved to the highest security level and Tank three should at all time remain with the security system on. Patient II now remains the only synthetic amnesia patient and thus, the lynchpin in our experiments.</p>
+                </action>
+                <action id="Take">
+                    <when>!story.isInInventory('breakInNote')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("breakInNote"); }}
+                </action>
+            </obj>
+            <obj id="tankTwoBody">
+                <action id="Examine">
+                    You decide there is no level of low you can not stoop to so you decide to root around in the the man's pockets. You look through the man's pockets and it’s hits you that looking over an unconscious body doesn’t phase you. You find a wadded up piece of paper, three strips of gum, and a metal jagged obelisk you think is called a <interact with="blueKey">key</interact>
+                </action>
+            </obj>
+            <obj id="letterTwoWIW" inventoryName="Letter Two">
+                <action id="Read">
+                    <p>Frank,</p>
+                    <p>You remember that time we went and did Arctic Blast shots at the Cosmo and then went round for round with those guys from the Prairie Bioregion, then we thought it would be a great idea to head down to A Good Strip Club and become one with the dance floor, then we brought those Brazilian dudes back and then….. just, remember our hotel room afterwards? Floor two makes that look like freaking Buckingham Palace. Something happened to one of the tanks and now the Shifta gel is everywhere. And I mean everywhere. Some of it even got into the circuit room and now the power is wiggin’ out. I think we can kill two jobs with one switch if we re-route the power from the ceiling coils to the electrical grid in the floor. The heat should evaporate some of that Shifa and the power should be working fine. Just throw the left switch in the circuit room and make sure no one’s on the floor when you do it? Formaldehyde might be a bad smell but I’m sure charred flesh is worse. </p>
+                    <p>Hang in there,</p>
+                    <p>Peyier</p>
+                </action>
+                <action id="Take">
+                     <when>!story.isInInventory('letterTwoWIW')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("letterTwoWIW"); }}
+                </action>
+            </obj>
+        <!-- Office -->
+            <page id="theOffice">
+                <p>The building that once held so much life and gambling is now a white, sterile, medical facility at it’s heart. The woman in white stands against the wall of windows that encompasses the laboratory, a coal black backdrop framing her silhouette against the city skyline. Printed over the windows, in letters that not even the blind could miss are the words.</p>
+                <p>ADAPT </p>
+                <p>IMPROVISE </p>
+                <p>OVERCOME</p>
+                <p>You enter into the room, with no more fear in your heart than had been there while you waded through formaldehyde or rushed passed decomposing bodies. The woman who towers over Neo-Vegas, both figuratively - and now quite literally, must be aware of your presence by now; for as you cross the circular room you are doing nothing to block the sound wave that echo from your feet and the woman before you is not hard of hearing. Her eyes register the sound waves that are pushed from the floor, those vibrations are converted into messages in the brain which fire synapses that alerted her to your presence.</p>
+                <p>DO YOU <turn to="approachFirstWIW">APPROACH</turn> OR <turn to="approachFirstWIW">STAY STILL?</turn></p>
+            </page>
+            <page id="approachFirstWIW">
+                <p>“Someone sent you to kill me.”</p> 
+                <p>The words aren’t asked. You wonder if the woman in white ever asks anything of everyone. You’ve hear not but five words from the woman but it seems to be the type to demand or otherwise do it herself.</p>
+                <p>DO YOU <turn to="confirmWIW">CONFIRM IT</turn> OR <turn to="denyWIW">DENY IT?</turn></p>
+            </page>
+            <page id="confirmWIW">
+                <p>“What does it matter if you kill me or not?” She moves towards the desk that sits just behind her and retrieves something, but does not look at you. “You have already made that decision hundreds of times already. Whom am I but one more body to hit the floor? My life counts as no more than the guards downstairs.” She turns back to face the window now. A new, sudden, disposition about her. “We had the chance to push humanity forward from the ashes of complete and utter failure. I was prepared to do what needed to be done to make that happen, it is none of my concern that others weren’t. The fact of the matter is sometimes the uncivilized things have to go.</p>
+                <p>DO YOU <turn to="respondWIW">RESPOND</turn> OR <turn to="sayNothingWIW">SAY NOTHING</turn></p>
+            </page>
+            <page id="respondWIW">
+                <p><i>“Who are you to say who’s culture is unsophisticated?”</i></p>
+                <p>“Why I’m the one with the bigger stick.” She answers calmly. She looks at you with this false sense of wisdom behind her eyes and it pours out now in pity for you. As if you, a greasy little mercenary, could ever fathom the complexity of rearranging the social structure of a metropolitan city. “Or in this case, I guess, the one with four doctorates.” Maybe one of those doctorates is in sarcastic comments.</p>
+                <p>DO YOU RESPOND <turn to="malWIW">MALICIOUSLY</turn> OR <turn to="beneWIW">BENEVOLENTLY?</turn></p>
+            </page>
+            <page id="sayNothingWIW">
+                She throws a glance over her shoulder, as if that’s all you deserve. “We set out to progress humanity; we never said it would be a moral movement. These radicals you no doubt work for tell you that we are nothing better than tyrants, but look around you. The quality of life is improving exponentially before our eyes! People are living longer, being healthier, the global poverty rate is declining, child mortality is at an all time low, the planet has stopped heating, and for Cruise’s sake people are richer now than they have ever been. For the majority to rise a few must die. And if I must die for the cause too then so be it.”
+                <p>DO YOU RESPOND <turn to="malWIW">MALICIOUSLY</turn> OR <turn to="beneWIW">BENEVOLENTLY?</turn></p>
+            </page>
+            <page id="malWIW">
+                <p>She doesn't turn back around as you approach. You think perhaps, that is for the better. You would rather not look into someone’s eyes as you kill them. Many attribute the saying, ‘eyes are the windows to the soul,’ to a man by the name of William Shakespeare. You may have heard of him. But the saying actually came from the Hebrew bible. You do not notice the irony as you slice her throat. </p>
+                {{story.kills=story.kills+1;}}
+                {{story.killWIW=true;}}
+                <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+            </page>
+            <page id="beneWIW">
+                {{? story.Serum=="Serum"}}
+                    <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear as you pull out the small syringe of <i>forget-me-not</i> serum from where you had hidden it. Her words, <i> a fate worse than death </i> still fresh in your mind. In one foul swoop, you rip off the safety cap and very unsafely inject it into her neck. She convulses, falls to the floor, convulses some more, throws up, then breathes a deep breath and asks…</p>
+                    <p><i>Where am I?</i></p>
+                    <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                {{??}}
+                    <p> Words of <i> It doesn’t have to be like this </i> and <i> there is another way </i> spill from your lips.</p>
+                    <p>“There are many things I am willing to do for my work. Steal, lie, kill - I’ve done them all before and I would do them all again.” She raises a device in her hand and twists it open and an ear splitting sound wave reverberates throughout the room and shatters into your head. Your claim about the woman in white being hard of hearing is surely false now. The glass windows that surround the laboratory shatter inward, firing glass bullets into the room. Your eyes water from the pain of it all but you manage to keep yourself upright and look the woman dead in the eye. “And I am forth and willing to die as well.” And with no more words, the wind reaches up from the skyline below and grabs her pulling her towards the sidewalk. And with no more words, all is over. </p>
+                    <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{story.kills=story.kills+1;}}
+                    {{story.killWIW=true;}}
+                {{?}}
+            </page>
+            <page id="denyWIW">
+                {{? story.Serum2=="Taken"}}
+                    <p>“For what? A fate worse than death?” She turns around now and looks at you fully. “I know those markings, I know where you come from. Do you hope I’ll come quietly?” She steps back closer to the window. </p>
+                    DO YOU TRY TO <turn to="quellWIW">QUELL HER</turn> or <turn to="injectWIW">RUSH FORWARD</turn> (INJECT WITH SERUM)?
+                {{??}} 
+                     <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear. It’s a bloodbath. Children are crying. A fire randomly starts somewhere. People are screaming. You look down at the sword in your hands. When you look up the woman in white has become the woman in red.</p>
+                     <p>She’s also dead on the floor.</p> 
+                     <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{story.kills=story.kills+1;}}
+                    {{story.killWIW=true;}}
+                {{?}}
+            </page>
+            <page id="injectWIW">
+                {{? story.Serum=="Serum"}} 
+                        <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear as you pull out the small syringe of <i>forget-me-not</i> serum from where you had hidden it. Her words, <i> a fate worse than death </i> still fresh in your mind. In one foul swoop, you rip off the safety cap and very unsafely inject it into her neck. She convulses, falls to the floor, convulses some more, throws up, then breathes a deep breath and asks…</p>
+                        <p> <i>Where am I?</i></p>
+                        <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{??}}
+                        <p>You don’t think anyone has actually successfully tried to, you know, kill the woman in white. As you lunge at her from across the room her face morphs first into an expression of surprise that quickly fades into fear as you pull out the small syringe of <i>forget-me-not</i> serum from where you had hidden it. Her words, <i> a fate worse than death </i> still fresh in your mind. In one foul swoop, you rip off the safety cap and very unsafely inject it into her neck. However, instead of the usual convulsions that should accompany the ‘forget-me-not’ serum blood seems to start spurting from every possible orifice. It’s a bloodbath. Children are crying. A fire randomly starts somewhere. People are screaming. You look down at the syringe in your hand and see you accidentally grabbed one of the untested serums.When you look up the woman in white has become the woman in red.</p>
+                        <p>She’s also dead on the floor.</p>
+                        {{story.kills=story.kills+1;}}
+                        {{story.killWIW=true;}}
+                        <p>You decide now is a good time to <turn to="chapterThree">LEAVE</turn></p>
+                    {{?}}
+            </page>
+        <!-- Objects -->
+        <obj id="DeskWIW">
+            <action id="Examine">
+                   There are three sets of <interact with="DeskDrawersWIW">drawers</interact>. 
+            </action>
+        </obj>
+        <obj id="DeskDrawersWIW">
+            <action id="Top">
+            It seems to be locked.
+            </action>
+            <action id="Middle">
+            There is nothing in here but a pile of staples, paper-clips, unused pencils, and the will to live of a man named Kenith Youngth.
+            </action>
+            <action id="Bottom">
+            There is a <interact with="SupplyKey">black key</interact> card that sits atop a pile of mints. 
+            </action>
+        </obj>    
+        <obj id="SupplyKey" inventoryName="Black Key">
+            <action id="Take">
+             <when>!story.isInInventory('SupplyKey')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("SupplyKey"); }}
+            </action>
+            <action id="Use">
+                <with id="SupplyDoor">
+                   The door opens when you use the keycard with it. The darkness of the room swallows you whole but your flashlight provides just enough light to see the cluttered shelves that stand wall to wall. Each shelf holds a smorgasbord of technical items dating back to the last centennial. There are <interact with="sockets">PROCESSOR SOCKETS</interact>, <interact with="ramChips">RAM CHIPS</interact>, <interact with="lanPorts">LAN PORTS</interact>, and <interact with="sparkPlugs">SPARK PLUGS</interact>.
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>    
+        <obj id="SupplyDoor" inventoryName="Supply Door">
+            <action id="Use">
+                <with id="SupplyKey">
+                    The door opens when you use the keycard with it. The darkness of the room swallows you whole but your flashlight provides just enough light to see the cluttered shelves that stand wall to wall. Each shelf holds a smorgasbord of technical items dating back to the last centennial. There are <interact with="sockets">PROCESSOR SOCKETS</interact>, <interact with="ramChips">RAM CHIPS</interact>, <interact with="lanPorts">LAN PORTS</interact>, and <interact with="sparkPlugs">SPARK PLUGS</interact>.
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id="DeskNoteWIW" inventoryName="Letter 1">
+            <action id="Read">
+                <p>[A page torn from a lab report]</p>
+                <p>For reason unclear - when subjects 2A through 2D are injected with the same carbon based serum, the pulmonary artery swells to a size of 3.4 cm and makes the subject unable to pass oxygenated blood through the system. This leads to either total organ failure (78 of 155 patients) or to asphyxiation (55 of 122 patients). Depending on the method of injection, the time of swelling begins at 4.34 seconds if injected into the jugular artery or 5.89 seconds in injected into the femoral artery.  More conclusive date will be needed for shipment and launch of Minaji. </p>
+                    <p>[Scribbled down at the bottom]</p>
+                    <p>NOTE for LEV: </p>
+                    <p>Americium</p>
+                    <p>Phosphorus </p>
+                    <p>Uranium</p>
+                    <p>Tantalum</p>
+                    <p>Tellurium</p>
+                    <p>Don’t ask again.</p>
+            </action>
+            <action id="Take">
+                    <when>!story.isInInventory('DeskNoteWIW')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("DeskNoteWIW"); }}
+            </action>
+            <action id="Use">
+                <with id="vaultLock">
+                    <p>You enter in the words printed on the bottom. AmPUTaTe. This causes the smooth metal to slowly click open and regress back into the walls leaving before you a new door way which to enter. You step gingerly into the newly accessible area and see rows upon rows of needles storage and label carefully. The ones you can read are labelled, </p>
+                    <p><interact with="notSerum" id="notSerumInteraction">145</interact>
+                    <interact with="notSerum" id="notSerumInteraction">146</interact>
+                    <interact with="notSerum" id="notSerumInteraction">147</interact>
+                    <interact with="notSerum" id="notSerumInteraction">148</interact>
+                    <interact with="notSerum" id="notSerumInteraction">149</interact>
+                    <interact with="notSerum" id="notSerumInteraction">150</interact>
+                    <interact with="notSerum" id="notSerumInteraction">151</interact>
+                    <interact with="notSerum" id="notSerumInteraction">152</interact>
+                    <interact with="notSerum" id="notSerumInteraction">153</interact>
+                    <interact with="notSerum" id="notSerumInteraction">154</interact>
+                    <interact with="notSerum" id="notSerumInteraction">155</interact>
+                    <interact with="notSerum" id="notSerumInteraction">156</interact>
+                    <interact with="notSerum" id="notSerumInteraction">157</interact>
+                    <interact with="notSerum" id="notSerumInteraction">158</interact>
+                    <interact with="notSerum" id="notSerumInteraction">159</interact>
+                    <interact with="notSerum" id="notSerumInteraction">160</interact>
+                    <interact with="notSerum" id="notSerumInteraction">161</interact>
+                    <interact with="notSerum" id="notSerumInteraction">162</interact>
+                    <interact with="notSerum" id="notSerumInteraction">163</interact>
+                    <interact with="serum" id="serumInteraction">164</interact>
+                    <interact with="notSerum" id="notSerumInteraction">165</interact>
+                    <interact with="notSerum" id="notSerumInteraction">166</interact>
+                    <interact with="notSerum" id="notSerumInteraction">167</interact>
+                    <interact with="notSerum" id="notSerumInteraction">168</interact></p>
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id="ElevatorNote" inventoryName="Note 1">
+            <action id="Read">
+                <p>Fillup, </p>
+                <p>If you keep leaving the door to the cold body storage open, these doors will keep freezing up. And if these door keep freezing up I have to come up here and fix them. And if I have to come up here and fix them I risk running into that woman in white. And if I run into that woman in white I’m going to get killed. And if I get killed my wife is going to have to get a job. And if my wife has to get a job then she can’t take care of the kids. And if she can’t take care of the kids they’re gonna join a casino gang. </p>
+                <p>Don’t let my kids join a casino gang. </p>
+                <p>Just unfreeze the doors by running the heat through the boiler room AND make sure no one is in there BEFORE you do it. Justin got third degree burns last time!!! And whatever you do DO NOT SEND IT THROUGH COLD STORAGE Tyran once ruined 3 bodies and we haven’t seen him since.</p> 
+                <p>-Maintenance Dan</p>
+            </action>
+            <action id="Take">
+                    <when>!story.isInInventory('ElevatorNote')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("ElevatorNote"); }}
+            </action>
+        </obj>
+        <obj id="sockets" inventoryName="Sockets">
+            <action id="Take">
+                    <when>!story.isInInventory('sockets')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("sockets"); }}
+            </action>
+        </obj>
+        <obj id="ramChips" inventoryName="Ram Chips">
+            <action id="Take">
+                    <when>!story.isInInventory('ramChips')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("ramChips"); }}
+            </action>
+        </obj>
+        <obj id="lanPorts" inventoryName="Lan Ports">
+            <action id="Take">
+                    <when>!story.isInInventory('lanPorts')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("lanPorts"); }}
+            </action>
+        </obj>
+        <obj id="sparkPlugs" inventoryName="Spark Plug">
+            <action id="Take">
+                    <when>!story.isInInventory('sparkPlugs')</when>
+                    You put it into your pocket. It might come in handy.
+                    {{ story.putInInventory("sparkPlugs"); }}
+            </action>
+            <action id="Use">
+                <with id="powerBox">
+                    Do you want to redirect it through the <turn to="leatalOne">BOILER ROOM</turn>,<turn to="nonleathalOne"> COLD STORAGE</turn> or <turn to="HallwayWIW">WAIT</turn>. (Once you choose an option -- you can not return.)
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>
+        <obj id='powerBox' inventoryName='Power Box'>
+            <action id="Use">
+                <with id="sparkPlugs">
+                    Do you want to redirect it through the <turn to="lethalOne">BOILER ROOM</turn>,<turn to="nonlethalOne"> COLD STORAGE</turn> or <turn to="HallwayWIW">WAIT</turn>. (Once you choose an option -- you can not return.)
+                </with>
+                You try, and try again, but without any appreciable result.
+            </action>
+        </obj>   
+<!-- CHAPTER THREE -->
+        <page id="chapterThree">
+            <p>Jeanette Deniz was a descendant of the gangsters in the Old-Vegas. After the terrible drought that came across the desert of Nevada, Las Vegas had become a desolate and rotting city. A great firestorm swept over the rotting corpse of the city and wiped it clean with one breath of inferno. Jeanette’s family inheritance burned down alongside Caesar's Palace casino as for the second time Rome fell. They were forced to waste away among the  poor in the rotten blood district. In case the name does not inform you, the rotten blood district is not a pleasant place to live. The buildings are built on the landfill where all the bodies were dumped after the great fire which unfortunately, causes some serious structural integrity. This week along three buildings will concave trapping sixteen people inside the rubble, never to be saved. Their cries will so silent into the bustling night as only a thousand feet away a woman will throw away an entire roasted duck because he ex-boyfriend looked at it. </p>
+            <p> Then at just twenty-two years of age, Jeanette Deniz was appointed by Chairwoman Isobel to lead the National Heritage Foundation of the Greater Neo-Vegas area, and with one flick of the pen, the Deniz family was whisked out of destitute and back into the silver spoon district. It also meant they had sworn their allegiance to the Kythreal family, no matter the cost, and no matter the price. Just like her name, her house was old fashioned. Jeanette, who was as foreign to the high collared Neo-Vegas scene as you were, seemed to build her facade of wealth on her family tree; nailing oil paintings into its bark and hanging antique vases from its branches. </p>
+            <p> The building serves as the colosseum and you a gladiator as you enter through the double doors and into the stone cold interior. However, instead of rushing into battle, sword draw and teeth gnashing, you walk with leisure to your pace. Yoou sword is sheathed. You are here by instruction of Tabitha with an invitation she snatched, only Tom Cruise knows how. Therefore you keep your blood lust at bay and try to think of an incognito way to dispose of Jeanette Deniz.</p>
+            <p>The <turn to="fountianCenter">party</turn> looms ahead of you.</p>
+        </page>
+      <page id="fountianCenter">
+      {{? story.roomsvisited == 6}}
+            <p>You return to the grand entryway - unsuccessful in your quest to find the hostess of the party. It seems that not showing up to your own fundraising party would be a social faux-pas that not even Jeanette Deniz would attempt. Therefore, you enter into the fountain center with a new determination in your uncontrollable mind. </p>
+            <p>As you enter, a commotion seems to erupt from the far side of the room. The grand front door swing open and even though the mansion seemed to be sparsely populated before, a new hoard of people swarm from seemingly nowhere to flock the new members of attendance. Over all of the commotion you hear one voice rise over the crowd,</p>
+            <p><i> “No, thank you, for your support.”</i></p>
+            <p><i> “I assure you, I will make sure that never happens again.”</i></p>
+            <p><i> “Me too! It was probably the most stressful two minutes of my life.”</i></p>
+            <p><i> “I’m shocked a fight didn’t break out!”</i></p>
+            <p>It’s the same voice you have heard over the speakers of billboard that flash visuals across the already blinding landscape of downtown Neo-Vegas.</p>
+            <p><i> “Let Isobel live on. Lobby for Damian Kytheal.”</i></p>
+            <p><i> “A supported of Damian Kytheal is a supporter of Neo-Vegas!” </i></p>
+            <p>Damian Kytheal, the legendary younger brother of the deceased chairwoman, Isobel, has just walked through the door, accompanied by no other than the missing woman of the hour, Jeanette. The aforementioned woman steps forward and addresses her audience of people.</p>
+            <p> “Thank you. Thank you.” She begins. What she is thanking the mindless mass of people for. you haven’t the slightest. “I would like to first and foremost apologize to each and everyone of you. My absence her today was no doubt noticed, as evident by each of your intelligence if not by my Twitter newsfeed.” This earned a few laughs. “But, there are certain special circumstances that have arisen which called for my attention. As many of you probably know, something has just happened that will change the course of Neo-Vegas history - hopefully for the better.” This got another round of laughter from the audience. Why they are laughing, you don’t know why. “Damian Kytheal, one of my closest friends, who has seen too much of this world for one of his age, has just been confirmed for inauguration to be the next chairperson of the Greater Neo-Vegas area.” The room erupts into polite rich people clapping but all you hear is an incomprehensible silence. Suddenly, someone grabs your arm. </p>
+            <p>“We’re not too late.” The woman whispers into your ear. “We need to act, <i>now.</i>” You get a look at her face and recall her figure crouched over a series of sapling trees. That seems like <i>months</i> ago. Before you can reminisce any more of your assassin journey, the woman speaks again. “Tabitha dropped me a direct line and says that if you can somehow make Damian… disappear… before the word gets out in the morning, than it will look like he abandoned his post AND the city.” She turns back to face you, “You better get to it.” She points to where you see Damians dark form slink up the north east staircase. “There he goes. I’m sure I don’t need to tell you what to do further.”</p>
+            <p><turn to="followDamian">FOLLOW DAMIAN</turn></p> 
+        {{??}}
+           <p> There is something about white people and the wasting of water. While technology has fixed many things such as: bad chemicals in one’s brain that makes people see things that aren’t actually there, (but only if you’re rich enough -- capitalism will be pried from the cold dead radioactive wasteland of the Earth) the curiosity about space (turns out everything was just an elaborate hoax by NASA to encourage wonder among humans), but it seems among all of the new innovation someone forgot to mention the water shortage. Therefore Nestle continued to cut off water sources and government continue to stick pipelines through Native American land (until there were no Native Americans left, they we all killed in the Great Shoshone Massacre of 2090)  and water became an elite commodity.. . even though it was a necessary one.</p>
+            <p>Therefore there was no greater display of <i>I’m so fucking rich, Karen</i> than sticking a giant fountain in the middle of your giant marble mansion in the middle of a giant desert. Therefore that’s just what Jeanette Deniz did. The pure water, straight from the the water cycle itself, none of this bonding oxygen and hydrogen together, that was peasants water, gurgled happily from where it was pumped from some recyclable vat deep beneath the stone cold floors. For a mansion based on a Roman the decor was very… Grecian. Tall pillars rose from the corners, spiralling towards a dome ceiling which was painted with delicate figures of  deities of years past. If not for the historical context of angels and cherubs, and if not for the money that ran through the veins of every member of this party you have no doubt they would be socially ostracised for even breathing in the direction of a Christian figure.</p> 
+            <p>You look around, wondering where you might find the hostess herself. You had entered from the front entrance leaving you facing a room with two doors, one leading <turn to="poolJean">east</turn> the other <turn to="kitchenJean">west</turn>. Then, pasted the fountain of wealth, there were two staircases, one going <turn to="upperLevelSouth">right</turn> and one <turn to="upperLevelNorth">left</turn>, that spiralled up to a mezzanine second floor. You could hear the murmurs of those above you, no doubt talking about the events of the past few nights. </p>
+         {{?}}           
+        </page>       
+        <page id="poolJean">
+            <p>You have seen two pools so far in your time in Neo-Vegas. The first, belonging to a cryptic crime boss, the second belonging to a woman who seemed to tower over a city that was failing to build her back up in turn. So far you are seeing a high correlation between troubled trillionaires and owning a pool. Maybe all Tabitha had to do was convince Damian to buy a pool, then he would just fail his way out of being Chairman of the Greater Neo-Vegas Area. But truly, you have describe the pool inaccurately - for you see, there is not just one pool, oh no, that would be child's play, but sixteen countable pools. All flow in and out of each other creating an impossible chain. Some drip down slowly while other cascade white water into the largest, making a foamy broth and spills over into a short jellybean shaped one. The only way is <turn to="fountianCenter">back</turn></p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="kitchenJean">
+            People love to use the past to justify wrongs in the present. The future is no different. While the year 2175 has come and will soon be gone just like all the years that have fell to make it possible to breathe, the humans that walk the Earth say, <i> “This is the twenty second century! Transphobia doesn’t exist anymore! What do you think this is? 2075?”</i>And while certain exponential growths have come about, such as the election of Elizabeth Warren in 2020 proved that the people of the United States had finally grown a conscious, there are certain irrevocable sexists truths that still live unnoticed in the subconscious of people who now walk around with cybernetic implants. One that still lives on before your eyes is a kitchen full of woman. Many had hoped that the barefoot in the kitchen meme would have burned in the fires of Las Vegas, but like any great plague it survives among the festering flesh of those who survive the wreckage. For Jeanette had fired her long time cook in favour of hiring an all female kitchen staff in order to meet certain social requirements. The only way is <turn to="fountianCenter">back</turn>.
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="upperLevelSouth">
+            You <turn to="fountianCenter">leave</turn> and enter into and open hallway that is the accumulation of both fine taste and tasteful distance for those who are considered ‘fine taste’. For as anyone who decorates multi-kelapire mansions should know that art work should be any focal point of a room - due to the current inflation of physical art work after the Madison-Johnson Studio Art Boom that took place during the late 2080’s. However, while the walls are lined with priceless paintings, such as a Madison original <i>closure</i>, the hallway seems to be consumed with blooming wild flowers. The flank a large oak <turn to="studyJean">door</turn> and wrap their way around an ivory <turn to="sittingRoomJean">archway</turn>, through you can a large congregation of furniture you can sit on, most popularity called - sofas. 
+        </page>
+        <page id="studyJean">
+            <p>Knock-Knock. Who's there? Productivity. From the paper strewn across the massive desk that stand opposite you, to the charts - literal paper charts, because apparently Jeanette hasn’t heard of holographics yet - tacked up across the walls like some vintage virtual video the room seems bursting to inform you that <i> shit gets done here</i>. As if people couldn’t already tell from the countless speeches that the primary user of this room gives. So many that Jeanette Deniz has become a household name, not only for wealth and prosperity but also for commencement speeches, high profile weddings, rallies for the people, the Oscars or the Darensens, or sometimes just to random people on the street she deems worthy of hearing her words.  The only way is <turn to="upperLevelSouth">back</turn>.</p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="sittingRoomJean">
+            <p>The word ‘living room’ was coined in the nineteenth century after semi-rich people got jealous of really rich people for having rooms adjacent to their bedrooms which served no other purpose than for their rich people buddies to come and talk about whatever rich people talk about.</p>
+            <p><i>Geraldine you would never believe what Carfarence wore to the Measles Fundraiser! A Paul Blane original!</i></p>
+            <p><i>I can’t believe that she would wear a Paul Blane dress! Everyone knows he was a pro-vaxxer! Who in their right mind would support such a heinous cause such as poisoning our children!</i></p>
+            <p><i>It’s just distasteful!</i></p>
+            <p>Or something like that.</p>
+            <p>The only way is <turn to="upperLevelSouth">back</turn>.</p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="upperLevelNorth">
+            You <turn to="fountianCenter">leave</turn> and enter into a new hallway. The south hallway holds in it the decoration of sound instead of visuals. The walls are barren, save for a table with a deplorable holophoto of the late Bellthyran Halvard, but music sits in the air of the hallway and never ceases to alert you to it’s presence. It’s seems to be produced from the walls itself as it pulsates toward you from all directions. There is a <interact with="ohDangCouple">couple</interact> that stands off to the side - seeming to be the only ones who can stand the classical music. The only avenues of escape are a large set of double <turn to="diningRoomJean">doors</turn> and a grand <turn to="libraryJean">archway</turn> obstructed by a glass curtain. 
+        </page>
+        <page id="diningRoomJean">
+            <p>There are dining tables in this world and then there are <i>dining tables</i>. You know, the long ones made of some expensive wood, like mahogany or African Blackwood - which currently doesn’t exist any more - or Ebony. They stretch across rooms made too large for any one party and make it impossible to talk with anyone except who is directly in contact with you, making for, in your humble assassin opinion, a very poor party. For how is someone supposed to enjoy the company of friends when they are stretched across a four foot distance. Set on the table currently, is a variety of bird looking meats and vegetables that seem to have been slaughtered with knives that are more exquisite than the ones you have hidden in your boots. The only way is <turn to="upperLevelNorth">back</turn>. </p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <page id="libraryJean">
+            <p>Jeanette, though being part of the top one percent of the one percent, seemed to only half-heartedly attempted in her facade of wealth, The library that you enter into, though looked like the library that would be present at an institute of higher learning -- for all it was missing was some pretentious philosophy student telling you how Ray Bradbury was the pinnacle of old-age science fiction when everyone new damn well it was Kurt Vonnegut -- seemed to be half heartedly stocked with books written in languages no one spoke by people everyone talked about. The rest of the shelves, the ones higher up where no one but an assassin with severe dedication and the ability to scale walls could reach, were filled with things that would certainly cause a scandal. The tabloids dug deep into the past looking for dirt of the woman when what they really needed was hidden on the top shelf plainly in view. For all the books on the shelves over twenty feet where nothing but porn magazines of classical literature characters. The only way is <turn to="upperLevelNorth">back</turn>.</p>
+            {{story.roomsvisited=story.roomsvisited+1;}}
+        </page>
+        <!-- Follow Damian -->
+        <page id="followDamian">
+            <p> You slink into the study behind Damian, just at the door closes you pull yourself into the room. He faces away from you and as the door clicks it seems a string is cut from the man’s shoulders and they hunch in on themselves as his souls seems to concave in. </p>
+            <p> You step forward. </p>
+            <p> DO YOU <turn to="killAndSpare">KILL DAMIAN</turn> OR <turn to="killAndSpare">SPARE HIM?</turn> </p>
+        </page>
+        <page id="killAndSpare">
+            <p>Suddenly the study shifts before your eyes, like if you had discovered colour when previously you had seen nothing but black and white. It sent a sensation over your body as if you were putting on dirty clothes after taking a nice hot shower. To say in bricklayers terms -- it felt nasty. You did not enjoy it. </p>
+            <p> The study is all at once exactly the same and completely different. You are alone now, Damian seemingly to have disappeared before your eyes and in his place stands a forlorned looked woman who sits leaning back in a chair, precariously you might add. Her face is the stark look of someone who doesn’t care if they live or die.</p>
+            <p> “Okay Google.” The woman says. “Start new letter.”</p>
+            <p><i> “Starting new letter.” </i> The voice responds. </p>
+            <p> The woman sighs. “Twenty-third, November twenty-one seventy. I have been examined by thirty-six medical professionals as of this afternoon. Each one giving me a different cause for my deterioration of health. Their suggestions range from radioactive poisoning to tuberculosis. The latter much more possible than the former in this economy. “ There is a beat. “I have yet to tell anyone of my condition. I feel no guilt except for my siblings. Damian will recover I am sure, but little sist-” Her word are caught by a cough that erupt from her lungs. They are strangled in her throat as you see them swell up inside her trachea, cutting off all oxygen. Blood, instead, spills out from her mouth and clots onto the desk in oozing lumps that seems to walk off the wooden surface and hop to the floor. In exactly thirty two seconds and twelve millisecond she slumps face forward into the red mass and ceases to breath.</p>
+             <p>She is however, not dead yet. One is not pronounced dead until resuscitation has been performed. Therefore, she  is not pronounced dead until twenty six minutes and eleven seconds later when Jeanette Deniz, Katharane Dexter, and Nickolev Zakharov enter (or should you say entered as it seems they are all alive and well and seemingly seven years younger by your estimation) and attempt to before a crude version of CPR. And It isn’t until, Hampton Frazier, Darus Harper, and Jedus Atticus enter do they stop. For when the later trio proclaims the aforementioned murderers everything really starts to go downhill from there. With the woman left lying in a pool of her own blood the six begin a mad rush of slander.  </p>
+            <p>You see the the letter has been automatically signed</p>
+            <p><i>Forever indubitably,</i></p>
+            <p><i>Isobel Kytheal</i> </p>
+            <p>You decide it best if you <turn to="diningRoomPast">left</turn>.</p>
+        </page>
+        <page id="diningRoomPast">
+            <p>You enter into the dining room, which is all at once the same dining room you had previously seen and nothing like it at all. A simple round table sits center with three people you recognize to be Hampton Frazier, Darus Harper, and Jedus Atticus, the owners of the MGM Grand and the champions of the current radical movement you’re vying for. </p>
+            <p> Frazier speaks first, “Listen, don’t pretend that this isn’t what we wanted.” </p>
+            <p> “What do you mean?” Atticus says slowly looking to the other man. 
+            <p> “Come on. Wasn’t it you who was just talking about how some twenty year old shouldn’t be in charge?” Frazier questions him. </p>
+            <p> “I was talking about Nick and Katharane! Not about plotting treason!” </p>
+            <p> “It’s not treason if we didn’t actually kill her.” Harper speaks up for the first time. “Who’s Katharane?” </p>
+            <p> “The Regional Consultant for the Great Neo-Vegas Area on Science and Engineering.” Frazier responds. “Where have you been for the past six years?”</p>
+            <p> “I didn’t even know she had a name.”Harper laments. </p>
+            <p> “Anyway,” Frazier continues, “if there was ever a time to move into power it’s now. We need to make sure that Nick, Jean, and Katharance take the fall for this. Then we can restore Vegas to at least a fraction of its former potential - before all these damn snowflakes came in.” </p>
+            <p>You decide it best if you <turn to="libraryPast">left</turn>.</p> 
+        </page>
+        <page id="libraryPast">
+            <p> The next room you enter into is the library. Except the shelves seem to be stocked with an array of eclectic books. From your view you can piece together an off brand copy of Les Mis, a Japanese knock off of A Tale of Two Cities, and a LGBT version of the Great Gatsby. Even though the loyalist trio is standing around the small room, there seems to be more distance between them than ever before.</p>
+            <p> “They are going to frame us for murder. The murder of a public figure, the murder of a public figure, the murder of our friend for Cruise’s sake! So no, I am not going to ‘calm down’ Nickolev.” Jeanette exclaims from her seat by a glass globe of the world.</p>
+            <p> “Jean, all I am saying is that there is nothing people do better than take a rumor and talk. Trust me, I know.” There seems to be a glance that conveys more words to that sentence between the two. “So yes, we need to move quickly but we can’t be stupid about it.” </p>
+            <p> “We need to move to disband the cabinet.” The woman in white, dressed in regular clothes, says from where she leans against a case of books pensively staring at the floor. </p>
+            <p> “What?” Jeanette whispers. </p>
+            <p> “Yeah, because that would make us look innocent.” Nickolev remarks.”</p>
+            <p> “It’s not supposed to make us look innocent. It’s supposed to save us from being killed. Or would you rather have your husband in charge of two trillion keplos and a casino empire?” She takes a breath. “I don’t even want to know how many people will die with those three in charge - with their talk of ‘social order’ and ‘the class system’ and ‘reverting back to the good christian ways’. Sometimes we have to so things the hard way because they are the right way.”</p>
+            <p> “That’s the most I’ve ever heard you speak.” Jeanette comments.</p>
+            <p>You decide it best if you <turn to="kitchenPast">left</turn>.</p>
+        </page>
+        <page id="kitchenPast">
+            <p> The kitchen seems to be next. A single chef stands in the corner chopping some carrots and squash into a pot of stew.  The radicals who you have fought for sit around a wooden table.</p>
+            <p> “This is fantastic.” Harper says, breaking the silence. </p>
+            <p> “I do not appreciate your use of sarcasm in a moment like this.” Frazier snaps. “They didn’t even take control of the city for themselves! No! They just fucked all of us over!” He yells out to no one in particular. </p>
+            <p> “What happened?” Atticus says, picking his head off of the table. </p>
+            <p> Frazier answers, “Those <i>kids</i> just disbanded the cabinet. “So essentially there is no government.”</p>
+            <p> “Oh there is still a government.” Harper corrects. “The library is still going freaking strong.” </p>
+            <p> “So… What now?” Atticus asks, looking around as if the air contains more words he could use. “They can’t install a new cabinet unless things get to states of emergency level.”</p>
+            <p> “Then we just have to make things bad enough to declare a state of emergency.” Frazier responds.</p>
+            <p> Harper gives him a concerning look, ‘What do you mean?”</p>
+            <p> “Come on,” Frazier says to his cohort, “it’s not like we have room to have any conscious here! If you want to overthrow the government you got to leave your personal beliefs at the door!” </p>
+            <p> Harper is silent for a while, but then speaks quietly. “If we are to do this, we ourselves can’t be part of it at all. I know a group though who would align themselves with our cause.” He stops again for a moment. “And if need be, they can take the fall for this adventure.”</p>
+            <p> Fraizer nods, “Very well. Go talk to this group. What’s their name?” </p>
+            <p> “The Church for the Children of Edith.” Harper answers. </p> 
+            <p>You decide it best if you <turn to="nickolevEnding">left</turn>.</p>
+        </page>
+        <page id="nickolevEnding">
+        {{? story.killNickolev =="false"}}
+            <p> You enter into the sitting room. This time instead of hearing the gossip of woman dressing in clothes six sizes too large for them -- but just big enough for their egos -- you see the radical trio sitting amongst themselves. They look older now and the room looks like it did at the party. Among them is a woman. </p>
+            <p> “He eloped. He straight up eloped.” Frazier says looking like he wants the ground to straight up swallow him whole.</p>
+            <p> “Technically they were already married.” The woman says.</p>
+            <p> “I don’t care. This is a crisis.” Frazier continues. “What sort of person leaves behind a trillion keplo empire for some UPS runner.” </p> 
+            <p> “You said that this person you found was the best of the best.” Harper says leaning forward in his wooden chair.</p>
+            <p>  “They were trained in stealth with the Chairwoman.” She retorts. “Besides, Nickolev is gone isn’t he?”</p>
+            <p> “You must be mistaken, Tabitha.” Frazier says. “Only the royal family is trained with the Chairwoman.”</p>
+            <p>DO YOU <turn to="WIWEnding">CONTINUE?</turn></p>
+        {{??}}
+            <p> You enter into the sitting room. This time instead of hearing the gossip of woman dressing in clothes six sizes too large for them -- but just big enough for their egos -- you see the radical trio sitting amongst themselves. They look older now and the room looks like it did at the party. Among them is a woman. </p>
+            <p> “Now the UPS runners are out of commission.” Frazier says smiling. </p>
+            <p> “Why? They have no business with Nickolev.” Harper comments lounging on an arm chair. “They’re an independent group.” </p>
+            <p> “Thank you, Harper. The sun is also a star.” The woman says. “Jack was married to Nickolev.” </p>
+            <p> “Jack?” Harper asks. “The captain?” </p> 
+            <p> “Yeah.” Atticus chirps in. “Seven years and counting.” </p>
+            <p> The woman cuts him off. “He was the one who found Nickolev’s body. Security came in while his body was still cooling and found the poor kid covered in blood. Going to death row for murder now.” </p>
+            <p> “Which is good for us.. I suppose” Frazier says a little bit too cheerful. </p>
+            <p> “Who’d a thought… A guy like that married to a runner.” Harper trails off.”</p>
+            <p> “Your person is doing fantastic! Where did you find them?” Fraizer asks.</p>
+            <p> “You should know them. They were trained with the Chairwoman in stealth.” </p>
+            <p> “You must be mistaken, Tabitha.” Frazier says. “Only the royal family is trained with the Chairwoman.”</p>
+            <p>DO YOU <turn to="WIWEnding">CONTINUE?</turn></p>
+        {{?}}
+        </page>
+        <page id="WIWEnding">
+            {{? story.killWIW =="false"}}
+                <p>The sitting room changes before you once again. Decorations, flowers, and light fill the room and it becomes identical to the one that you saw during the party. The radical trio which you have defied stand around the room -- if they sat down their agitation would boil over and kill them. The woman is with them once again.</p>
+                <p>Frazier breaks the silence. “Now everyone thinks she’s some type of scientific martyr AND that someone is trying to sabotage the installment of Damian!”</p>
+                <p>“Isn’t that what we’re trying to do though?” Atticus, bless his heart, asks.</p>
+                <p>“Yeah! But we don’t want anyone to know about it!” Frazier yells. “The synthetic amnesia clearly was butchered.” </p>
+                <p>“Tabitha,” Harper says to the woman, “I have concerns about your assassin's ability for the next mission. If they are unable to kill Katharane, and they barely knew them, how are they going to react when they have to kill their own brother?”</p>
+                <p>DO YOU <turn to="finale">CONTINUE?</turn>
+            {{??}}
+                <p>The sitting room changes before you once again. Decorations, flowers, and light fill the room and it becomes identical to the one that you saw during the party. The radical trio lounge around the room, relaxation seeping from their bones. The woman is with them once again. Harper throws up the <i>Neo-Vegas Times</i> via the TabletTable. The blue light fills the space.<i>The Regional Consultant for the Great Neo-Vegas Area on Science and Engineering commits suicide at age 27</i> the headline reads.</i></p>
+                <p>“Well. I’ll be damned.” Atticus says. </p>
+                <p>“I was going to say that she’s not the most subtle of assassins... but now everyone is discussing Katharane’s thousand foot fall to the Neo-Vegas sidewalk instead of the installation.” Harper says. </p>
+                <p>“I had concerns at first too, I’ll admit.” Fraizer says. “But it seems our synthetic amnesia worked.” </p>
+                <p>“We never had a successful case with the meat-packing district.” Atticus said. “They were all able to recognize their families faces.”</p>
+                <p>“Well then, let’s just hope that your assassin doesn’t come face to face with Damian.” Frazier says to Tabitha. </p>
+                <p>DO YOU <turn to="finale">CONTINUE?</turn></p>
+            {{?}}
+        </page>    
+        <page id="finale">
+            <p>The concept of time-travel was popularized in H.G Wells's short story <i>The Time Machine</i>. At the time is was characterized as a fiction story.  However, as you are pulled back out of the past and into the study that exists in the year 2175 you feel a real sense of patriotic duty to inform the masses it is now more realistic fiction.</p> 
+            <p> However you have little time to contemplate the mis-labeling of classic literature as you are shipped back into someone’s past and the approaching future; also known as your present. Damian stands in front of you once more the tension having just faded from his shoulders and the door still in route to shutting, even though you have experienced several hours of…. time… travel…. </p>
+            <p> Damian suddenly stands rigid.<p>
+            <p> He breathes in sharply.</p>
+            <p> He starts to turn around..</p>
+            <p>DO YOU <turn to="endingKill">KILL HIM</turn> OR <turn to="endingSpare">SPARE</turn> HIS LIFE?</p> 
+        </page>
+        <page id="endingKill">
+            <p> You are quite impressed with his throwing skills. The knife soars through the air -- directly towards your glabella. You are quicker though and strafe just in time to dodge the impact thrown in your direction. So that’s how it’s going to be? If he doesn’t want to play by the rules neither will you. The bartender was right. Everything about this man is cold. You run towards him jumping up and sliding across the conference table that he has step up workshop on. Pieces of machinery fall to the floor sending out noises that seem to deafen your ears. In one quick movement you grab the arm that has become trapped in the cyber world and rip it from the computer. As you do so Nickolvev lets out a scream of pain as a sudden, but not unexpected, wetness coats your fingers. You shove your fingers deep into the laceration that travels down the man’s forearm making him wince, but not scream. Before he can get a single defense move in your sword has cut through his major tendons and he falls to the ground.  You imagine him to be the man in your preconceived vision as you slide your sword into his stomach. It helps the metal slide between his ribs a little bit easier. </p>
+            <p>He’s unable to move -- equal parts because of pain and because he simply can’t.</p>
+            <p>You wait for fifteen minutes watching him regurgitate up his own blood. You don’t get to see his last breath however as a sudden movement outside the window alerts you to the fact the you will soon be not alone.</p>
+            <p> You decide to take your LEAVE knowing your job is done and your promise to the bartender fulfilled.</p>
+            {{? story.nickDead==true}}
+                The major benefactor for the state is gone. Nickolev Zakharov is buried under the soil. His body will sone decompose and for the soil that a new city will be built on top of. His money making it rise to greater and more lavish heights as his bones turn to dust next to his lover that hung for his death. Two innocent men, lost to the dirt and to the greed of three more who wanted the dry cake of Neo-Vegas. 
+            {{??}}
+                The major benefactor for the state is gone. Nickolev Zakharov is lost to somewhere to the hazy distance that spreads itself in a promiscuous fashion along the outskirts of Neo-Vegas. Seven hundred thousand people used to live in this great city at the beginning of the week and as that number dropped to sixty hundred and ninety nine thousand nine hundred and ninety eight it changed more than a sudden mass exodus. But somewhere, out there in the great unknown, as the population of Neo-Vegas dropped - the number of people who lived happier lives increased. 
+            {{?}}
+            {{? story.WIWDead==true}}
+                <p>The intellectual think tank for the state is gone as well. Katharane Baxter is dead to this Earth. If you were a more dramatic person you would say she has been purged from this Earth, but no one is truly purged from this Earth until intergalactic space travel is invented. You’ll have to remind NASA to get on that -- that is when NASA is re-established.  If  people have to die for the sake of progress, then the inverse must be true. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{??}}
+                <p>The intellectual think tank of the state is gone as well. Oh Katharane Baxter still breathes, and walks, and talks, and smiles, she remembers nothing of the past. It seems that she has been wiped clean, as you once were. She, however, will not fall into the wrong hands. You send all that knew her to her side so that she may look into their face and synapses can fire old memories back into  her reach. It proves difficult, as people seem only to know <i>of</i> her. </i> Soon new inventions will roll out into the hand of Vegeons and there will be flying cars, and jetpack backpacks, and cool pools that defy the laws of gravity. Everything will become tinted blue and white like in every single futuristic movie as every citizen gets good dental care. Or they won’t. You can’t see the future. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{?}}
+        </page>
+        <page id="endingSpare">
+           <p>You come face to face with your brother.</p>
+            <p>That is something you never would have thought to run through your head. The thought trips and falls, crippled to the ground with a sensation you haven’t felt in a long time. It swarms through your body like a blast of warm air and makes your blood run quickly through your veins. You feel your body being squeezed as your body is pressed against Damians. You are receiving your first ever hug. The sensation seems to grow in size as you lift your arms and wrap them in tandem around the strange being in front of you. </p>
+            <p>When your brother says quietly, for only you to hear, <i> “I’ve found you.</i> you realize what the sensation is. </p>
+            <p>Joy.</p>
+            <p>There are certain ticks people displayed when overwhelmed with emotions and your brother is displaying all of them in this moment. Questions start to bubble from his lips. You can probably think of them on you own, <i> When, where, how, who why?</i> As some guy named T.S. Eliot once wrote, “... when the evening is spread out against the sky, like a patient etherized upon a table, let us go, through certain half-deserted streets - Oh, do not ask, “What is it?” Let us go and make our visit.” You aren’t sure why those words come to you now, or where you ever heard them in the first place, but you say them outloud, without a works cited, and they seem to bring some satisfaction to your compatriot. </p> 
+            {{? story.nickDead==true}}
+                The major benefactor for the state is gone. Nickolev Zakharov is buried under the soil. His body will sone decompose and for the soil that a new city will be built on top of. His money making it rise to greater and more lavish heights as his bones turn to dust next to his lover that hung for his death. Two innocent men, lost to the dirt and to the greed of three more who wanted the dry cake of Neo-Vegas. 
+            {{??}}
+                The major benefactor for the state is gone. Nickolev Zakharov is lost to somewhere to the hazy distance that spreads itself in a promiscuous fashion along the outskirts of Neo-Vegas. Seven hundred thousand people used to live in this great city at the beginning of the week and as that number dropped to sixty hundred and ninety nine thousand nine hundred and ninety eight it changed more than a sudden mass exodus. But somewhere, out there in the great unknown, as the population of Neo-Vegas dropped - the number of people who lived happier lives increased. 
+            {{?}}
+            {{? story.WIWDead==true}}
+                <p>The intellectual think tank for the state is gone as well. Katharane Baxter is dead to this Earth. If you were a more dramatic person you would say she has been purged from this Earth, but no one is truly purged from this Earth until intergalactic space travel is invented. You’ll have to remind NASA to get on that -- that is when NASA is re-established.  If  people have to die for the sake of progress, then the inverse must be true. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{??}}
+                <p>The intellectual think tank of the state is gone as well. Oh Katharane Baxter still breathes, and walks, and talks, and smiles, she remembers nothing of the past. It seems that she has been wiped clean, as you once were. She, however, will not fall into the wrong hands. You send all that knew her to her side so that she may look into their face and synapses can fire old memories back into  her reach. It proves difficult, as people seem only to know <i>of</i> her. </i> Soon new inventions will roll out into the hand of Vegeons and there will be flying cars, and jetpack backpacks, and cool pools that defy the laws of gravity. Everything will become tinted blue and white like in every single futuristic movie as every citizen gets good dental care. Or they won’t. You can’t see the future. </p>
+                <p>Either way, thus ends the interregnum. </p>
+            {{?}}
+        </page> 
+        <!-- Characters --> 
+        <character id="ohDangCouple">
+            <action id="Listen">
+                    <p>"This place used to be so different." The man says to his all but five foot nothing of a wife.</p>
+                    <p>"Umm... I guess. I never really saw it before Isobel's death." Is her articulate reply.</p>
+                    <p>"Oh yeah. This place used to be like... basically abandoned. This floor was built back right before Isobel died and was supposed to house like incoming dignitaries but then... yeah."</p>
+            </action>        
+        </character>     
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="inventoryHostWrapper">
+            <h2>Inventory</h2>
+            <div id="inventoryHost"></div>
+        </div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <div id="footer">
+        <a id="undoHost" href="#">Undo</a> &bull; <a id="saveHost" href="#">Save</a> &bull; <a id="restoreHost" href="#">Restore</a> &bull; <a id="reseteHost" href="#">Reset</a>
+    </div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource         : $('#story'),
+                domTarget         : $('#host'),
+                titleTarget       : $('#title'),
+                inventoryTarget   : $('#inventoryHost'),
+                interactionTarget : $('#interactionHost'),
+                undoTarget        : $('#undoHost'),
+                undoStageTarget   : $('#undoStageHost'),
+                saveTarget        : $('#saveHost'),
+                restoreTarget     : $('#restoreHost'),
+                resetTarget       : $('#reseteHost'),
+            });
+        });
+
+    </script>
+</body>
+</html>
+]]>
+</Content>
+</Module>
